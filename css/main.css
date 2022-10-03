@@ -740,11 +740,49 @@ section.main .content .markdown tbody tr:nth-child(odd) th {
   background-color: #f7f7f7;
 }
 .badge-purple {
-  border: 1px solid #5E17EB;
+  border: 1px solid #5e17eb;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 4px 8px;
   text-align: center;
   border-radius: 5px;
   font-family: AileronRegular;
+}
+@media only screen and (max-width: 768px) {
+  .about-me {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hosna-profile {
+    top: -10vmin;
+    border-radius: 50%;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18vmin;
+  }
+  #hosna-profile {
+    position: relative;
+    margin: 5vmin;
+    margin-right: 10vmin;
+    width: 350px;
+    border-radius: 50%;
+  }
+  .text-wrapper {
+    position: relative;
+    width: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
