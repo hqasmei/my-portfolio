@@ -571,7 +571,7 @@ a {
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 a:hover {
-  color: #2a6496;
+  color: #a172ff;
 }
 img {
   max-width: 100%;
@@ -823,4 +823,9 @@ section.main .content .markdown tbody tr:nth-child(odd) th {
   color: #333;
   position: relative;
   z-index: 2;
+}
+a {
+  color: #5e17eb;
+  background-color: transparent;
+  text-decoration: none;
 }
