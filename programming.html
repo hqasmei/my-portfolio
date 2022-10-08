@@ -70,143 +70,122 @@
 
           <div class="markdown">
             <p>
-              Last Updated: October 6th, 2022 <br>
+              Last Updated: October 6th, 2022 <br />
               Here are some programming resources I've complied for specific
-              topics that I wish I knew about when I started. Will continuosly be adding more!
+              topics that I wish I knew about when I started. Will continuosly
+              be adding more!
             </p>
 
             <h3>Courses</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://learnweb3.io/"
-                  >LearnWeb3 </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://www.datacamp.com/"
-                  >DataCamp </a
-                >
-              </li>
-            </ul>
-
-            <h3>Web3</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://uniswap.org/"
-                  >UniSwap </a
-                >
-              </li>
-            </ul>
-
-            <h3>Machine Learning</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://www.fast.ai/"
-                  >fast.ai </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://huggingface.co/"
-                  >Hugging Face </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://openai.com/">OpenAI </a>
-              </li>
-            </ul>
+            <ul id="courses"></ul>
 
             <h3>Datasets</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://www.kaggle.com/datasets"
-                  >Kaggle Datasets </a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://archive.ics.uci.edu/ml/index.php"
-                  >UCI Machine Learning Repository </a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://datasetsearch.research.google.com/"
-                  >Google’s Datasets Search Engine </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://data.gov/"
-                  >US Gov Data </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://informationisbeautiful.net/"
-                  >Information is Beautiful </a
-                >
-              </li>
-            </ul>
+            <ul id="datasets"></ul>
 
             <h3>Frontend/Libraries/Frameworks</h3>
-            <ul>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://akveo.github.io/react-native-ui-kitten/"
-                  >UI Kitten</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://carrd.co/">Carrd</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://eui.elastic.co/#/">Elastic UI</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://ant.design/">Ant Design</a>
-              </li>
-            </ul>
-
-            <h3>UI/UX</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://thenounproject.com/"
-                  >The Nouns Project</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://icons.expo.fyi/">Icons - Expo</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://icons8.com/">Icons8</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://blush.design/">blush</a>
-              </li>
-            </ul>
+            <ul id="flf"></ul>
 
             <h3>IDE</h3>
-            <ul>
-              <li>
-                <a target="_blank" href="https://replit.com/"
-                  >Replit IDE </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://remix.ethereum.org/"
-                  >Remix IDE </a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://hardhat.org/"
-                  >HardHat </a
-                >
-              </li>
-            </ul>
+            <ul id="ide"></ul>
+
+            <h3>Machine Learning</h3>
+            <ul id="ml"></ul>
+
+            <h3>UX/UI</h3>
+            <ul id="uxui"></ul>
+
+            <h3>Web3</h3>
+            <ul id="web3"></ul>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      const courseList = document.querySelector("#courses")
+      const datasetList = document.querySelector("#datasets")
+      const flfList = document.querySelector("#flf")
+      const ideList = document.querySelector("#ide")
+      const mlList = document.querySelector("#ml")
+      const uxuiList = document.querySelector("#uxui")
+      const web3List = document.querySelector("#web3")
+
+      fetch("./assets/programming/courses.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            courseList.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href="${post.link}">${post.title}</a></li>`
+            )
+          })
+        })
+
+      fetch("./assets/programming/datasets.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            datasetList.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href='${post.link}'>${post.title}</a></li>`
+            )
+          })
+        })
+
+      fetch("./assets/programming/frontend_libraries_frameworks.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            flfList.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href='${post.link}'>${post.title}</a></li>`
+            )
+          })
+        })
+
+      fetch("./assets/programming/ide.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            ideList.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href='${post.link}'>${post.title}</a></li>`
+            )
+          })
+        })
+
+      fetch("./assets/programming/machine_learning.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            mlList.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href='${post.link}'>${post.title}</a></li>`
+            )
+          })
+        })
+
+      fetch("./assets/programming/ux_ui.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            uxuiList.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href='${post.link}'>${post.title}</a></li>`
+            )
+          })
+        })
+
+      fetch("./assets/programming/web3.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            web3List.insertAdjacentHTML(
+              "beforeend",
+              `<li><a target="_blank" href='${post.link}'>${post.title}</a></li>`
+            )
+          })
+        })
+    </script>
   </body>
 </html>

@@ -74,24 +74,24 @@
               by subject.
             </p>
             <ul id="books"></ul>
-
-            <script>
-              const bookList = document.querySelector("#books")
-
-              fetch("./assets/books.json")
-                .then((res) => res.json())
-                .then((data) => {
-                  data.forEach((post) => {
-                    bookList.insertAdjacentHTML(
-                      "beforeend",
-                      `<li><strong>${post.Title}</strong>, ${post.Authors}</li>`
-                    )
-                  })
-                })
-            </script>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      const bookList = document.querySelector("#books")
+
+      fetch("./assets/books/books.json")
+        .then((res) => res.json())
+        .then((data) => {
+          data.forEach((post) => {
+            bookList.insertAdjacentHTML(
+              "beforeend",
+              `<li><strong>${post.Title}</strong>, ${post.Authors}</li>`
+            )
+          })
+        })
+    </script>
   </body>
 </html>

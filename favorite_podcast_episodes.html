@@ -66,22 +66,16 @@
     <section class="main">
       <div class="container">
         <div class="content">
-          <div class="page-heading">Snippets of Wisdom</div>
+          <div class="page-heading">My Favorite Podcast Episodes</div>
 
           <div class="markdown">
             <p>
-              Here are a complelation of TED talks, authors, articles, videos,
-              podcasts, and quotes that I like to reference time to time.
+              I've listened to a lot of podcasts over the last few years. Here are my favorite episodes. 
             </p>
 
-            <h3>Ted Talks</h3>
-            <ul id="tedtalks"></ul>
+            <div id="favorites">
 
-            <h3>Podcasts</h3>
-            <ul id="podcasts"></ul>
-
-            *** my favorite episodes can be found <a href="favorite_podcast_episodes.html">here</a>.
-
+            </div>
            
           </div>
         </div>
@@ -89,27 +83,15 @@
     </section>
 
     <script>
-      const tedtalkList = document.querySelector("#tedtalks")
-      const podcastList = document.querySelector("#podcasts")
+      const favoritesList = document.querySelector("#favorites")
 
-      fetch("./assets/snippets_of_wisdom/ted_talks.json")
+      fetch("./assets/snippets_of_wisdom/favorite_podcast_episodes.json")
         .then((res) => res.json())
         .then((data) => {
           data.forEach((post) => {
-            tedtalkList.insertAdjacentHTML(
+            favoritesList.insertAdjacentHTML(
               "beforeend",
-              `<li><a target="_blank" href="${post.link}">${post.title}</a>, ${post.speaker}</li>`
-            )
-          })
-        })
-
-        fetch("./assets/snippets_of_wisdom/podcasts.json")
-        .then((res) => res.json())
-        .then((data) => {
-          data.forEach((post) => {
-            podcastList.insertAdjacentHTML(
-              "beforeend",
-              `<li><a target="_blank" href="${post.link}">${post.title}</a>, ${post.speaker}</li>`
+              `${post.link}`
             )
           })
         })
