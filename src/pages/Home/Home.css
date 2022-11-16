@@ -1,0 +1,34 @@
+ :root { 
+  --black: #000000;
+  --pine: #36a37c;
+  --white: #ffffff;
+ 
+  --font-size-l: 72px;
+  --font-size-m: 36px;
+  --font-size-s: 24px;
+  --font-size-xs: 20px;
+ 
+  --font-family-aileron-bold: "Aileron-Bold", Helvetica;
+  --font-family-aileron-regular: "Aileron-Regular", Helvetica;
+}
+
+.aileron-bold-black-72px {
+  color: var(--black);
+  font-family: var(--font-family-aileron-bold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.aileron-regular-normal-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-aileron-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.outer-container{
+  padding-top: 4em;
+  padding-bottom: 12em;
+}
