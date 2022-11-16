@@ -1,0 +1,44 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --font-size-l: 72px;
+  --font-size-m: 36px;
+  --font-size-s: 24px;
+  --font-size-xs: 20px;
+
+  --font-family-aileron-bold: "Aileron-Bold", Helvetica;
+  --font-family-aileron-regular: "Aileron-Regular", Helvetica;
+}
+
+.aileron-bold-black-24px {
+  color: var(--white);
+  font-family: var(--font-family-aileron-bold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.aileron-regular-normal-black-20px {
+  color: var(--white);
+  font-family: var(--font-family-aileron-regular);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-family-aileron-regular);
+}
+
+.nav-link:hover,
+.active:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+  font-family: var(--font-family-aileron-bold);
+}
