@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { NavLink } from "react-router-dom"
+
 import "./TopNav.css"
 
 const TopNav = () => {
@@ -24,7 +25,7 @@ const TopNav = () => {
               src="images/logo.jpg"
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top font-face-gm "
             />{" "}
             Hosna Qasmei
           </Navbar.Brand>

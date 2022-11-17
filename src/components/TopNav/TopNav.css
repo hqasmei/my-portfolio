@@ -1,33 +1,37 @@
+@font-face {
+  font-family: "AileronBold";
+  src: local("Aileron-Bold"),
+    url("../../fonts/Aileron/Aileron-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AileronRegular";
+  src: local("Aileron-Regular"),
+    url("../../fonts/Aileron/Aileron-Regular.otf") format("opentype");
+}
+
 :root {
   --black: #000000;
   --white: #ffffff;
-
-  --font-size-l: 72px;
-  --font-size-m: 36px;
-  --font-size-s: 24px;
-  --font-size-xs: 20px;
-
-  --font-family-aileron-bold: "Aileron-Bold", Helvetica;
-  --font-family-aileron-regular: "Aileron-Regular", Helvetica;
 }
 
 .navbar-brand {
   color: var(--white);
-  font-family: var(--font-family-aileron-bold);
+  font-family: "AileronBold";
 }
 
 .nav-link {
   text-decoration: none;
-  color: white;
-  font-family: var(--font-family-aileron-regular);
+  color: var(--white);
+  font-family: "AileronRegular";
 }
 
 .nav-link:hover,
 .active:hover {
-  color: white;
+  color: var(--white);
 }
 
 .active {
-  color: white;
-  font-family: var(--font-family-aileron-bold);
+  color: var(--white);
+  font-family: "AileronBold";
 }

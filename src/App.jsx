@@ -1,6 +1,11 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
+// fonts
+import "./fonts/Aileron/Aileron-Bold.otf"
+import "./fonts/Aileron/Aileron-Regular.otf"
+
+// components
 import TopNav from "./components/TopNav/TopNav"
 import Footer from "./components/Footer/Footer"
 
