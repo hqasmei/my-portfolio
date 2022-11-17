@@ -22,12 +22,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100px;
+  width: 150px;
 }
 
 .social-icon-link {
   color: rgb(0, 0, 0);
   font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icon-link:hover {
+  color: rgb(111, 111, 111);
 }
 
 .website-rights {
@@ -35,3 +40,5 @@
   margin-bottom: 16px;
   align-items: center;
 }
+
+
