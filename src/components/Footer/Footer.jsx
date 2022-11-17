@@ -11,6 +11,14 @@ function Footer() {
           <div className="social-icons">
             <Link
               className="social-icon-link"
+              to={{ pathname: "https://github.com/hqasmei" }}
+              target="_blank"
+              aria-label="Github"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              className="social-icon-link"
               to={{ pathname: "https://twitter.com/hqasmei" }}
               target="_blank"
               aria-label="Twitter"
@@ -24,14 +32,6 @@ function Footer() {
               aria-label="LinkedIn"
             >
               <FaLinkedin />
-            </Link>
-            <Link
-              className="social-icon-link"
-              to={{ pathname: "https://github.com/hqasmei" }}
-              target="_blank"
-              aria-label="Github"
-            >
-              <FaGithub />
             </Link>
           </div>
           <small className="website-rights">Hosna Qasmei © 2022</small>

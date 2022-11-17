@@ -11,3 +11,41 @@
   text-align: "center";
 }
 
+.outer-container {
+  padding: 20px;
+}
+
+.results-container {
+  padding: 20px;
+}
+
+.buttons {
+  width: 70%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  background-color: #0c3564;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+}
+
+.btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  background-color: #037fff;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  border: none;
+}

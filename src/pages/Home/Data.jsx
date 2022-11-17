@@ -2,10 +2,13 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "",
-  headline: "Hi, my name is Hosna!",
+  topLine: "Hi, my name is Hosna!",
+  headline: "I am a Sofware Engineer",
   description:
-    "I am a Software Engineer located in Los Angeles, California.",
+    "Passionate about solving problems and working with different technologies.",
+  buttonLabel: "Check out my projects!",
   img: "images/hosna-profile.jpg",
   alt: "Logo",
 }
+
+
