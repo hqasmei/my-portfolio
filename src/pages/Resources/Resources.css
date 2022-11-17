@@ -1,0 +1,17 @@
+.nav-link {
+  text-decoration: none;
+}
+
+.breadcrumb-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-properties {
+  text-align: "center";
+}
+
+.outer-container {
+  padding: 20px;
+}
+

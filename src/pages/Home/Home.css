@@ -1,0 +1,127 @@
+:root {
+  --black: #000000;
+  --green: #4ca767;
+  --white: #ffffff;
+  --dark-gray: #222529;
+
+  --font-size-l: 72px;
+  --font-size-m: 36px;
+  --font-size-s: 24px;
+  --font-size-xs: 20px;
+
+  --font-family-aileron-bold: "Aileron-Bold", Helvetica;
+  --font-family-aileron-regular: "Aileron-Regular", Helvetica;
+}
+
+.aileron-bold-black-72px {
+  color: var(--black);
+  font-family: var(--font-family-aileron-bold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.aileron-regular-normal-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-aileron-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.outer-container {
+  padding-top: 4em;
+  padding-bottom: 12em;
+}
+
+.home-section {
+  color: #fff;
+  padding: 100px 0;
+}
+
+.home-row {
+  align-items: center;
+}
+
+.home-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-line {
+  color: var(--green);
+  font-size: 28px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  line-height: 35px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #f7f8fa;
+}
+
+.dark {
+  color: #1c2237;
+}
+
+.darkBg {
+  background-color: var(--dark-gray);
+}
+
+.home-subtitle {
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 24px;
+  line-height: 32px; /* within paragraph */
+}
+
+.home-img-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.home-img {
+  max-width: 85%;
+  max-height: 70%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  padding-right: 0;
+  border-radius: 50%;
+}
+
+.button-style {
+  font-weight: 500;
+  padding-top: 25px;
+  padding-right: 30px;
+  font-size: 1.2em;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  background-color: #48ac0e;
+  border-color: #48ac0e;
+  text-align: center;
+  line-height: 0px;
+}
+
+.button-style:hover {
+  background-color: #48ac0eb4;
+  border-color: #48ac0eb4;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
