@@ -4,23 +4,13 @@ import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import Button from "react-bootstrap/Button"
 import { Link } from "react-router-dom"
-import { homeObjOne } from "./Data"
+import { homeOne } from "./Data"
 
 import ReactGA from "react-ga"
 import "./Home.css"
 
 const Home = () => {
-  const {
-    lightBg,
-    topLine,
-    lightText,
-    lightTextDesc,
-    headline,
-    description,
-    buttonLabel,
-    img,
-    alt,
-  } = homeObjOne
+  const { topLine, headline, description, buttonLabel, img, alt } = homeOne
 
   useEffect(() => {
     // non interaction
@@ -29,26 +19,16 @@ const Home = () => {
 
   return (
     <>
-      <div className={lightBg ? "home-section" : "home-section darkBg"}>
+      <div className="home-section darkBg">
         <Container>
           <Row xs={1} md={2} className="g-4">
             <Col className="home-text-wrapper">
               <div>
                 <div className="top-line">{topLine}</div>
-                <h1 className={lightText ? "heading" : "heading dark"}>
-                  {headline}
-                </h1>
-                <p
-                  className={
-                    lightTextDesc ? "home-subtitle" : "home-subtitle dark"
-                  }
-                >
-                  {description}
-                </p>
+                <h1 className="heading">{headline}</h1>
+                <p className="home-subtitle">{description}</p>
                 <Link to="/projects">
-                  <Button variant="success">
-                    {buttonLabel}
-                  </Button>
+                  <Button variant="dark">{buttonLabel}</Button>
                 </Link>
               </div>
             </Col>

@@ -11,20 +11,9 @@
   --font-family-aileron-regular: "Aileron-Regular", Helvetica;
 }
 
-.aileron-bold-black-24px {
+.navbar-brand {
   color: var(--white);
   font-family: var(--font-family-aileron-bold);
-  font-size: var(--font-size-s);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.aileron-regular-normal-black-20px {
-  color: var(--white);
-  font-family: var(--font-family-aileron-regular);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 400;
 }
 
 .nav-link {

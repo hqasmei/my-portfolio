@@ -1,7 +1,4 @@
-export const homeObjOne = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+export const homeOne = {
   topLine: "Hi, my name is Hosna!",
   headline: "I am a Sofware Engineer",
   description:

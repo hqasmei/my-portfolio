@@ -10,9 +10,22 @@ const TopNav = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expanded={expanded} expand="lg" bg="dark" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expanded={expanded}
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
         <Container>
-          <Navbar.Brand href="/" className="aileron-bold-black-24px">
+          <Navbar.Brand href="/">
+            <img
+              alt=""
+              src="images/logo.jpg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
             Hosna Qasmei
           </Navbar.Brand>
           <Navbar.Toggle
