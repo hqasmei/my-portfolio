@@ -14,7 +14,7 @@ export const Menu = (props) => {
       <Row xs={1} md={2} lg={3} className="g-4">
         {menuItem.map((val, idx) => (
           <Col key={idx}>
-            <Card className="h-100">
+            <Card className="card-text h-100">
               <Card.Img variant="top" className="h-100" src={val.img} />
               <Card.Header as="h5">{val.title}</Card.Header>
               <Card.Body>
@@ -30,7 +30,7 @@ export const Menu = (props) => {
                     </Col>
                   </Row>
                 </div>
-                <Button variant="success" href={val.link} target="_blank">
+                <Button variant="dark" href={val.link} target="_blank">
                   See Project
                 </Button>
               </Card.Body>

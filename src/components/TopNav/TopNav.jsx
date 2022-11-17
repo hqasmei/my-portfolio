@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { NavLink } from "react-router-dom"
+
 import "./TopNav.css"
 
 const TopNav = () => {
@@ -10,9 +11,22 @@ const TopNav = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expanded={expanded} expand="lg" bg="dark" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expanded={expanded}
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
         <Container>
-          <Navbar.Brand href="/" className="aileron-bold-black-24px">
+          <Navbar.Brand href="/">
+            <img
+              alt=""
+              src="images/logo.jpg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top font-face-gm "
+            />{" "}
             Hosna Qasmei
           </Navbar.Brand>
           <Navbar.Toggle

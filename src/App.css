@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "AileronBold";
+  src: local("Aileron-Bold"),
+    url("./fonts/Aileron/Aileron-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AileronRegular";
+  src: local("Aileron-Regular"),
+    url("./fonts/Aileron/Aileron-Regular.otf") format("opentype");
+}
+
 .App {
   text-align: center;
 }

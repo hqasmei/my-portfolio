@@ -1,6 +1,7 @@
 :root {
   --black: #000000;
   --green: #4ca767;
+  --light-gray: #22252962;
   --white: #ffffff;
   --dark-gray: #222529;
 
@@ -13,34 +14,14 @@
   --font-family-aileron-regular: "Aileron-Regular", Helvetica;
 }
 
-.aileron-bold-black-72px {
-  color: var(--black);
-  font-family: var(--font-family-aileron-bold);
-  font-size: var(--font-size-l);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.aileron-regular-normal-black-36px {
-  color: var(--black);
-  font-family: var(--font-family-aileron-regular);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
-}
-
-.outer-container {
-  padding-top: 4em;
-  padding-bottom: 12em;
-}
-
 .home-section {
   color: #fff;
   padding: 100px 0;
+  min-height: calc(100vh - 169px);
 }
 
-.home-row {
-  align-items: center;
+.darkBg {
+  background: linear-gradient(var(--dark-gray), var(--light-gray));
 }
 
 .home-text-wrapper {
@@ -50,12 +31,11 @@
 }
 
 .top-line {
-  color: var(--green);
+  color: var(--white);
   font-size: 28px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
-  text-transform: uppercase;
   margin-bottom: 16px;
   line-height: 35px;
 }
@@ -68,20 +48,16 @@
   color: #f7f8fa;
 }
 
-.dark {
-  color: #1c2237;
-}
-
-.darkBg {
-  background-color: var(--dark-gray);
-}
-
 .home-subtitle {
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 20px;
   line-height: 24px;
   line-height: 32px; /* within paragraph */
+}
+
+.dark {
+  color: #1c2237;
 }
 
 .home-img-wrapper {
@@ -92,36 +68,11 @@
 }
 
 .home-img {
-  max-width: 85%;
+  max-width: 60%;
   max-height: 70%;
   margin-top: 0;
   margin-right: 0;
   margin-left: 10px;
   padding-right: 0;
-  border-radius: 50%;
-}
-
-.button-style {
-  font-weight: 500;
-  padding-top: 25px;
-  padding-right: 30px;
-  font-size: 1.2em;
-  padding-bottom: 25px;
-  padding-left: 30px;
-  background-color: #48ac0e;
-  border-color: #48ac0e;
-  text-align: center;
-  line-height: 0px;
-}
-
-.button-style:hover {
-  background-color: #48ac0eb4;
-  border-color: #48ac0eb4;
-}
-
-img {
-  border: 0;
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
+  border-radius: 10%;
 }
