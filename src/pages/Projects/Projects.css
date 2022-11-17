@@ -1,12 +1,9 @@
-.outer-container {
-  padding: 20px;
-}
-
-.home-section {
-  padding: 100px 0;
+.projects-section {
+  color: #fff;
+  padding: 20px 0;
   min-height: calc(100vh - 169px);
 }
 
-.darkBg {
+.projects-darkBg {
   background: linear-gradient(var(--dark-gray), var(--light-gray));
 }

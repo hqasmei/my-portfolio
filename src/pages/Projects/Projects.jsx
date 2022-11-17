@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="outer-container home-section darkBg">
+      <div className="projects-section projects-darkBg ">
         <Container>
           <h1>Projects</h1>
           {/* <ButtonGroup button={buttons} filter={filter} /> */}

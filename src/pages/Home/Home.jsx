@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="home-section darkBg">
+      <div className="home-section home-darkBg">
         <Container>
           <Row xs={1} md={2} className="g-4">
             <Col className="home-text-wrapper">

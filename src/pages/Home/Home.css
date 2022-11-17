@@ -20,7 +20,7 @@
   min-height: calc(100vh - 169px);
 }
 
-.darkBg {
+.home-darkBg {
   background: linear-gradient(var(--dark-gray), var(--light-gray));
 }
 

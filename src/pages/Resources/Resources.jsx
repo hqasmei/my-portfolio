@@ -4,12 +4,9 @@ import "./Resources.css"
 
 const Resources = () => (
   <>
-    <div className="outer-container">
+    <div className="resources-section resources-darkBg ">
       <Container>
         <h1>Resources</h1>
-        <p>
-          Coming Soon
-        </p>
       </Container>
     </div>
   </>
