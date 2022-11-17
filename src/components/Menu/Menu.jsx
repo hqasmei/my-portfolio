@@ -20,15 +20,13 @@ export const Menu = (props) => {
               <Card.Body>
                 <Card.Text>{val.description}</Card.Text>
                 <div className="badge-bar">
-                  <Row className="g-4">
-                    <Col>
-                      {val.tech.map((i, idx) => (
-                        <Badge bg="secondary" key={idx}>
-                          {i}
-                        </Badge>
-                      ))}
-                    </Col>
-                  </Row>
+                  {val.tech.map((i, idx) => (
+                    <>
+                      <Badge bg="secondary" className="badge-spacing" key={idx}>
+                        {i}
+                      </Badge>{" "}
+                    </>
+                  ))}
                 </div>
                 <Button variant="dark" href={val.link} target="_blank">
                   See Project
