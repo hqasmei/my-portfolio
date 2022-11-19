@@ -1,6 +1,8 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
+import "antd/dist/reset.css"
+import "./App.css"
 // fonts
 import "./fonts/Aileron/Aileron-Bold.otf"
 import "./fonts/Aileron/Aileron-Regular.otf"
@@ -8,6 +10,7 @@ import "./fonts/Aileron/Aileron-Regular.otf"
 // components
 import TopNav from "./components/TopNav/TopNav"
 import Footer from "./components/Footer/Footer"
+import Books from "./components/ResourcesSection/Books/Books"
 
 import Home from "./pages/Home/Home"
 import Projects from "./pages/Projects/Projects"
@@ -26,6 +29,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/books" element={<Books />} />
         </Routes>
         <Footer />
       </Router>

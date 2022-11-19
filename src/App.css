@@ -1,3 +1,10 @@
+:root {
+  --font-size-l: 72px;
+  --font-size-m: 38px;
+  --font-size-s: 32px;
+  --font-size-xs: 20px;
+}
+
 @font-face {
   font-family: "AileronBold";
   src: local("Aileron-Bold"),
@@ -49,6 +56,11 @@
   }
 }
 
-.darkBg {
-  background: linear-gradient(var(--dark-gray), var(--light-gray));
+.breadcrumb-style-1 {
+  color: white;
+}
+
+.breadcrumb-style-2 {
+  color: white;
+  text-decoration: none;
 }
