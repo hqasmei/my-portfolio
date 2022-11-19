@@ -1,17 +1,10 @@
-.nav-link {
-  text-decoration: none;
+.resources-section {
+  color: white;
+  padding: 20px 0;
+  min-height: calc(100vh - 169px);
 }
 
-.breadcrumb-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.card-properties {
-  text-align: "center";
-}
-
-.outer-container {
-  padding: 20px;
+.resources-darkBg {
+  background: linear-gradient(#222529, #22252962);
 }
 

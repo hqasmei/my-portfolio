@@ -10,28 +10,23 @@
     url("../../fonts/Aileron/Aileron-Regular.otf") format("opentype");
 }
 
-:root {
-  --black: #000000;
-  --white: #ffffff;
-}
-
 .navbar-brand {
-  color: var(--white);
+  color: white;
   font-family: "AileronBold";
 }
 
 .nav-link {
   text-decoration: none;
-  color: var(--white);
+  color: white;
   font-family: "AileronRegular";
 }
 
 .nav-link:hover,
 .active:hover {
-  color: var(--white);
+  color: white;
 }
 
 .active {
-  color: var(--white);
+  color: white;
   font-family: "AileronBold";
 }
