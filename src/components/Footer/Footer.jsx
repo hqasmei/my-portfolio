@@ -1,5 +1,6 @@
 import React from "react"
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa"
+import { FaTwitter, FaLinkedin, FaGithub, } from "react-icons/fa"
+import { SiHashnode, SiCodepen } from "react-icons/si"
 import "./Footer.css"
 
 function Footer() {
@@ -33,6 +34,24 @@ function Footer() {
             aria-label="LinkedIn"
           >
             <FaLinkedin />
+          </a>
+          <a
+            className="social-icon-link"
+            href="https://www.hashnode.com/@hqasmei/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Hashnode"
+          >
+            <SiHashnode />
+          </a>
+          <a
+            className="social-icon-link"
+            href="https://www.codepen.io/hqasmei/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="CodePen"
+          >
+            <SiCodepen />
           </a>
         </div>
         <small className="website-rights">Hosna Qasmei © 2022</small>
