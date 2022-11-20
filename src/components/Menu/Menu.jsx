@@ -24,9 +24,11 @@ export const Menu = (props) => {
                     <Row className="g-4">
                       <Col>
                         {val.tech.map((i, idx) => (
-                          <Badge bg="secondary" key={idx}>
-                            {i}
-                          </Badge>
+                          <>
+                            <Badge bg="secondary" key={idx}>
+                              {i}
+                            </Badge>{" "}
+                          </>
                         ))}
                       </Col>
                     </Row>
