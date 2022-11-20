@@ -41,7 +41,7 @@ const App = () => {
             path="/resources/snippets-of-wisdom"
             element={<SnippetsOfWisdom />}
           />
-          <Route path="/nownownow" element={<Nownownow />} />
+          <Route path="/now" element={<Nownownow />} />
         </Routes>
         <Footer />
       </Router>
