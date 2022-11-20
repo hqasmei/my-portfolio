@@ -17,6 +17,7 @@ import SnippetsOfWisdom from "./components/ResourcesSection/SnippetsOfWisdom/Sni
 import Home from "./pages/Home/Home"
 import Projects from "./pages/Projects/Projects"
 import Resources from "./pages/Resources/Resources"
+import Nownownow from "./pages/Nownownow/Nownownow"
 
 import ReactGA from "react-ga"
 const TRACKING_ID = "UA-151549955-1" // OUR_TRACKING_ID
@@ -40,6 +41,7 @@ const App = () => {
             path="/resources/snippets-of-wisdom"
             element={<SnippetsOfWisdom />}
           />
+          <Route path="/nownownow" element={<Nownownow />} />
         </Routes>
         <Footer />
       </Router>

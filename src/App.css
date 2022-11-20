@@ -1,8 +1,10 @@
 :root {
   --font-size-l: 72px;
-  --font-size-m: 38px;
+  --font-size-m: 36px;
   --font-size-s: 32px;
   --font-size-xs: 20px;
+
+  --white: #ffffff;
 }
 
 @font-face {
@@ -58,9 +60,18 @@
 
 .breadcrumb-style-1 {
   color: white;
+  text-decoration: none;
 }
 
 .breadcrumb-style-2 {
   color: white;
   text-decoration: none;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: red;
 }

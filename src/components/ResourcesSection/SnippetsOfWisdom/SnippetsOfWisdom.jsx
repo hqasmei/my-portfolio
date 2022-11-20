@@ -1,6 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import { tedTalks, podcasts, favoritePodcasts } from "./Data"
+import { Link } from "react-router-dom"
+import { tedTalks, podcasts } from "./Data"
 import { BreadCrumb } from "../../BreadCrumb/BreadCrumb"
 import "./SnippetsOfWisdom.css"
 
@@ -26,15 +27,16 @@ const SnippetsOfWisdom = () => {
           ))}
           <h3>Podcasts</h3>
           {podcasts.map((val, idx) => (
-            <li>
+            <li key={idx}>
               <a target="_blank" rel="noopener noreferrer" href={val.link}>
                 {val.title}
               </a>
               , {val.speaker}
             </li>
           ))}
-          *** my favorite episodes can be found{" "}
-          {/* <a href="favorite_podcast_episodes.html">here</a>. */}
+          <br />
+          *** P.S. my favorite episodes can be found{" "}
+          <Link className="link-style">here</Link>.
         </Container>
       </div>
     </>

@@ -20,7 +20,7 @@ export const Menu2 = (props) => {
                 <Card.Body>
                   <Card.Text>{val.description}</Card.Text>
                   <Link to={val.path}>
-                    <Button variant="dark">See Project</Button>
+                    <Button variant="dark">{val.buttonText}</Button>
                   </Link>
                 </Card.Body>
               </Card>
