@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import Breadcrumb from "react-bootstrap/Breadcrumb"
+import { Breadcrumb } from "antd"
 import { useLocation, Link } from "react-router-dom"
 
 export const BreadCrumb = () => {
@@ -12,7 +12,8 @@ export const BreadCrumb = () => {
     return (
       <>
         <Container>
-          <Breadcrumb>
+          <Breadcrumb >
+            {/* <span style={{ backgroundColor: "#f7f5f5" }}> */}
             {pathnames.map((name, index) => {
               const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`
               const isLast = index === pathnames.length - 1
@@ -28,6 +29,7 @@ export const BreadCrumb = () => {
                 </Breadcrumb.Item>
               )
             })}
+            {/* </span> */}
           </Breadcrumb>
         </Container>
       </>

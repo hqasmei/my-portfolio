@@ -1,9 +1,9 @@
 .programming-resources-section {
-  color: white;
+  color: black;
   padding: 20px 0;
   min-height: calc(100vh - 169px);
 }
 
 .programming-resources-darkBg {
-  background: linear-gradient(#222529, #22252962);
+  background: linear-gradient(#ffffff, #22252962);
 }
