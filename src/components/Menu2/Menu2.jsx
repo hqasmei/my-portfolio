@@ -5,10 +5,10 @@ import Row from "react-bootstrap/Row"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 import "./Menu2.css"
+import { Link } from "react-router-dom"
 
 export const Menu2 = (props) => {
   const { menuItem } = props
-  console.log(menuItem)
   return (
     <>
       <Container>
@@ -19,9 +19,9 @@ export const Menu2 = (props) => {
                 <Card.Header as="h5">{val.title}</Card.Header>
                 <Card.Body>
                   <Card.Text>{val.description}</Card.Text>
-                  <Button variant="dark" href={val.path}>
-                    See Project
-                  </Button>
+                  <Link to={val.path}>
+                    <Button variant="dark">See Project</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>

@@ -9,7 +9,6 @@ import "./Menu.css"
 
 export const Menu = (props) => {
   const { menuItem } = props
-  console.log(menuItem)
   return (
     <>
       <Container>
