@@ -9,12 +9,12 @@ export const items = [
     title: "Programming Resources",
     description:
       "Here are some programming resources I've complied for specific topics that I wish I knew about when I started.",
-    path: "/resources/books",
+    path: "/resources/programming-resources",
   },
   {
     title: "Snippets of Wisdom",
     description:
       "Here are a complelation of TED talks, authors, articles, videos, podcasts, and quotes that I like to reference time to time.",
-    path: "/resources/books",
+    path: "/resources/snippets-of-wisdom",
   },
 ]

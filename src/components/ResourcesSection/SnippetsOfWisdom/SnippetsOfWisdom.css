@@ -1,0 +1,9 @@
+.snippets-of-wisdom-section {
+  color: white;
+  padding: 20px 0;
+  min-height: calc(100vh - 169px);
+}
+
+.snippets-of-wisdom-darkBg {
+  background: linear-gradient(#222529, #22252962);
+}
