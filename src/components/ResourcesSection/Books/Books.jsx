@@ -1,32 +1,29 @@
 import React, { useState, useEffect } from "react"
-import Card from "react-bootstrap/Card"
-import Col from "react-bootstrap/Col"
-import Row from "react-bootstrap/Row"
-import { Layout, Pagination } from "antd"
+import { Layout } from "antd"
 import { Container } from "react-bootstrap"
 import { BreadCrumb } from "../../BreadCrumb/BreadCrumb"
+import BookCards from "../../BookCards/BookCards"
+import { Pagination } from "antd"
 import "./Books.css"
 
 const { Content } = Layout
 
 const Books = () => {
   const [data, setData] = useState([])
-  const [total, setTotal] = useState()
-  const [page, setPage] = useState(0)
-  const [postPerPage, setPostPerPage] = useState(10)
+  const [loading, setLoading] = useState(false)
+  const [currentPage, setCurrentPage] = useState(0)
+  const [itemsPerPage] = useState(10)
 
   useEffect(() => {
-    loadData()
-    setTotal(75)
+    const fetchItems = async () => {
+      setLoading(true)
+      loadData()
+      setLoading(false)
+    }
+
+    fetchItems()
+    
   }, [])
-
-  const indexOfLastPage = page + postPerPage
-  const indexOfFirstPage = indexOfLastPage - postPerPage
-  const currentData = data.slice(indexOfFirstPage, indexOfLastPage)
-
-  const onShowSizeChange = (current, pageSize) => {
-    setPostPerPage(pageSize)
-  }
 
   const loadData = async () => {
     await Promise.all([
@@ -51,17 +48,23 @@ const Books = () => {
 
         collectedData.forEach(function (d) {
           d.items.forEach((i) => {
-            setData((data) => [...data, i])
+            setData((oldArray) => [...oldArray, i])
           })
         })
+        console.log(data)
 
-        
       })
       .catch(function (error) {
         // if there's an error, log it
         console.log(error)
       })
   }
+
+  // Get current items
+  const indexOfLastItem = currentPage * itemsPerPage
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem)
+
   return (
     <>
       <div className="books-section books-darkBg">
@@ -75,34 +78,16 @@ const Books = () => {
           <Layout className="layout">
             <Content
               style={{
-                padding: "0 50px",
+                padding: "25px 50px",
               }}
             >
-              <div className="site-layout-content">
-                <Row xs={2} md={3} lg={4} className="g-4">
-                  {currentData.map((val, idx) => (
-                    <Col key={idx}>
-                      <Card key={idx} className="card-text">
-                        <Card.Img
-                          variant="top"
-                          src={val.volumeInfo.imageLinks.smallThumbnail}
-                        />
-                        <Card.Header>{val.volumeInfo.title}</Card.Header>
-                        <Card.Body>
-                          <Card.Text>{val.volumeInfo.authors[0]}</Card.Text>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
-                <Pagination
-                  onChange={(value) => setPage(value)}
-                  pageSize={postPerPage}
-                  total={total}
-                  current={page}
-                  onShowSizeChange={onShowSizeChange}
-                />
-              </div>
+              <BookCards data={currentItems} loading={loading} />
+              <Pagination
+                onChange={(value) => setCurrentPage(value)}
+                pageSize={itemsPerPage}
+                total={data.length}
+                current={currentPage}
+              />
             </Content>
           </Layout>
         </Container>
