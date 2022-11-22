@@ -1,6 +1,6 @@
 import React from "react"
 import { FaTwitter, FaLinkedin, FaGithub, } from "react-icons/fa"
-import { SiHashnode, SiCodepen } from "react-icons/si"
+import { SiHashnode, SiCodesandbox } from "react-icons/si"
 import "./Footer.css"
 
 function Footer() {
@@ -46,12 +46,12 @@ function Footer() {
           </a>
           <a
             className="social-icon-link"
-            href="https://www.codepen.io/hqasmei/"
+            href="https://codesandbox.io/u/hqasmei"
             target="_blank"
             rel="noreferrer"
-            aria-label="CodePen"
+            aria-label="CodeSandBox"
           >
-            <SiCodepen />
+            <SiCodesandbox />
           </a>
         </div>
         <small className="website-rights">Hosna Qasmei © 2022</small>
