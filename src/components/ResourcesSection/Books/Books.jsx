@@ -9,10 +9,10 @@ import "./Books.css"
 const { Content } = Layout
 
 const Books = () => {
-  const [data, setData] = useState([])
+  const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(false)
-  const [currentPage, setCurrentPage] = useState(0)
-  const [itemsPerPage] = useState(10)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [postsPerPage] = useState(5)
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -22,7 +22,6 @@ const Books = () => {
     }
 
     fetchItems()
-    
   }, [])
 
   const loadData = async () => {
@@ -48,11 +47,9 @@ const Books = () => {
 
         collectedData.forEach(function (d) {
           d.items.forEach((i) => {
-            setData((oldArray) => [...oldArray, i])
+            setPosts((oldArray) => [...oldArray, i])
           })
         })
-        console.log(data)
-
       })
       .catch(function (error) {
         // if there's an error, log it
@@ -60,10 +57,15 @@ const Books = () => {
       })
   }
 
-  // Get current items
-  const indexOfLastItem = currentPage * itemsPerPage
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem)
+  // get current posts
+  const indexOfLastPost = currentPage * postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
+
+  // change page
+  const handleChangePage = (pageNumber) => setCurrentPage(pageNumber)
+
+  const totalPosts = posts.length
 
   return (
     <>
@@ -81,12 +83,14 @@ const Books = () => {
                 padding: "25px 50px",
               }}
             >
-              <BookCards data={currentItems} loading={loading} />
+              <BookCards items={currentPosts} loading={loading} />
               <Pagination
-                onChange={(value) => setCurrentPage(value)}
-                pageSize={itemsPerPage}
-                total={data.length}
+                showSizeChanger={false}
+                style={{ paddingTop: "20px" }}
+                onChange={handleChangePage}
                 current={currentPage}
+                total={totalPosts}
+                pageSize={postsPerPage}
               />
             </Content>
           </Layout>
