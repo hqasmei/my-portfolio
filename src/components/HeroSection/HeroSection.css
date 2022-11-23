@@ -1,7 +1,8 @@
-.hero-section {
+.hero-left {
   color: #fff;
-  padding: 100px 0;
-  min-height: calc(100vh - 169px);
+  padding: 4em 0;
+  min-height: calc(100vh - 10.5em);
+  text-align: center;
 }
 
 .hero-darkBg {
@@ -9,39 +10,39 @@
 }
 
 .home-text-wrapper {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.top-line {
+.home-text-wrapper h1 {
+  font-size: 2.5em;
+  width: 80%;
+  font-weight: bold;
+  margin: 0 auto 0.25em;
+}
+
+.home-text-wrapper h2 {
+  font-size: 1.6em;
+  width: 80%;
+  margin: 0 auto 0.1em;
+}
+
+.home-text-wrapper p {
+  font-size: 1.2em;
+  width: 85%;
+  margin: 1em auto;
+}
+
+a.cta-btn {
   color: white;
-  font-size: 28px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  margin-bottom: 16px;
-  line-height: 35px;
-}
-
-.heading {
-  margin-bottom: 24px;
-  font-size: 36px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: #f7f8fa;
-}
-
-.home-subtitle {
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 20px;
-  line-height: 24px;
-  line-height: 32px; /* within paragraph */
-}
-
-.dark {
-  color: #1c2237;
+  background: #1c1c1c;
+  padding: 0.8em 1.5em;
+  border-radius: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 1em 0 1.5em;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .home-img-wrapper {
@@ -51,12 +52,82 @@
   align-items: center;
 }
 
-.home-img {
+.home-img-wrapper img {
   max-width: 60%;
   max-height: 70%;
   margin-top: 0;
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: .7em;
   padding-right: 0;
-  border-radius: 10%;
+  border-radius: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-left {
+    padding: 10em 2em;
+  }
+
+  .home-text-wrapper {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  .home-text-wrapper h1 {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.2em;
+  }
+
+  .home-text-wrapper h2 {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .home-text-wrapper p {
+    margin: 0;
+    width: 90%;
+  }
+  .home-img-wrapper img {
+    max-width: 90%;
+    max-height: 70%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: .7em;
+    padding-right: 0;
+    border-radius: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-left {
+    padding: 7em 0;
+  }
+
+  .home-text-wrapper {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  .home-text-wrapper h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.2em;
+  }
+
+  .home-text-wrapper h2 {
+    font-size: 2.2em;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .home-text-wrapper p {
+    margin: 0;
+    width: 80%;
+    font-size: 1.5em;
+  }
 }

@@ -1,5 +1,5 @@
 export const homeOne = {
-  topLine: "Hi, my name is Hosna!",
+  topLine: "Hi, I'm Hosna!",
   headline: "I am a Sofware Engineer",
   description:
     "Passionate about solving problems and working with different technologies.",

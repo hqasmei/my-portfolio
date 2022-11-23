@@ -1,7 +1,6 @@
 import React from "react"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
-import Button from "react-bootstrap/Button"
 import { Link } from "react-router-dom"
 import Container from "react-bootstrap/Container"
 import "./HeroSection.css"
@@ -16,22 +15,24 @@ const HeroSection = ({
 }) => {
   return (
     <>
-      <div className="hero-section hero-darkBg">
+      <div className="hero-left hero-darkBg">
         <Container>
           <Row xs={1} md={2} className="g-4">
-            <Col className="home-text-wrapper">
-              <div>
-                <div className="top-line">{topLine}</div>
-                <h1 className="heading">{headline}</h1>
-                <p className="home-subtitle">{description}</p>
+            <Col>
+              <div className="home-text-wrapper">
+                <h1>{topLine}</h1>
+                <h2>{headline}</h2>
+                <p>{description}</p>
                 <Link to="/projects">
-                  <Button variant="dark">{buttonLabel}</Button>
+                  <a href="/projects" className="cta-btn">
+                    {buttonLabel}
+                  </a>
                 </Link>
               </div>
             </Col>
             <Col>
               <div className="home-img-wrapper">
-                <img src={img} alt={alt} className="home-img" />
+                <img src={img} alt={alt} />
               </div>
             </Col>
           </Row>
