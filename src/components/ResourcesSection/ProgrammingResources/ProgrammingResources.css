@@ -7,3 +7,13 @@
 .programming-resources-darkBg {
   background: linear-gradient(#ffffff, #22252962);
 }
+
+.programming-resources-section a {
+  text-decoration: none;
+}
+
+.programming-resources-section li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

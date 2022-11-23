@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import Badge from "react-bootstrap/Badge"
-import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 import "./Menu.css"
 
@@ -33,9 +32,14 @@ export const Menu = (props) => {
                       </Col>
                     </Row>
                   </div>
-                  <Button variant="dark" href={val.link} target="_blank">
+                  <a
+                    href={val.link}
+                    rel="noreferrer"
+                    target="_blank"
+                    className="menu-btn"
+                  >
                     See Project
-                  </Button>
+                  </a>
                 </Card.Body>
               </Card>
             </Col>

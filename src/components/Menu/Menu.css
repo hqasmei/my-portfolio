@@ -10,3 +10,21 @@
 .badge-bar {
   padding-bottom: 15px;
 }
+
+a.menu-btn{
+  color: white;
+  background: #1c1c1c;
+  padding: 0.4em 1.2em;
+  border-radius: .5em;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.menu-btn:hover{
+  color: white;
+  background: #424549;
+  transition: 300ms;
+}

@@ -45,6 +45,12 @@ a.cta-btn {
   text-decoration: none;
 }
 
+a.cta-btn:hover{
+  color: white;
+  background: #424549;
+  transition: 300ms;
+}
+
 .home-img-wrapper {
   display: flex;
   justify-content: center;
