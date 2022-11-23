@@ -71,7 +71,7 @@ const Books = () => {
     <>
       <div className="books-section books-darkBg">
         <BreadCrumb />
-        <Container>
+        <Container className="books-text-wrapper">
           <h1>Books I&#39;ve Read</h1>
           <p>
             Here is a list of 90+ books that I have read that can be filtered by

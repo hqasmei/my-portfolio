@@ -9,8 +9,11 @@
 }
 
 .card-img-top {
-    width: 100%;
-    height: 20vw;
-    object-fit: scale-down;
+  width: 100%;
+  height: 20vw;
+  object-fit: scale-down;
 }
 
+.books-text-wrapper {
+  margin: 1em;
+}

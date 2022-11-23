@@ -11,3 +11,18 @@
 .link-style {
   color: green;
 }
+
+.snippets-text-wrapper {
+  margin-top: 1em;
+}
+
+.snippets-text-wrapper a {
+  text-decoration: none;
+}
+
+.snippets-text-wrapper li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #4d4d4d;
+}
