@@ -1,6 +1,6 @@
 .hero-left {
   color: #fff;
-  padding: 4em 0;
+  padding: 5em 0;
   min-height: calc(100vh - 10.5em);
   text-align: center;
 }
@@ -40,12 +40,12 @@ a.cta-btn {
   border-radius: 1em;
   font-weight: bold;
   font-size: 1.1em;
-  margin: 1em 0 1.5em;
+  margin: 0;
   display: inline-block;
   text-decoration: none;
 }
 
-a.cta-btn:hover{
+a.cta-btn:hover {
   color: white;
   background: #424549;
   transition: 300ms;
@@ -59,11 +59,10 @@ a.cta-btn:hover{
 }
 
 .home-img-wrapper img {
-  max-width: 60%;
-  max-height: 70%;
+  width: 80%;
   margin-top: 0;
   margin-right: 0;
-  margin-left: .7em;
+  margin-left: 0.7em;
   padding-right: 0;
   border-radius: 100%;
 }
@@ -71,11 +70,12 @@ a.cta-btn:hover{
 @media (min-width: 768px) {
   .hero-left {
     padding: 10em 2em;
+    min-height: calc(105vh - 10.5em);
   }
 
   .home-text-wrapper {
     text-align: left;
-    margin: 0;
+    margin: 2em auto 0.5em;
     width: 100%;
   }
 
@@ -92,48 +92,90 @@ a.cta-btn:hover{
   }
 
   .home-text-wrapper p {
-    margin: 0;
+    margin: 0 0 1em;
     width: 90%;
+    line-height: 1.2em;
   }
   .home-img-wrapper img {
-    max-width: 90%;
-    max-height: 70%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: .7em;
+    width: 80%;
+    margin: 1em auto;
     padding-right: 0;
     border-radius: 100%;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
+  .home-text-wrapper {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    margin: 1em auto 0.5em;
+  }
+  .home-text-wrapper h1 {
+    font-size: 4em;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+  }
+  .home-text-wrapper h2 {
+    font-size: 2.5em;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 0.2em;
+  }
+  .home-text-wrapper p {
+    margin: .5em 0;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+  a.cta-btn {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .home-img-wrapper img {
+    width: 80%;
+    margin: -2em;
+  }
+}
+
+@media (min-width: 1400px) {
   .hero-left {
-    padding: 7em 0;
+    padding: 5em 0;
   }
 
   .home-text-wrapper {
     text-align: left;
     margin: 0;
     width: 100%;
+    margin: 6em 4em 1em;
   }
 
   .home-text-wrapper h1 {
-    font-size: 3em;
+    font-size: 5em;
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.1em;
   }
 
   .home-text-wrapper h2 {
-    font-size: 2.2em;
+    font-size: 3em;
     margin: 0;
     width: 100%;
-    margin-bottom: 0.5em;
   }
 
   .home-text-wrapper p {
-    margin: 0;
+    margin: .5em 0 .5em;
     width: 80%;
-    font-size: 1.5em;
+    font-size: 1.75em;
+    line-height: 1.2em;
+  }
+
+  a.cta-btn {
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  .home-img-wrapper img {
+    width: 80%;
+    margin: 1em;
   }
 }
