@@ -1,7 +1,7 @@
 .books-section {
   color: black;
-  padding: 20px 0;
-  min-height: calc(100vh - 169px);
+  padding: 1.25em 0;
+  min-height: calc(100vh - 10.5em);
 }
 
 .books-darkBg {

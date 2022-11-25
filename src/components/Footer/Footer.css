@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 1000px;
+  max-width: 62.5em;
   margin: 0;
   flex-direction: column;
 }
@@ -22,12 +22,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 9.375em;
 }
 
 .social-icon-link {
   color: rgb(0, 0, 0);
-  font-size: 24px;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@
 
 .website-rights {
   color: rgb(0, 0, 0);
-  margin-bottom: 16px;
+  margin-bottom: 1em;
   align-items: center;
 }
 

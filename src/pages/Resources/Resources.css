@@ -1,10 +1,9 @@
 .resources-section {
   color: white;
-  padding: 20px 0;
-  min-height: calc(100vh - 169px);
+  padding: 1.25em 0;
+  min-height: calc(105vh - 10.5em);
 }
 
 .resources-darkBg {
   background: linear-gradient(#222529, #22252962);
 }
-

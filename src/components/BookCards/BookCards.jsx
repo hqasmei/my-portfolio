@@ -7,7 +7,7 @@ const BookCards = ({ items, loading }) =>
   loading ? (
     <h2>Loading...</h2>
   ) : (
-    <div style={{ paddingLeft: "10px" }}>
+    <div style={{ paddingLeft: ".625em" }}>
       <Row xs={1} md={5} className="g-4">
         {items.map((item, idx) => (
           <Col key={idx}>
