@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "AileronBold";
+  src: local("Aileron-Bold"),
+    url("../assets/fonts/Aileron/Aileron-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AileronRegular";
+  src: local("Aileron-Regular"),
+    url("../assets/fonts/Aileron/Aileron-Regular.otf") format("opentype");
+}
+
+.navbar-brand {
+  color: white;
+  font-family: "AileronBold";
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: "AileronRegular";
+}
+
+.nav-link:hover,
+.active:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+  font-family: "AileronBold";
+}
