@@ -1,0 +1,28 @@
+.snippets-of-wisdom-section {
+  color: black;
+  padding: 1.25em 0;
+  min-height: calc(100vh - 7.5em);
+}
+
+.snippets-of-wisdom-darkBg {
+  background: linear-gradient(#ffffff, #22252962);
+}
+
+.link-style {
+  color: green;
+}
+
+.snippets-text-wrapper {
+  margin-top: 1em;
+}
+
+.snippets-text-wrapper a {
+  text-decoration: none;
+}
+
+.snippets-text-wrapper li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #4d4d4d;
+}
