@@ -39,7 +39,16 @@ export const projectsData = [
     img: "images/project-images/platoio.png",
     link: "https://platoio.com/register",
     category: "",
-    tech: ["React", "Elastic UI","Postgres", "Express"],
+    tech: ["React", "Elastic UI", "Postgres", "Express"],
+  },
+  {
+    title: "The Ultimate Calculator",
+    description:
+      "The Ultimate Calculator is a web app developed using Vite and React. Improving upon my UI/UX and Frontend skills.",
+    img: "images/project-images/theutlimatecalculator.png",
+    link: "https://theultimatecalculator.netlify.app/",
+    category: "",
+    tech: ["React", "Vite", "Netlify"],
   },
 ]
 
