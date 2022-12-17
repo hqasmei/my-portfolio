@@ -20,30 +20,14 @@ const animateText = keyframes`
   }
 `
 const wavingHand = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-   20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+   0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
 `
 const Section = styled.div`
   display: flex;
@@ -76,7 +60,6 @@ const ContentContainer = styled.div`
 
 const ImageContainer = styled.div`
   margin: 0;
-  z-index: 1;
 `
 
 const Title = styled.p`
@@ -250,8 +233,8 @@ const ButtonOutlined = styled.a`
 `
 
 const PersonalImage = styled.img`
-  padding: 3em;
-  width: 300px;
+  padding: 1em;
+  width: 200px;
 
   @media ${devices.laptop} {
     width: 80%;
@@ -273,8 +256,11 @@ const BackgroundSquare = styled.div`
 `
 
 const HandWaveEmoji = styled.span`
-  animation: ${wavingHand} 2.5s infinite;
-  transform-origin: 70% 70%;
+  animation-name: ${wavingHand}; 
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
+  display: inline-block;
 `
 
 const HeroSection = () => {
