@@ -1,72 +1,71 @@
-import React, { useState } from "react"
-import { NavLink } from "react-router-dom"
+import React from "react"
+import styled from "styled-components"
 
-import Nav from "react-bootstrap/Nav"
-import Navbar from "react-bootstrap/Navbar"
-import Container from "react-bootstrap/Container"
+import { BsSun, BsMoon } from "react-icons/bs"
 
-import * as constants from "../constants"
+const Toggle = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: ${(props) => props.theme.primary};
+  &:focus {
+    outline: none;
+  }
+  transition: all 0.5s ease;
+`
 
-import "./TopNav.css"
+const Navbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: ${(props) => props.theme.pageBackground};
+  transition: all 0.5s ease;
+  height: 80px;
+  border-bottom: 1px solid ${(props) => props.theme.primary};
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+`
 
-const TopNav = () => {
-  const [expanded, setExpanded] = useState(false)
+const Logo = styled.img`
+  width: 60px;
+  height: 60px;
+`
+
+const TopNav = (props) => {
+  const { theme, setTheme } = props
+
+  const changeTheme = () => {
+    if (theme === "light") {
+      setTheme("dark")
+    } else {
+      setTheme("light")
+    }
+  }
+
+  const icon = theme === "light" ? <BsMoon size={40} /> : <BsSun size={40} />
+  const logoImg =
+    theme === "light" ? (
+      <Logo src="images/dark-logo.png" alt="dark-logo" />
+    ) : (
+      <Logo src="images/light-logo.png" alt="light-logo" />
+    )
 
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expanded={expanded}
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
-        <Container>
-          <Navbar.Brand href="/">
-            <img
-              alt=""
-              src="/images/logo.jpg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top font-face-gm "
-            />{" "}
-            Hosna Qasmei
-          </Navbar.Brand>
-          <Navbar.Toggle
-            onClick={() => setExpanded(expanded ? false : "expanded")}
-            aria-controls="responsive-navbar-nav"
-          />
-          <Navbar.Collapse
-            className="justify-content-end"
-            id="responsive-navbar-nav"
-          >
-            <Nav className="me-auto"></Nav>
-            <Nav>
-              <NavLink
-                to={constants.ROUTE_HOME}
-                end
-                className="nav-link"
-                onClick={() => setExpanded(false)}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                to={constants.ROUTE_PROJECTS}
-                className="nav-link"
-                onClick={() => setExpanded(false)}
-              >
-                Projects
-              </NavLink>
-              <NavLink
-                to={constants.ROUTE_RESOURCES}
-                className="nav-link"
-                onClick={() => setExpanded(false)}
-              >
-                Resources
-              </NavLink>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+      <Navbar>
+        <a href="/" className="logo">
+          {logoImg}
+        </a>
+
+        <div className="switch">
+          <Toggle onClick={changeTheme}>{icon}</Toggle>
+        </div>
       </Navbar>
     </>
   )

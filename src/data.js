@@ -1,26 +1,54 @@
+// export const resourcesData = [
+//   {
+//     title: "Books I've Read",
+//     description:
+//       "Here is a list of 89+ books that I have read. The book genres range from literature, business, poetry, memoirs to self development.",
+//     path: "/resources/books",
+//     buttonText: "See Books",
+//   },
+//   {
+//     title: "Programming Resources",
+//     description:
+//       "Here are some programming resources I've complied for specific topics that I wish I knew about when I started.",
+//     path: "/resources/programming-resources",
+//     buttonText: "See Resources",
+//   },
+//   {
+//     title: "Snippets of Wisdom",
+//     description:
+//       "Here are a complelation of TED talks, authors, articles, videos, podcasts, and quotes that I like to reference time to time.",
+//     path: "/resources/snippets-of-wisdom",
+//     buttonText: "See Wisdom",
+//   },
+// ]
+
 export const resourcesData = [
   {
-    title: "Books I've Read",
-    description:
-      "Here is a list of 89+ books that I have read. The book genres range from literature, business, poetry, memoirs to self development.",
-    path: "/resources/books",
-    buttonText: "See Books",
+    title: "Podcasts",
+    data: "Test",
   },
   {
-    title: "Programming Resources",
-    description:
-      "Here are some programming resources I've complied for specific topics that I wish I knew about when I started.",
-    path: "/resources/programming-resources",
-    buttonText: "See Resources",
+    title: "Youtube Videos",
+    data: "Test",
   },
   {
-    title: "Snippets of Wisdom",
-    description:
-      "Here are a complelation of TED talks, authors, articles, videos, podcasts, and quotes that I like to reference time to time.",
-    path: "/resources/snippets-of-wisdom",
-    buttonText: "See Wisdom",
+    title: "Frontend",
+    data: "Test",
+  },
+  {
+    title: "Backend",
+    data: "Test",
+  },
+  {
+    title: "Machine Learning",
+    data: "Test",
+  },
+  {
+    title: "Web3",
+    data: "Test",
   },
 ]
+
 
 export const projectsData = [
   {

@@ -21,6 +21,7 @@
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "react-switch": "^7.0.0",
     "react-youtube": "^9.0.3",
     "simplex-noise": "^4.0.1",
     "styled-components": "^5.3.6",
