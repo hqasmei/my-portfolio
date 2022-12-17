@@ -19,26 +19,16 @@ const animateText = keyframes`
     transform: translateY(0%);
   }
 `
-const wavingHand = keyframes`
-   0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) } 
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) } 
-  100% { transform: rotate( 0.0deg) }
-`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   background: ${(props) => props.theme.pageBackground};
 
   @media ${devices.mobileM} {
-    height: 85vh;
+    height: 75vh;
   }
   @media ${devices.laptop} {
     flex-direction: row;
@@ -63,7 +53,7 @@ const ImageContainer = styled.div`
 `
 
 const Title = styled.p`
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   color: ${(props) => props.theme.primary};
   margin: 0;
@@ -72,19 +62,19 @@ const Title = styled.p`
   animation-timing-function: ease-out;
 
   @media ${devices.mobileM} {
-    font-size: 3em;
+    font-size: 2.25em;
   }
 
   @media ${devices.mobileL} {
-    font-size: 3.25em;
+    font-size: 2.5em;
   }
 
   @media ${devices.tablet} {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   @media ${devices.laptop} {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 
   @media ${devices.laptopL} {
@@ -92,9 +82,9 @@ const Title = styled.p`
 `
 
 const Headline = styled.p`
-  font-size: 1.5em;
+  font-size: 1.25em;
   letter-spacing: 0.025em;
-  margin: 0.25em 0.5em;
+  margin: 0.25em 1.5em;
   color: ${(props) => props.theme.primary};
   animation-name: ${animateText};
   animation-duration: 2s;
@@ -103,15 +93,15 @@ const Headline = styled.p`
   animation-fill-mode: backwards;
 
   @media ${devices.mobileM} {
-    font-size: 1.75em;
+    font-size: 1.45em;
   }
 
   @media ${devices.mobileL} {
-    font-size: 1.85em;
+    font-size: 1.65em;
   }
 
   @media ${devices.tablet} {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   @media ${devices.laptop} {
@@ -124,10 +114,10 @@ const Headline = styled.p`
 `
 
 const Subtitle = styled.p`
-  font-size: 1.125em;
+  font-size: 1em;
   line-height: 1.35em;
   color: ${(props) => props.theme.primary};
-  margin: 0.5em 0.75em 1em;
+  margin: 0.5em 2em 1em;
   animation-name: ${animateText};
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -135,17 +125,15 @@ const Subtitle = styled.p`
   animation-fill-mode: backwards;
 
   @media ${devices.mobileM} {
-    font-size: 1.25em;
-    margin: 0.5em 1.25em 1em;
+    font-size: 1.125em;
   }
 
   @media ${devices.mobileL} {
-    font-size: 1.35em;
+    font-size: 1.25em;
   }
 
   @media ${devices.tablet} {
-    font-size: 1.75em;
-    margin: 0.5em 2.5em 0.5em;
+    font-size: 1.5em;
   }
 
   @media ${devices.laptop} {
@@ -181,7 +169,7 @@ const ButtonFilled = styled.a`
   margin: 1em;
   white-space: nowrap;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
   color: ${(props) => props.theme.secondary};
   background-color: ${(props) => props.theme.primary};
@@ -208,7 +196,7 @@ const ButtonOutlined = styled.a`
   margin: 1em;
   white-space: nowrap;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
   color: ${(props) => props.theme.primary};
   background: linear-gradient(
@@ -233,7 +221,6 @@ const ButtonOutlined = styled.a`
 `
 
 const PersonalImage = styled.img`
-  padding: 1em;
   width: 200px;
 
   @media ${devices.laptop} {
@@ -255,13 +242,7 @@ const BackgroundSquare = styled.div`
   }
 `
 
-const HandWaveEmoji = styled.span`
-  animation-name: ${wavingHand}; 
-  animation-duration: 2.5s; 
-  animation-iteration-count: infinite; 
-  transform-origin: 70% 70%; 
-  display: inline-block;
-`
+
 
 const HeroSection = () => {
   return (
@@ -273,7 +254,7 @@ const HeroSection = () => {
 
       <ContentContainer>
         <Title>
-          Hi, I&#39;m Hosna <HandWaveEmoji>👋</HandWaveEmoji>
+          Hi, I&#39;m Hosna
         </Title>
         <Headline>Software Engineer and Aspiring Entrepreneur</Headline>
         <Subtitle>
