@@ -25,7 +25,7 @@ const Navbar = styled.div`
   padding: 1em 2em;
   background-color: ${(props) => props.theme.pageBackground};
   transition: all 0.5s ease;
-  height: 80px;
+  height: 40px;
   border-bottom: 1px solid ${(props) => props.theme.primary};
   position: sticky;
   top: 0px;
@@ -33,8 +33,8 @@ const Navbar = styled.div`
 `
 
 const Logo = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 `
 
 const TopNav = (props) => {
@@ -48,7 +48,7 @@ const TopNav = (props) => {
     }
   }
 
-  const icon = theme === "light" ? <BsMoon size={40} /> : <BsSun size={40} />
+  const icon = theme === "light" ? <BsMoon size={30} /> : <BsSun size={30} />
   const logoImg =
     theme === "light" ? (
       <Logo src="images/dark-logo.png" alt="dark-logo" />
