@@ -6,7 +6,7 @@ export const FooterRights = styled.div`
   color: ${(props) => props.theme.secondary};
   margin-bottom: 16px;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   border-top: 1px solid ${(props) => props.theme.secondary};
   padding: 1rem 0;
@@ -25,10 +25,8 @@ export const FooterWrapper = styled.div`
 `
 
 export const FooterColumn = styled(Column)`
-  @media screen and (max-width: 999px) {
-    align-items: center;
-    grid-column: 1/-1;
-  }
+  align-items: center;
+  grid-column: 1/-1;
 `
 
 export const FooterRow = styled(Row)`

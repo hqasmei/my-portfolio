@@ -10,7 +10,7 @@ import { Row, Section } from "../../globalStyles"
 
 function Footer() {
   return (
-    <Section padding="4rem 0 2rem 0">
+    <Section padding="4rem 0 1rem 0">
       <FooterWrapper>
         <FooterRights>
           <FooterColumn id="footerLogo">
@@ -18,7 +18,7 @@ function Footer() {
               {footerSocialData.map((social, index) => (
                 <FooterSocialIcon
                   key={index}
-                  href="/"
+                  href={social.link}
                   target="_blank"
                   aria-label={social.name}
                 >

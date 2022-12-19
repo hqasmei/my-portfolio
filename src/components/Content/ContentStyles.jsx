@@ -9,7 +9,7 @@ export const ContentRow = styled.div`
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   justify-content: space-around;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 842px) {
     flex-direction: column-reverse;
   }
 `
@@ -22,7 +22,7 @@ export const ContentColumn = styled(motion.div)`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 842px) {
     max-width: 100% !important;
     flex-basis: 100%;
     justify-content: center;
@@ -34,7 +34,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 842px) {
     padding-bottom: 65px;
     > h1,
     p {
@@ -65,7 +65,7 @@ export const TopLine = styled(motion.div)`
   margin-bottom: 0.5rem;
   color: ${(props) => props.theme.secondary};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 842px) {
     text-align: center;
   }
 `
@@ -88,7 +88,7 @@ export const Heading = styled(motion.h2)`
   max-width: 440px;
   color: ${(props) => props.theme.secondary};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 842px) {
     text-align: center;
   }
 `
@@ -146,7 +146,7 @@ export const ContentButton = styled(motion.button)`
     color: ${(props) => props.theme.primary};
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 842px) {
     margin-right: 0;
     margin-bottom: 1em;
   }

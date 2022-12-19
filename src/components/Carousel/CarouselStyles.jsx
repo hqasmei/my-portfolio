@@ -6,7 +6,7 @@ export const CarouselImage = styled.img`
   width: 100%;
   height: 300px;
   border-radius: 10px 10px 0 0;
-  object-fit: cover;
+  object-fit: contain;
   vertical-align: middle;
 `
 
@@ -64,7 +64,7 @@ export const CardButton = styled.button`
   background-color: #1d609c;
   font-size: 1.3rem;
   padding: 5px 10px;
-  color: #fff;
+  color: ${(props) => props.theme.primary};
   cursor: pointer;
   width: 100%;
   font-weight: 600;
@@ -75,5 +75,16 @@ export const CardButton = styled.button`
   &:hover {
     background-color: #112f4a;
     transition: background-color 0.2s ease-in;
+  }
+`
+
+export const Heading = styled.h2`
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  max-width: 440px;
+  color: ${(props) => props.theme.secondary};
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
   }
 `
