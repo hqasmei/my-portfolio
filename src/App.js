@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 
 import Home from "./pages/Home"
-import MyStory from "./pages/MyStory"
+import MyProjects from "./pages/MyProjects"
 import MyExperience from "./pages/MyExperience"
 
 const themes = {
@@ -28,8 +28,11 @@ const App = () => {
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
           <Route path={constants.ROUTE_HOME} element={<Home />} />
-          <Route path={constants.ROUTE_MY_STORY} element={<MyStory />} />
-          <Route path={constants.ROUTE_MY_EXPERIENCE} element={<MyExperience />} />
+          <Route path={constants.ROUTE_MY_PROJECTS} element={<MyProjects />} />
+          <Route
+            path={constants.ROUTE_MY_EXPERIENCE}
+            element={<MyExperience />}
+          />
         </Routes>
         <Footer />
       </Router>

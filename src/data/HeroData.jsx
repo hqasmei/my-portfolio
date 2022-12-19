@@ -9,7 +9,7 @@ export const heroOne = {
   description:
     "Working towards creating software that makes life easier and more meaningful",
   buttons: [
-    { label: "My Story", path: constants.ROUTE_MY_STORY },
+    { label: "My Projects", path: constants.ROUTE_MY_PROJECTS },
     { label: "My Experience", path: constants.ROUTE_MY_EXPERIENCE },
   ],
   imgStart: "start",

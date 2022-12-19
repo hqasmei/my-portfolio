@@ -1,6 +1,6 @@
 // Routes.
 export const ROUTE_HOME = "/"
-export const ROUTE_MY_STORY = "/mystory"
+export const ROUTE_MY_PROJECTS = "/myprojects"
 export const ROUTE_MY_EXPERIENCE = "/myexperience"
 
 // Colors.
