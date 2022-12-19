@@ -5,20 +5,20 @@ export const ROUTE_MY_EXPERIENCE = "/myexperience"
 
 // Colors.
 const lightPrimary = "#f1f4f8"
-const lightPrimaryHue = ""
+const lightPrimaryHue = "#6a6a6a"
 const lightSecondary = "#293238"
 const lightSecondaryHue = ""
 const lightColorGradient =
   "linear-gradient(90deg, rgba(67, 9, 121, 1) 33%, rgba(255, 0, 228, 1) 100%)"
 
 const darkPrimary = "#293238"
-const darkPrimaryHue = ""
+const darkPrimaryHue = "#a7b5be"
 const darkSecondary = "#f1f4f8"
 const darkSecondaryHue = ""
 const darkColorGradient =
   "linear-gradient(90deg, rgba(67, 9, 121, 1) 33%, rgba(255, 0, 228, 1) 100%)"
 
-export const LightTheme = {
+export const LIGHT_THEME = {
   primary: lightPrimary,
   primaryHue: lightPrimaryHue,
   secondary: lightSecondary,
@@ -26,7 +26,7 @@ export const LightTheme = {
   colorGradient: lightColorGradient,
 }
 
-export const DarkTheme = {
+export const DARK_THEME = {
   primary: darkPrimary,
   primaryHue: darkPrimaryHue,
   secondary: darkSecondary,

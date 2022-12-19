@@ -98,7 +98,7 @@ export const Subtitle = styled(motion.p)`
   margin-bottom: 35px;
   line-height: 1.25;
   font-size: 1.5rem;
-  color: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.primaryHue};
 `
 
 export const ContentButton = styled(motion.button)`

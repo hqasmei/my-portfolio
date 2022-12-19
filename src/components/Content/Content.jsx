@@ -1,4 +1,6 @@
 import React, { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+
 import { Container, Section } from "../../globalStyles"
 import {
   ContentRow,
@@ -29,6 +31,7 @@ export const Content = ({
   const animation = useAnimation()
 
   const { ref, inView } = useInView({ threshold: 0.2 })
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (inView) {
@@ -74,9 +77,12 @@ export const Content = ({
                     transition={{ delay: 1, duration: 0.6 }}
                     animate={animation}
                     primary={primary}
+                    onClick={() => {
+                      navigate(button.path)
+                    }}
                     key={idx}
                   >
-                    {button.buttonLabel}
+                    {button.label}
                   </ContentButton>
                 )
               })}
