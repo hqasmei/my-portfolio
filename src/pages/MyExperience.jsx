@@ -6,7 +6,7 @@ const MyExperience = () => {
     <Section padding="20px 0" position="relative" inverse id="about">
       <Container>
         <h1>My Experience</h1>
-        <br/>
+        <br />
         <p>Coming Soon...</p>
       </Container>
     </Section>

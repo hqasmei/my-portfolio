@@ -18,7 +18,6 @@ import { useInView } from "react-intersection-observer"
 import { useAnimation } from "framer-motion"
 
 export const Content = ({
-  primary,
   topLine,
   headline,
   description,
@@ -76,7 +75,6 @@ export const Content = ({
                     initial={initial}
                     transition={{ delay: 1, duration: 0.6 }}
                     animate={animation}
-                    primary={primary}
                     onClick={() => {
                       navigate(button.path)
                     }}
