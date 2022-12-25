@@ -17,6 +17,8 @@ import {
   ProjectButton,
   ProjectCardIcon,
   ProjectCardIconImage,
+  ProjectBadges,
+  ProjectBadge,
 } from "./ProjectsStyles"
 
 const Projects = () => {
@@ -29,7 +31,7 @@ const Projects = () => {
     opacity: 1,
   }
   return (
-    <Section margin="auto" padding={"40px 0"}>
+    <Section height="80vh" margin="auto" padding={"40px 0"}>
       <Container>
         <ProjectsTextWrapper>
           <ProjectsTitle>My Projects</ProjectsTitle>
@@ -55,13 +57,21 @@ const Projects = () => {
               <ProjectCardTextWrapper>
                 <ProjectName>{item.name}</ProjectName>
 
-                {item.link !== "" ? (
-                  <ProjectButton href={item.link} target="_blank">
-                    See Project
-                  </ProjectButton>
-                ) : (
-                  <></>
-                )}
+                <ProjectBadges>
+                  {item.tech.map((element, idx) => {
+                    return <ProjectBadge key={idx}>{element}</ProjectBadge>
+                  })}
+                </ProjectBadges>
+
+                <div>
+                  {item.link !== "" ? (
+                    <ProjectButton href={item.link} target="_blank">
+                      Learn More
+                    </ProjectButton>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </ProjectCardTextWrapper>
             </ProjectCard>
           ))}

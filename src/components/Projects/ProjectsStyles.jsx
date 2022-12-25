@@ -43,7 +43,7 @@ export const ProjectName = styled.h3`
   font-weight: bold;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.5rem;
   @media screen and (max-width: 768px) {
     font-weight: 400;
     font-size: 1rem;
@@ -72,7 +72,7 @@ export const ProjectImage = styled.img`
 
 export const ProjectCardTextWrapper = styled.div`
   width: 100%;
-  height: 125px;
+  height: 170px;
   padding: 1.5rem;
   color: ${(props) => props.theme.primary};
   background: ${(props) => props.theme.secondary};
@@ -104,7 +104,6 @@ export const ProjectCardIconImage = styled.img`
 export const ProjectButton = styled.a`
   text-decoration: none;
   padding: 10px 20px;
-  margin-right: 1em;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -124,4 +123,18 @@ export const ProjectButton = styled.a`
     background: ${(props) => props.theme.primaryHue};
     border: 2px solid ${(props) => props.theme.primaryHue};
   }
+`
+
+
+export const ProjectBadges = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+`
+
+export const ProjectBadge = styled.p`
+  padding: 0.5rem 0.5rem;
+  border: 2px solid ${(props) => props.theme.primary};
+  border-radius: 0.15rem;
+  margin-right: 0.5rem;
 `
