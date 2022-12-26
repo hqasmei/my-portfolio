@@ -20,9 +20,9 @@ const Navbar = (props) => {
   const icon = theme === "light" ? <BsMoon size={30} /> : <BsSun size={30} />
   const logoImg =
     theme === "light" ? (
-      <Logo src="assets/dark-logo.png" alt="dark-logo" />
+      <Logo src="./assets/dark-logo.png" alt="dark-logo" />
     ) : (
-      <Logo src="assets/light-logo.png" alt="light-logo" />
+      <Logo src="./assets/light-logo.png" alt="light-logo" />
     )
 
   return (

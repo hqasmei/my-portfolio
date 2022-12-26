@@ -4,6 +4,11 @@ export const TopWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
 `
 
 export const ProjectTitle = styled.div`
@@ -22,9 +27,13 @@ export const ProjectHeadline = styled.p`
   font-weight: 500;
   text-decoration: underline;
   color: ${(props) => props.theme.secondary};
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+  }
 `
 
-export const ProjectButton = styled.a`
+export const ProjectButton = styled.div`
   text-decoration: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -47,6 +56,10 @@ export const ProjectButton = styled.a`
     border: 2px solid ${(props) => props.theme.primaryHue};
     color: ${(props) => props.theme.primary};
   }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 1rem;
+  }
 `
 
 export const ProjectDescription = styled.p`
@@ -62,5 +75,18 @@ export const Content = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+  }
+`
+
+export const ProjectLink = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.theme.secondary};
+  transition: all 0.3s ease;
+  &:hover {
+    color: ${(props) => props.theme.primary};
   }
 `

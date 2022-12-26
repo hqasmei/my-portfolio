@@ -9,8 +9,8 @@ export const projectsData = [
     name: "SportsTable",
     projectId: "sportstable",
     description: "This is a test",
-    image: "assets/project-images/SportsTable/sportstable-image.png",
-    icon: "assets/project-images/SportsTable/sportstable-icon.png",
+    image: "./assets/project-images/SportsTable/sportstable-image.png",
+    icon: "./assets/project-images/SportsTable/sportstable-icon.png",
     link: "https://sportstable.xyz/",
     tech: ["Next.js", "Supabase", "Prisma"],
     overview:
@@ -36,8 +36,8 @@ export const projectsData = [
     name: "PlatoIO",
     projectId: "platoio",
     description: "This is a test",
-    image: "assets/project-images/PlatoIO/platoio-image.png",
-    icon: "assets/project-images/PlatoIO/platoio-icon.png",
+    image: "./assets/project-images/PlatoIO/platoio-image.png",
+    icon: "./assets/project-images/PlatoIO/platoio-icon.png",
     link: "https://platoio.com/register",
     tech: ["React", "Express", "Postgres"],
     overview:

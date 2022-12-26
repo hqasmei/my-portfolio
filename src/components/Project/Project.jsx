@@ -8,6 +8,7 @@ import {
   ProjectHeadline,
   ProjectButton,
   ProjectDescription,
+  ProjectLink,
   Content,
 } from "./ProjectStyles"
 
@@ -34,11 +35,11 @@ const Project = ({
       <Container>
         <TopWrapper>
           <ProjectTitle>{name}</ProjectTitle>
-          <div>
-            <ProjectButton href={link} target="_blank">
+          <ProjectButton>
+            <ProjectLink href={link} target="_blank" rel="noreferrer">
               Try Out
-            </ProjectButton>
-          </div>
+            </ProjectLink>
+          </ProjectButton>
         </TopWrapper>
 
         <Content>
