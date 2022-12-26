@@ -14,6 +14,7 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
   padding: 0 50px;
 
   @media screen and (max-width: 960px) {
@@ -64,6 +65,7 @@ export const Section = styled.section`
 
   @media screen and (max-width: 768px) {
     padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+    height: auto;
   }
 `
 

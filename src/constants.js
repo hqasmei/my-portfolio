@@ -1,7 +1,11 @@
 // Routes.
 export const ROUTE_HOME = "/"
-export const ROUTE_MY_PROJECTS = "/myprojects"
-export const ROUTE_MY_EXPERIENCE = "/myexperience"
+export const ROUTE_PROJECTS = "/projects"
+export const ROUTE_EXPERIENCE = "/experience"
+
+// Route ID Names.
+// See Dashboard.jsx and TopNav.jsx.
+export const ROUTE_PROJECT_ID = "projectId"
 
 // Colors.
 const lightPrimary = "#f1f4f8"

@@ -1,5 +1,7 @@
 import React from "react"
 
+import { useNavigate, useLocation } from "react-router-dom"
+
 import { projectsData } from "../../data/ProjectsData"
 
 // import ButtonBar from "../ButtonBar/ButtonBar"
@@ -22,6 +24,13 @@ import {
 } from "./ProjectsStyles"
 
 const Projects = () => {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const routeChange = (id) => {
+    navigate(`${location.pathname}/${id}`)
+  }
+
   const initial = {
     y: 40,
     opacity: 0,
@@ -31,10 +40,10 @@ const Projects = () => {
     opacity: 1,
   }
   return (
-    <Section height="80vh" margin="auto" padding={"40px 0"}>
+    <Section height="75vh" margin="auto" padding={"40px 0"}>
       <Container>
         <ProjectsTextWrapper>
-          <ProjectsTitle>My Projects</ProjectsTitle>
+          <ProjectsTitle>Projects</ProjectsTitle>
         </ProjectsTextWrapper>
 
         {/* <ButtonBar /> */}
@@ -63,15 +72,17 @@ const Projects = () => {
                   })}
                 </ProjectBadges>
 
-                <div>
-                  {item.link !== "" ? (
-                    <ProjectButton href={item.link} target="_blank">
-                      Learn More
-                    </ProjectButton>
-                  ) : (
-                    <></>
-                  )}
-                </div>
+                {item.link !== "" ? (
+                  <ProjectButton
+                    onClick={() => {
+                      routeChange(item.projectId)
+                    }}
+                  >
+                    Learn More
+                  </ProjectButton>
+                ) : (
+                  <></>
+                )}
               </ProjectCardTextWrapper>
             </ProjectCard>
           ))}

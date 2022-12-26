@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer"
 
 import Home from "./pages/Home"
 import MyProjects from "./pages/MyProjects"
+import MyProject from "./pages/MyProject"
 import MyExperience from "./pages/MyExperience"
 
 const themes = {
@@ -28,9 +29,14 @@ const App = () => {
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
           <Route path={constants.ROUTE_HOME} element={<Home />} />
-          <Route path={constants.ROUTE_MY_PROJECTS} element={<MyProjects />} />
+          <Route path={constants.ROUTE_PROJECTS} element={<MyProjects />} />
           <Route
-            path={constants.ROUTE_MY_EXPERIENCE}
+            path={`${constants.ROUTE_PROJECTS}/:${constants.ROUTE_PROJECT_ID}`}
+            element={<MyProject />}
+          />
+
+          <Route
+            path={constants.ROUTE_EXPERIENCE}
             element={<MyExperience />}
           />
         </Routes>
