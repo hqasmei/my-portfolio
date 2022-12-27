@@ -37,7 +37,7 @@ const Project = ({
           <ProjectTitle>{name}</ProjectTitle>
           <ProjectButton>
             <ProjectLink href={link} target="_blank" rel="noreferrer">
-              Try Out
+              View Project
             </ProjectLink>
           </ProjectButton>
         </TopWrapper>

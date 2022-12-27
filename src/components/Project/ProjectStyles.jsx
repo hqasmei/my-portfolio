@@ -7,7 +7,7 @@ export const TopWrapper = styled.div`
 
   @media screen and (max-width: 450px) {
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 `
 
@@ -34,31 +34,9 @@ export const ProjectHeadline = styled.p`
 `
 
 export const ProjectButton = styled.div`
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  background: ${(props) => props.theme.primary};
-  color: ${(props) => props.theme.secondary};
-
-  border-radius: 4px;
-  white-space: nowrap;
-  outline: none;
-  border: 2px solid ${(props) => props.theme.secondary};
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  &:hover {
-    background: ${(props) => props.theme.primaryHue};
-    border: 2px solid ${(props) => props.theme.primaryHue};
-    color: ${(props) => props.theme.primary};
-  }
-
   @media screen and (max-width: 450px) {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -84,9 +62,29 @@ export const Content = styled.div`
 
 export const ProjectLink = styled.a`
   text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: ${(props) => props.theme.primary};
   color: ${(props) => props.theme.secondary};
+
+  border-radius: 4px;
+  white-space: nowrap;
+  outline: none;
+  border: 2px solid ${(props) => props.theme.secondary};
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition: all 0.3s ease;
   &:hover {
+    background: ${(props) => props.theme.primaryHue};
+    border: 2px solid ${(props) => props.theme.primaryHue};
     color: ${(props) => props.theme.primary};
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 1rem;
   }
 `
