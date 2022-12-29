@@ -15,7 +15,7 @@ export const ProjectTitle = styled.div`
   text-align: left;
   font-size: 3rem;
   font-weight: bold;
-  margin: 0;
+  margin-right: 1rem;
   color: ${(props) => props.theme.secondary};
 `
 
@@ -97,9 +97,12 @@ export const LeftContainer = styled.div`
 `
 
 export const RightContainer = styled.div`
-  
-  
   @media screen and (max-width: 1110px) {
     margin: 1rem;
   }
+`
+
+export const VersionContainter = styled.div`
+  display: flex;
+  align-items: baseline;
 `

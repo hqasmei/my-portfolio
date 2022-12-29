@@ -13,11 +13,13 @@ import {
   Content,
   LeftContainer,
   RightContainer,
+  VersionContainter,
 } from "./ProjectStyles"
 
 const Project = ({
   name,
   // projectId,
+  version,
   // description,
   // image,
   // icon,
@@ -37,7 +39,11 @@ const Project = ({
 
       <Container>
         <TopWrapper>
-          <ProjectTitle>{name}</ProjectTitle>
+          <VersionContainter>
+            <ProjectTitle>{name}</ProjectTitle>
+            <p>{version}</p>
+          </VersionContainter>
+
           <ProjectButton>
             <ProjectLink href={link} target="_blank" rel="noreferrer">
               View Project

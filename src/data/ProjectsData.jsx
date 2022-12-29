@@ -8,6 +8,7 @@ export const projectsData = [
   {
     name: "SportsTable",
     projectId: "sportstable",
+    version: "v1.0.0",
     description: "This is a test",
     image: "./assets/images/project-images/SportsTable/sportstable-image.png",
     icon: "./assets/images/project-images/SportsTable/sportstable-icon.png",
@@ -35,6 +36,7 @@ export const projectsData = [
   {
     name: "PlatoIO",
     projectId: "platoio",
+    version: "v1.0.0",
     description: "This is a test",
     image: "./assets/images/project-images/PlatoIO/platoio-image.png",
     icon: "./assets/images/project-images/PlatoIO/platoio-icon.png",
