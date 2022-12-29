@@ -13,6 +13,6 @@ export const heroOne = {
     { label: "My Experience", path: constants.ROUTE_EXPERIENCE },
   ],
   imgStart: "start",
-  img: "./assets/personal-photo.png",
+  img: "./assets/images/personal-photo.png",
   start: "true",
 }

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import React from "react"
 import BreadCrumb from "../BreadCrumb/BreadCrumb"
 import { Section, Container } from "../../globalStyles"
@@ -10,6 +11,8 @@ import {
   ProjectDescription,
   ProjectLink,
   Content,
+  LeftContainer,
+  RightContainer,
 } from "./ProjectStyles"
 
 const Project = ({
@@ -23,7 +26,7 @@ const Project = ({
   overview,
   features,
   techDetails,
-  // demo,
+  demo,
   conclusion,
 }) => {
   return (
@@ -43,7 +46,7 @@ const Project = ({
         </TopWrapper>
 
         <Content>
-          <div>
+          <LeftContainer>
             <ProjectHeadline>Overview</ProjectHeadline>
             <ProjectDescription>{overview}</ProjectDescription>
 
@@ -65,9 +68,14 @@ const Project = ({
 
             <ProjectHeadline>Conclusion</ProjectHeadline>
             <ProjectDescription>{conclusion}</ProjectDescription>
-          </div>
+          </LeftContainer>
 
-          <div></div>
+          <RightContainer>
+            <ProjectHeadline>Demo</ProjectHeadline>
+            <video autoPlay loop muted width="100%" height="45%">
+              <source src={demo} type="video/mp4" />
+            </video>
+          </RightContainer>
         </Content>
       </Container>
     </Section>

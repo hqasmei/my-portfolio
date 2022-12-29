@@ -46,13 +46,12 @@ export const ProjectDescription = styled.p`
 `
 
 export const Content = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 1rem;
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: row;
 
-  @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+  @media screen and (max-width: 1100px) {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   @media screen and (max-width: 450px) {
@@ -86,5 +85,21 @@ export const ProjectLink = styled.a`
 
   @media screen and (max-width: 450px) {
     margin-top: 1rem;
+  }
+`
+
+export const LeftContainer = styled.div`
+  margin-right: 5rem;
+
+  @media screen and (max-width: 1110px) {
+    margin: 1rem;
+  }
+`
+
+export const RightContainer = styled.div`
+  
+  
+  @media screen and (max-width: 1110px) {
+    margin: 1rem;
   }
 `

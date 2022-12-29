@@ -9,8 +9,8 @@ export const projectsData = [
     name: "SportsTable",
     projectId: "sportstable",
     description: "This is a test",
-    image: "./assets/project-images/SportsTable/sportstable-image.png",
-    icon: "./assets/project-images/SportsTable/sportstable-icon.png",
+    image: "./assets/images/project-images/SportsTable/sportstable-image.png",
+    icon: "./assets/images/project-images/SportsTable/sportstable-icon.png",
     link: "https://sportstable.xyz/",
     tech: ["Next.js", "Supabase", "Prisma"],
     overview:
@@ -27,7 +27,7 @@ export const projectsData = [
       "Hosted on Vercel: The app is hosted on Vercel, a cloud platform for static sites and serverless functions.",
       "Uses Prisma: I used Prisma, an open-source data management tool, to handle database queries and mutations.",
     ],
-    demo: "This is the demo",
+    demo: "",
     conclusion:
       "As a developer, I'm always looking for opportunities to create meaningful projects that solve real-world problems. My sports highlights web app is a testament to my passion for sports and my ability to build a functional and user-friendly web app. I hope that this project showcases my skills in modern technologies like Next.js, Supabase, and Prisma, and demonstrates my ability to deliver high-quality projects.",
   },
@@ -36,8 +36,8 @@ export const projectsData = [
     name: "PlatoIO",
     projectId: "platoio",
     description: "This is a test",
-    image: "./assets/project-images/PlatoIO/platoio-image.png",
-    icon: "./assets/project-images/PlatoIO/platoio-icon.png",
+    image: "./assets/images/project-images/PlatoIO/platoio-image.png",
+    icon: "./assets/images/project-images/PlatoIO/platoio-icon.png",
     link: "https://platoio.com/register",
     tech: ["React", "Express", "Postgres"],
     overview:
@@ -55,7 +55,7 @@ export const projectsData = [
       "Back end hosted on an Elastic Beanstalk instance that serves the Express server ",
       "A PostgreSQL database in Amazon's RDS",
     ],
-    demo: "This is the demo",
+    demo: "./assets/videos/platoio-demo.mp4",
     conclusion:
       "PlatoIO is a simple and convenient to do list app that helps users stay organized and on top of their tasks. I have additional iterations in progress to further improve and enhance the app, and plan to continue developing new versions and features in the future.",
   },
