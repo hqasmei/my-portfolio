@@ -15,7 +15,6 @@ import {
   Org,
   Period,
   Grid,
-  
 } from "./ExperienceStyles"
 
 import {
@@ -126,7 +125,7 @@ const Experience = () => {
                     animate={animate}
                     transition={{ duration: 0.5 + idx * 0.1 }}
                   >
-                    <ExperienceCardHeaderWrapper>
+                    <ExperienceCardHeaderWrapper height="85px">
                       <ExperienceCardInfo>
                         <Role>{item.skill}</Role>
                         <Period>{item.level}</Period>
@@ -150,7 +149,7 @@ const Experience = () => {
                     animate={animate}
                     transition={{ duration: 0.5 + idx * 0.1 }}
                   >
-                    <ExperienceCardHeaderWrapper>
+                    <ExperienceCardHeaderWrapper height="85px">
                       <ExperienceCardInfo>
                         <Role>{item.skill}</Role>
                         <Period>{item.level}</Period>
@@ -173,7 +172,7 @@ const Experience = () => {
                     animate={animate}
                     transition={{ duration: 0.5 + idx * 0.1 }}
                   >
-                    <ExperienceCardHeaderWrapper>
+                    <ExperienceCardHeaderWrapper height="85px">
                       <ExperienceCardInfo>
                         <Role>{item.skill}</Role>
                         <Period>{item.level}</Period>
@@ -197,7 +196,7 @@ const Experience = () => {
                     animate={animate}
                     transition={{ duration: 0.5 + idx * 0.1 }}
                   >
-                    <ExperienceCardHeaderWrapper>
+                    <ExperienceCardHeaderWrapper height="85px">
                       <ExperienceCardInfo>
                         <Role>{item.skill}</Role>
                         <Period>{item.level}</Period>

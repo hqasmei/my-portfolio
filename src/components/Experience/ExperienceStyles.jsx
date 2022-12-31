@@ -73,10 +73,10 @@ export const ExperienceCard = styled(motion.div)`
 export const ExperienceCardHeaderWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 105px;
+  height: ${({ height }) => (height ? height : "105px")};
 
   @media screen and (max-width: 490px) {
-    height: 125px;
+    height: ${({ height }) => (height ? height : "110px")};
   }
 
   @media screen and (max-width: 390px) {
