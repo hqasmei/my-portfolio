@@ -106,3 +106,17 @@ export const VersionContainter = styled.div`
   display: flex;
   align-items: baseline;
 `
+
+export const ProjectBadges = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+`
+
+export const ProjectBadge = styled.p`
+  padding: 0.5rem 0.5rem;
+  border: 2px solid ${(props) => props.theme.secondary};
+  border-radius: 0.15rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+`

@@ -14,6 +14,8 @@ import {
   LeftContainer,
   RightContainer,
   VersionContainter,
+  ProjectBadges,
+  ProjectBadge
 } from "./ProjectStyles"
 
 const Project = ({
@@ -24,7 +26,7 @@ const Project = ({
   // image,
   // icon,
   link,
-  // tech,
+  tech,
   overview,
   features,
   techDetails,
@@ -46,7 +48,7 @@ const Project = ({
 
           <ProjectButton>
             <ProjectLink href={link} target="_blank" rel="noreferrer">
-              View Project
+              Visit Site
             </ProjectLink>
           </ProjectButton>
         </TopWrapper>
@@ -66,11 +68,12 @@ const Project = ({
             })}
 
             <ProjectHeadline>Technical Details</ProjectHeadline>
+            <ProjectBadges>
+              {tech.map((element, idx) => {
+                return <ProjectBadge key={idx}>{element}</ProjectBadge>
+              })}
+            </ProjectBadges>
             <ProjectDescription>{techDetails}</ProjectDescription>
-
-            {/* <ProjectHeadline>Demo</ProjectHeadline>
-        <p>{demo}</p>
-        <a href={link}>Link</a> */}
 
             <ProjectHeadline>Conclusion</ProjectHeadline>
             <ProjectDescription>{conclusion}</ProjectDescription>

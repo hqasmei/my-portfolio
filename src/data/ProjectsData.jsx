@@ -9,7 +9,7 @@ export const projectsData = [
     name: "SportsTable",
     projectId: "sportstable",
     version: "v1.0.0",
-    description: "This is a test",
+    description: "SportsTable is a web app that localizes sports highlights in one place.",
     image: "./assets/images/project-images/SportsTable/sportstable-image.png",
     icon: "./assets/images/project-images/SportsTable/sportstable-icon.png",
     link: "https://sportstable.xyz/",
@@ -37,7 +37,8 @@ export const projectsData = [
     name: "PlatoIO",
     projectId: "platoio",
     version: "v1.0.0",
-    description: "This is a test",
+    description:
+      "PlatoIO is a to do list app that built using the PERN stack.",
     image: "./assets/images/project-images/PlatoIO/platoio-image.png",
     icon: "./assets/images/project-images/PlatoIO/platoio-icon.png",
     link: "https://platoio.com/register",

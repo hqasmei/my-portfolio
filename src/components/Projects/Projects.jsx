@@ -21,8 +21,7 @@ import {
   ProjectButton,
   ProjectCardIcon,
   ProjectCardIconImage,
-  ProjectBadges,
-  ProjectBadge,
+  ProjectDescription,
 } from "./ProjectsStyles"
 
 const Projects = () => {
@@ -68,12 +67,7 @@ const Projects = () => {
               <ProjectCardTextWrapper>
                 <ProjectName>{item.name}</ProjectName>
 
-                <ProjectBadges>
-                  {item.tech.map((element, idx) => {
-                    return <ProjectBadge key={idx}>{element}</ProjectBadge>
-                  })}
-                </ProjectBadges>
-
+                <ProjectDescription>{item.description}</ProjectDescription>
                 {item.link !== "" ? (
                   <ProjectButton
                     onClick={() => {
