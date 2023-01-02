@@ -25,7 +25,6 @@ export const ProjectHeadline = styled.p`
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  text-decoration: underline;
   color: ${(props) => props.theme.secondary};
 
   @media screen and (max-width: 450px) {
@@ -50,7 +49,7 @@ export const Content = styled.div`
   flex-direction: row;
 
   @media screen and (max-width: 1100px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -119,4 +118,10 @@ export const ProjectBadge = styled.p`
   border-radius: 0.15rem;
   margin-right: 0.5rem;
   margin-bottom: 0;
+`
+
+export const VideoPlayer = styled.video`
+  box-shadow: 0px 3px 17px -3px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 3px 17px -3px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 3px 17px -3px rgba(0, 0, 0, 0.36);
 `

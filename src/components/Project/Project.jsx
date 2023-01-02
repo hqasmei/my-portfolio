@@ -15,7 +15,8 @@ import {
   RightContainer,
   VersionContainter,
   ProjectBadges,
-  ProjectBadge
+  ProjectBadge,
+  VideoPlayer,
 } from "./ProjectStyles"
 
 const Project = ({
@@ -28,13 +29,10 @@ const Project = ({
   link,
   tech,
   overview,
-  features,
-  techDetails,
   demo,
-  conclusion,
 }) => {
   return (
-    <Section margin="auto" padding={"40px 0"}>
+    <Section height="75vh" margin="auto" padding={"40px 0"}>
       <Container mb="1rem">
         <BreadCrumb />
       </Container>
@@ -55,35 +53,21 @@ const Project = ({
 
         <Content>
           <LeftContainer>
+            <VideoPlayer autoPlay loop muted width="500px" height="300px">
+              <source src={demo} type="video/mp4" />
+            </VideoPlayer>
+          </LeftContainer>
+
+          <RightContainer>
             <ProjectHeadline>Overview</ProjectHeadline>
             <ProjectDescription>{overview}</ProjectDescription>
 
-            <ProjectHeadline>Features</ProjectHeadline>
-            {features.map((feature, idx) => {
-              return (
-                <ProjectDescription key={idx}>
-                  {idx + 1}. {feature}
-                </ProjectDescription>
-              )
-            })}
-
-            <ProjectHeadline>Technical Details</ProjectHeadline>
+            <ProjectHeadline>Tech Stack</ProjectHeadline>
             <ProjectBadges>
               {tech.map((element, idx) => {
                 return <ProjectBadge key={idx}>{element}</ProjectBadge>
               })}
             </ProjectBadges>
-            <ProjectDescription>{techDetails}</ProjectDescription>
-
-            <ProjectHeadline>Conclusion</ProjectHeadline>
-            <ProjectDescription>{conclusion}</ProjectDescription>
-          </LeftContainer>
-
-          <RightContainer>
-            <ProjectHeadline>Demo</ProjectHeadline>
-            <video autoPlay loop muted width="100%" height="45%">
-              <source src={demo} type="video/mp4" />
-            </video>
           </RightContainer>
         </Content>
       </Container>
