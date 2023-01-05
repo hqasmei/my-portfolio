@@ -13,6 +13,7 @@ import Home from "./pages/Home"
 import MyProjects from "./pages/MyProjects"
 import MyProject from "./pages/MyProject"
 import MyExperience from "./pages/MyExperience"
+import MyReadingList from "./pages/MyReadingList"
 
 const themes = {
   light: constants.LIGHT_THEME,
@@ -35,9 +36,10 @@ const App = () => {
             element={<MyProject />}
           />
 
+          <Route path={constants.ROUTE_EXPERIENCE} element={<MyExperience />} />
           <Route
-            path={constants.ROUTE_EXPERIENCE}
-            element={<MyExperience />}
+            path={constants.ROUTE_READING_LIST}
+            element={<MyReadingList />}
           />
         </Routes>
         <Footer />
