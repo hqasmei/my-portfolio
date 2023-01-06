@@ -1,9 +1,10 @@
 import React from "react"
+import ReadingList from "../components/ReadingList/ReadingList"
 
 const MyReadingList = () => {
   return (
     <>
-      <h1>This is my reading list</h1>
+      <ReadingList />
     </>
   )
 }
