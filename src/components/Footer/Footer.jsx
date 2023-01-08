@@ -27,7 +27,7 @@ function Footer() {
               ))}
             </Row>
           </FooterColumn>
-          Hosna Qasmei © 2022
+          Hosna Qasmei © 2023
         </FooterRights>
       </FooterWrapper>
     </Section>
