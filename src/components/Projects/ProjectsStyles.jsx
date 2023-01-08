@@ -43,7 +43,7 @@ export const ProjectCard = styled(motion.div)`
   align-items: center;
   background: #f3f3f3;
   // box-shadow: 0 0 32px 8px #d0d0d0;
-  border: 1px solid ${(props) => props.theme.secondary};
+  border: 2px solid ${(props) => props.theme.primaryHue};
   border-radius: 5px;
 `
 
@@ -82,8 +82,8 @@ export const ProjectCardTextWrapper = styled.div`
   width: 100%;
   height: 170px;
   padding: 1.5rem 1.5rem 1rem 1.5rem;
-  color: ${(props) => props.theme.primary};
-  background: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.secondary};
+  background: ${(props) => props.theme.primary};
 `
 
 export const ProjectCardHeaderWrapper = styled.div`
@@ -115,10 +115,10 @@ export const ProjectButton = styled.button`
   font-size: 1rem;
   letter-spacing: 1px;
   cursor: pointer;
-  background: ${(props) => props.theme.primary};
-  color: ${(props) => props.theme.secondary};
+  background: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.primary};
 
-  border-radius: 4px;
+  border-radius: 7px;
   white-space: nowrap;
   outline: none;
   border: 2px solid ${(props) => props.theme.primary};
