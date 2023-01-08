@@ -30,7 +30,22 @@ export const projectsData = [
     link: "https://platoio.com/register",
     tech: ["React", "Express", "Postgres"],
     overview:
-      "PlatoIO is a to do list app that helps users stay organized and on top of their tasks. Built using the PERN stack and hosted on AWS, PlatoIO is a highly performant and scalable app that can handle a large number of users and transactions.",
+      "PlatoIO is a highly performant and scalable app that can handle a large number of users and transactions.",
     demo: "./assets/videos/platoio-demo.mp4",
+  },
+  {
+    name: "Kator Family Photos",
+    projectId: "katorfamilyphotos",
+    version: "v1.0.0",
+    description:
+      "Kator Family Photos is a photos and video digitization service in the LA area.",
+    image:
+      "./assets/images/project-images/KatorFamilyPhotos/katorfamilyphotos-image.png",
+    icon: "./assets/images/project-images/KatorFamilyPhotos/katorfamilyphotos-icon.png",
+    link: "https://katorfamilyphotos.netlify.app/",
+    tech: ["React", "Tailwind CSS", "Chakra UI"],
+    overview:
+      "Kator Family Photos is a service that helps individuals and families digitize their physical photos and videos, making it easier to preserve and share these memories with loved ones. Kator Family Photos will digitize it and return the digital copies to the customer.",
+    demo: "./assets/videos/katorfamilyphotos-demo.mp4",
   },
 ]
