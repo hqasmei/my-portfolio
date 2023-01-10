@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 
 import Home from "./pages/Home"
 import Experience from "./pages/Experience"
-// import Projects from "./pages/Projects"
+import Projects from "./pages/Projects"
 // import About from "./pages/About"
 
 import Navbar from "./components/Navbar"
@@ -16,7 +16,7 @@ export default function App() {
       <Navbar />
       <Home />
       <Experience />
-      {/* <Projects /> */}
+      <Projects />
       {/* <About /> */}
       <Footer />
     </Router>

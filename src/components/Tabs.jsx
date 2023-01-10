@@ -14,9 +14,9 @@ export default function Tabs() {
                 onClick={() => setOpenTab(tab.organization)}
                 className={` ${
                   openTab === tab.organization
-                    ? "bg-teal-600 font-semibold rounded-sm font-mono text-neutral-100"
-                    : "hover:bg-slate-100 font-mono rounded-sm"
-                } inline-block px-2 py-2 font-mono rounded-sm text-gray-600 `}
+                    ? "bg-teal-600 font-semibold rounded-sm font-mono text-neutral-100 text-xs md:text-base"
+                    : "hover:bg-slate-100 font-mono rounded-sm text-xs md:text-base"
+                } inline-block px-2 py-2 font-mono rounded-sm text-gray-600 text-xs md:text-base`}
               >
                 {tab.organization}
               </button>
@@ -25,26 +25,26 @@ export default function Tabs() {
         </ul>
       </div>
 
-      <div className="container mt-4 md:w-1/2 md:mt-0">
+      <div className="container mt-8 md:w-1/2 md:mt-0">
         {experienceData.map((tab) => (
           <div
             key={tab.organization}
             className={tab.organization === openTab ? "block" : "hidden"}
           >
             <p>
-              <span className="font-bold">{tab.role}</span>
+              <span className="text-xl font-bold">{tab.role}</span>
 
-              <span className="font-bold text-teal-500">
+              <span className="text-xl font-bold text-teal-500">
                 {" @ "}
                 {tab.organization}
               </span>
             </p>
 
-            <p className="text-sm text-slate-600 mb-4">{tab.period}</p>
+            <p className="text-md text-slate-600 mb-4">{tab.period}</p>
             <ul className="ml-4">
               {tab.description.map((bullet, idx) => {
                 return (
-                  <li className="list-disc text-slate-600" key={idx}>
+                  <li className="text-lg list-disc text-slate-600" key={idx}>
                     {bullet}
                   </li>
                 )
