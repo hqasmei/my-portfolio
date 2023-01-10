@@ -5,7 +5,7 @@ export default function Tabs() {
   const [openTab, setOpenTab] = useState("Proterra Ag")
 
   return (
-    <div className="container flex flex-col items-start text-left justify-center p-6 space-x-4 md:flex-row">
+    <div className="container flex flex-col items-start text-left justify-center md:p-6 md:space-x-4 md:flex-row">
       <div className="container overflow-x-auto md:w-1/4">
         <ul className="flex flex-row text-left wrap space-x-4 md:flex-col md:space-x-0 md:space-y-4">
           {experienceData.map((tab) => (
@@ -32,19 +32,24 @@ export default function Tabs() {
             className={tab.organization === openTab ? "block" : "hidden"}
           >
             <p>
-              <span className="text-xl font-bold">{tab.role}</span>
+              <span className="text-md md:text-xl font-bold">{tab.role}</span>
 
-              <span className="text-xl font-bold text-teal-500">
+              <span className="text-md md:text-xl font-bold text-teal-500">
                 {" @ "}
                 {tab.organization}
               </span>
             </p>
 
-            <p className="text-md text-slate-600 mb-4">{tab.period}</p>
+            <p className="text-sm md:text-md text-slate-600 mb-4">
+              {tab.period}
+            </p>
             <ul className="ml-4">
               {tab.description.map((bullet, idx) => {
                 return (
-                  <li className="text-lg list-disc text-slate-600" key={idx}>
+                  <li
+                    className="text-sm md:text-lg list-disc text-slate-600"
+                    key={idx}
+                  >
                     {bullet}
                   </li>
                 )

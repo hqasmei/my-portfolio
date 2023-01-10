@@ -8,7 +8,7 @@ export default function FeaturedProject(props) {
   return (
     <div>
       {reverse === false ? (
-        <div className="flex flex-col my-8 space-x-6 md:flex-row">
+        <div className="flex flex-col my-8 md:space-x-6 md:flex-row">
           <img
             src={image}
             alt=""
@@ -19,7 +19,7 @@ export default function FeaturedProject(props) {
             <p className="text-teal-500 font-semibold mb-2">Featured Project</p>
             <p className="text-4xl font-bold mb-2">{name}</p>
             <p className="z-20 px-12 text-xl mb-4">{description}</p>
-            <div className="flex flex-row justify-center space-x-4 mb-4">
+            <div className="flex flex-row justify-center md:space-x-4 mb-4">
               {tech.map((item, idx) => {
                 return (
                   <p key={idx} className="mr-2 text-neutral-500">
@@ -39,7 +39,7 @@ export default function FeaturedProject(props) {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col my-8 space-x-6 md:flex-row">
+        <div className="flex flex-col my-8 md:space-x-6 md:flex-row">
           <img
             src={image}
             alt=""
@@ -50,7 +50,7 @@ export default function FeaturedProject(props) {
             <p className="text-teal-500 font-semibold mb-2">Featured Project</p>
             <p className="text-4xl font-bold mb-2">{name}</p>
             <p className="z-20 px-12 text-xl mb-4">{description}</p>
-            <div className="flex flex-row justify-center space-x-4 mb-4">
+            <div className="flex flex-row justify-center md:space-x-4 mb-4">
               {tech.map((item, idx) => {
                 return (
                   <p key={idx} className="mr-2 text-neutral-500">
