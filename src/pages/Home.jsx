@@ -1,13 +1,16 @@
 import React from "react"
-import { Content } from "../components/Content/Content"
-import { heroOne } from "../data/HeroData"
+import HeroSection from "../components/HeroSection"
 
-const Home = () => {
+export default function Home() {
   return (
-    <>
-      <Content {...heroOne} />
-    </>
+    <div className="container mx-auto" id="home">
+      <HeroSection
+        intro="Hi, my name is"
+        name="Hosna Qasmei."
+        heading="I am a software engineer and aspiring entrepreneur."
+        subtitle="Working towards creating software that makes life easier and more meaningful. "
+        image="./assets/images/personal-photo.png"
+      />
+    </div>
   )
 }
-
-export default Home
