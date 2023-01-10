@@ -1,13 +1,35 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { HashLink as Link } from "react-router-hash-link"
 
 import * as constants from "../constants"
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false)
+  const [prevScrollpos, setPrevScrollpos] = useState(0)
+  const [navbarTop, setNavbarTop] = useState(0)
+
+  useEffect(() => {
+    function handleScroll() {
+      const currentScrollPos = window.pageYOffset
+      if (prevScrollpos > currentScrollPos) {
+        setNavbarTop(0)
+      } else {
+        setNavbarTop(-100)
+      }
+      setPrevScrollpos(currentScrollPos)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [prevScrollpos])
 
   return (
-    <nav className="w-full fixed z-50 bg-white shadow">
+    <nav
+      style={{ top: `${navbarTop}px` }}
+      id="navbar"
+      className="w-full sticky top-0 z-50 bg-white shadow"
+    >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
