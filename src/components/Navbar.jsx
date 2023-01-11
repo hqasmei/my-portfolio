@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { HashLink as Link } from "react-router-hash-link"
+import { NavLink } from "react-router-dom"
 
 import * as constants from "../constants"
 
@@ -7,9 +7,9 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false)
 
   return (
-    <nav id="navbar" className="w-full fixed top-0 z-50 bg-white shadow">
+    <header className="w-full fixed top-0 z-50 bg-white shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-        <div>
+        <div >
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href={constants.ROUTE_HOME}>
               <div className="container flex items-center space-x-2">
@@ -55,37 +55,58 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
         <div>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-neutral-600">
-                <Link to="#home" smooth>
-                  Home
-                </Link>
-              </li>
-              <li className="text-gray-600 hover:text-neutral-600">
-                <Link to="#experience" smooth>
-                  Experience
-                </Link>
-              </li>
-              <li className="text-gray-600 hover:text-neutral-600">
-                <Link to="#projects" smooth>
-                  Projects
-                </Link>
-              </li>
-              <li className="text-gray-600 hover:text-neutral-600">
-                <Link to="#about" smooth>
-                  About
-                </Link>
-              </li>
-            </ul>
+            <div className=" items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "active:block lg:inline-block font-bold"
+                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                }
+                to={constants.ROUTE_HOME}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "active: block lg:inline-block font-bold"
+                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                }
+                to={constants.ROUTE_EXPERIENCE}
+              >
+                Experience
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "active: block lg:inline-block font-bold"
+                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                }
+                to={constants.ROUTE_PROJECTS}
+              >
+                Projects
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "active: block lg:inline-block font-bold"
+                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                }
+                to={constants.ROUTE_ABOUT}
+              >
+                About
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   )
 }

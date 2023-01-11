@@ -6,7 +6,7 @@ import { projectsData } from "../data"
 
 export default function Projects() {
   return (
-    <div className="container mx-auto" id="projects">
+    <div className="container mx-auto">
       <section className="mx-4 py-16 md:py-40 xl:py-40">
         <div className="container flex flex-col items-center justify-center mx-auto">
           <p className="font-semibold text-4xl mb-4 md:mb-8">

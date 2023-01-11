@@ -8,7 +8,7 @@ export default function FeaturedProject(props) {
   return (
     <div>
       {reverse === false ? (
-        <div className="flex flex-col my-8 md:space-x-6 md:flex-row">
+        <div className="flex flex-col my-8 justify-center text-center items-center md:space-x-6 md:flex-row">
           <img
             src={image}
             alt=""
@@ -39,7 +39,7 @@ export default function FeaturedProject(props) {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col my-8 md:space-x-6 md:flex-row">
+        <div className="flex flex-col justify-center text-center items-center my-8 md:space-x-6 md:flex-row-reverse">
           <img
             src={image}
             alt=""

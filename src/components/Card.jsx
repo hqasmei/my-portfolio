@@ -1,18 +1,31 @@
 import React from "react"
 
-export default function Card() {
+export default function Card(props) {
+  const { title, description, image, path } = props
   return (
-    <div className="flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52">
-      <img src="images/database-icon.svg" alt="" className="h-20 m-6" />
+    <div className="wrapper antialiased text-gray-900">
+      <div>
+        <img
+          src={image}
+          alt=" random imgee"
+          className="w-full object-cover object-center rounded-lg shadow-md"
+        />
 
-      <h2 className="text-center px-2 pb-5">Database Support</h2>
+        <div className="relative px-4 -mt-16  ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
+              {title}
+            </h4>
 
-      <a
-        href="/"
-        className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500"
-      >
-        Know More
-      </a>
+            <div className="mt-1">{description}</div>
+            <div className="mt-4">
+              <a href={path} alt="" className="px-4 py-2 rounded-lg border-2 border-teal-600 text-teal-600 font-semibold hover:border-teal-400 hover:text-teal-400">
+                See More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
