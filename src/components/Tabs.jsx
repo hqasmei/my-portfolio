@@ -31,11 +31,12 @@ export default function Tabs() {
             key={tab.organization}
             className={tab.organization === openTab ? "block" : "hidden"}
           >
-            <div className="flex flex-col md:flex-row md:space-x-2">
-              <span className="text-lg md:text-xl font-bold">{tab.role}</span>
-              <span className="text-lg md:text-xl font-bold text-teal-500">
+            <span className="text-lg md:text-2xl font-bold">{tab.role}</span>
+            <div className="flex flex-col justify-center space-x-2 md:flex-row md:justify-start md:items-baseline">
+              <span className="text-lg md:text-2xl font-bold text-teal-500">
                 {tab.organization}
               </span>
+              <span className="text-sm md:text-lg">{tab.location}</span>
             </div>
 
             <p className="text-sm md:text-md lg:text-lg text-slate-600 mb-4">
@@ -45,7 +46,7 @@ export default function Tabs() {
               {tab.description.map((bullet, idx) => {
                 return (
                   <li
-                    className="text-sm text-left md:text-lg list-disc text-slate-600"
+                    className="text-sm text-left md:text-xl list-disc text-slate-600"
                     key={idx}
                   >
                     {bullet}

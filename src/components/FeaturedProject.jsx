@@ -1,6 +1,6 @@
 import React from "react"
 import { CgArrowTopRightR } from "react-icons/cg"
-import { FiGithub } from "react-icons/fi"
+import { AiOutlineGithub } from "react-icons/ai"
 
 export default function FeaturedProject(props) {
   const { name, description, image, link, github, tech, reverse } = props
@@ -30,7 +30,7 @@ export default function FeaturedProject(props) {
             </div>
             <div className="flex flex-row justify-center space-x-4">
               <a href={github} rel="noreferrer" target="_blank">
-                <FiGithub size={30} />
+                <AiOutlineGithub size={30} />
               </a>
               <a href={link} rel="noreferrer" target="_blank">
                 <CgArrowTopRightR size={30} />
@@ -61,7 +61,7 @@ export default function FeaturedProject(props) {
             </div>
             <div className="flex flex-row justify-center space-x-4">
               <a href={github} rel="noreferrer" target="_blank">
-                <FiGithub size={30} />
+                <AiOutlineGithub size={30} />
               </a>
               <a href={link} rel="noreferrer" target="_blank">
                 <CgArrowTopRightR size={30} />

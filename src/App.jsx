@@ -25,9 +25,18 @@ export default function App() {
         <Route path={constants.ROUTE_PROJECTS} element={<Projects />} />
         <Route path={constants.ROUTE_ABOUT} element={<About />} />
 
-        <Route path={constants.ROUTE_TRAVELS} element={<Travels />} />
-        <Route path={constants.ROUTE_BOOKS} element={<Books />} />
-        <Route path={constants.ROUTE_SPORTS} element={<Sports />} />
+        <Route
+          path={`${constants.ROUTE_ABOUT}/${constants.ROUTE_TRAVELS}`}
+          element={<Travels />}
+        />
+        <Route
+          path={`${constants.ROUTE_ABOUT}/${constants.ROUTE_BOOKS}`}
+          element={<Books />}
+        />
+        <Route
+          path={`${constants.ROUTE_ABOUT}/${constants.ROUTE_SPORTS}`}
+          element={<Sports />}
+        />
       </Routes>
       <Footer />
     </Router>
