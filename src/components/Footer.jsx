@@ -31,7 +31,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-1">
-          <span>Crafted & Molded with</span>
+          <span>Designed with</span>
           <span>
             <AiOutlineHeart color="red" />
           </span>
