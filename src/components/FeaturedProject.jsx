@@ -18,7 +18,7 @@ export default function FeaturedProject(props) {
           <div className="conatiner m-4 justify-center text-center items-center z-10  md:relative md:w-1/2 ">
             <p className="text-teal-500 font-semibold mb-2">Featured Project</p>
             <p className="text-4xl font-bold mb-2">{name}</p>
-            <p className="z-20 px-12 text-xl mb-4">{description}</p>
+            <p className="z-20 px-2 text-xl mb-4 md:px-12">{description}</p>
             <div className="flex flex-row justify-center md:space-x-4 mb-4">
               {tech.map((item, idx) => {
                 return (
@@ -49,7 +49,7 @@ export default function FeaturedProject(props) {
           <div className="conatiner m-4 justify-center text-center items-center z-10  md:relative md:w-1/2 ">
             <p className="text-teal-500 font-semibold mb-2">Featured Project</p>
             <p className="text-4xl font-bold mb-2">{name}</p>
-            <p className="z-20 px-12 text-xl mb-4">{description}</p>
+            <p className="z-20 px-2 text-xl mb-4 md:px-12">{description}</p>
             <div className="flex flex-row justify-center md:space-x-4 mb-4">
               {tech.map((item, idx) => {
                 return (

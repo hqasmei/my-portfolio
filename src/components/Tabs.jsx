@@ -14,7 +14,7 @@ export default function Tabs() {
                 onClick={() => setOpenTab(tab.organization)}
                 className={` ${
                   openTab === tab.organization
-                    ? "bg-teal-600 font-semibold rounded-sm font-mono text-neutral-100 text-xs md:text-base"
+                    ? "bg-teal-600 font-semibold rounded-sm font-mono text-slate-200 text-xs md:text-base"
                     : "hover:bg-slate-100 font-mono rounded-sm text-xs md:text-base"
                 } inline-block px-2 py-2 font-mono rounded-sm text-gray-600 text-xs md:text-base`}
               >
@@ -25,29 +25,27 @@ export default function Tabs() {
         </ul>
       </div>
 
-      <div className="container mt-8 md:w-1/2 md:mt-0">
+      <div className="container mt-8 text-center md:text-left px-4 md:w-1/2 md:mt-0">
         {experienceData.map((tab) => (
           <div
             key={tab.organization}
             className={tab.organization === openTab ? "block" : "hidden"}
           >
-            <p>
-              <span className="text-md md:text-xl font-bold">{tab.role}</span>
-
-              <span className="text-md md:text-xl font-bold text-teal-500">
-                {" @ "}
+            <div className="flex flex-col md:flex-row md:space-x-2">
+              <span className="text-lg md:text-xl font-bold">{tab.role}</span>
+              <span className="text-lg md:text-xl font-bold text-teal-500">
                 {tab.organization}
               </span>
-            </p>
+            </div>
 
-            <p className="text-sm md:text-md text-slate-600 mb-4">
+            <p className="text-sm md:text-md lg:text-lg text-slate-600 mb-4">
               {tab.period}
             </p>
             <ul className="ml-4">
               {tab.description.map((bullet, idx) => {
                 return (
                   <li
-                    className="text-sm md:text-lg list-disc text-slate-600"
+                    className="text-sm text-left md:text-lg list-disc text-slate-600"
                     key={idx}
                   >
                     {bullet}
