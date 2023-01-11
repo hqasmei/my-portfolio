@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="w-full fixed top-0 z-50 bg-white shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-        <div >
+        <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href={constants.ROUTE_HOME}>
               <div className="container flex items-center space-x-2">
@@ -70,6 +70,7 @@ export default function Navbar() {
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 to={constants.ROUTE_HOME}
+                onClick={() => setNavbar(!navbar)}
               >
                 Home
               </NavLink>
@@ -80,6 +81,7 @@ export default function Navbar() {
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 to={constants.ROUTE_EXPERIENCE}
+                onClick={() => setNavbar(!navbar)}
               >
                 Experience
               </NavLink>
@@ -90,6 +92,7 @@ export default function Navbar() {
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 to={constants.ROUTE_PROJECTS}
+                onClick={() => setNavbar(!navbar)}
               >
                 Projects
               </NavLink>
@@ -100,6 +103,7 @@ export default function Navbar() {
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 to={constants.ROUTE_ABOUT}
+                onClick={() => setNavbar(!navbar)}
               >
                 About
               </NavLink>
