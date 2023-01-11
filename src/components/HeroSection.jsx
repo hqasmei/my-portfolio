@@ -4,7 +4,7 @@ export default function HeroSection(props) {
   const { intro, name, heading, subtitle, image, button = "" } = props
 
   return (
-    <section className="mx-4 py-32 md:py-48 xl:py-52">
+    <section className="mx-4 py-32 md:py-48 xl:py-52 animate-fadeIn animation-delay-2">
       <div className="container flex flex-col items-center justify-center mx-auto space-y-4 md:flex-row md:space-x-12">
         <div className="w-3/4 md:w-1/2 lg:w-2/6 lg:ml-10 xl:ml-28">
           <img alt="logo" src={image} className="rounded-lg drop-shadow-2xl" />

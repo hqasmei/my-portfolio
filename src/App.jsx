@@ -14,10 +14,12 @@ import Sports from "./pages/Sports"
 
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import ScrollToTop from "./components/ScrollToTop"
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path={constants.ROUTE_HOME} element={<Home />} />
