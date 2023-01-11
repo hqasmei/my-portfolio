@@ -2,20 +2,22 @@ import React from "react"
 import Card from "./Card"
 
 export default function CardsGrid(props) {
-  const { header } = props
+  const { data } = props
   return (
-    <section className="mx-4 my-16 md:mx-auto md:pt-20">
-      <div className="container flex flex-col text-center items-center mx-auto space-y-4 md:text-left">
-        <div>
-          <h1 className="font-bold text-4xl">{header}</h1>
-        </div>
-
-        <div className="flex flex-wrap justify-center">
-          <Card />
-          <Card />
-          <Card />
-        </div>
+    <div className="container flex flex-col text-center items-center mx-auto space-y-4 md:text-left">
+      <div className="flex flex-col space-x-0 space-y-10 md:flex-row md:space-y-0 md:space-x-10">
+        {data.map((item, idx) => {
+          return (
+            <Card
+              key={idx}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              path={item.path}
+            />
+          )
+        })}
       </div>
-    </section>
+    </div>
   )
 }

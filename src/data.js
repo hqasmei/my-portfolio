@@ -18,6 +18,8 @@ import {
 
 import { FaNode } from "react-icons/fa"
 
+import * as constants from "./constants"
+
 const iconStyle = (Icon) => <Icon size={50} />
 
 export const experienceData = [
@@ -283,5 +285,29 @@ export const projectsData = [
       "Kator Family Photos is a service that helps individuals and families digitize their physical photos and videos, making it easier to preserve and share these memories with loved ones. Kator Family Photos will digitize it and return the digital copies to the customer.",
     demo: "./assets/videos/katorfamilyphotos-demo.mp4",
     reverse: false,
+  },
+]
+
+export const aboutData = [
+  {
+    title: "Travels",
+    description:
+      "I have gotten the opportunity to travel to a few places. Check out where I've been so far and where I am going next!",
+    image: "/assets/images/about-images/travels.jpg",
+    path: constants.ROUTE_TRAVELS,
+  },
+  {
+    title: "Books",
+    description:
+      "I used to not like reading, but as I have gotten older I have feel in love with it. See what books I've read, notes, and what books I'm currently reading.",
+    image: "/assets/images/about-images/books.jpg",
+    path: constants.ROUTE_BOOKS,
+  },
+  {
+    title: "Sports",
+    description:
+      "I have played sports most of my life. Here are some experiences I have had which each of them and take aways. ",
+    image: "/assets/images/about-images/sports.jpg",
+    path: constants.ROUTE_SPORTS,
   },
 ]

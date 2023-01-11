@@ -11,13 +11,13 @@ export default function HeroSection(props) {
         </div>
 
         <div className="flex flex-col space-y-4 md:w-2/5">
-          <p className="text-2xl  font-bold text-center pl-1 md:text-left ">
+          <p className="text-2xl  font-semibold text-center text-teal-500 pl-1 md:text-left ">
             {intro}
           </p>
           <p className="text-5xl font-bold text-center md:text-left lg:text-6xl">
             {name}
           </p>
-          <p className="text-3xl font-semibold leading-10 text-center text-neutral-500 md:text-left ">
+          <p className="text-3xl font-semibold leading-10 text-center md:text-left ">
             {heading}
           </p>
           <p className="text-xl leading-8 text-center text-neutral-500 md:text-left  xl:pr-36">
