@@ -14,9 +14,9 @@ export default function Tabs() {
                 onClick={() => setOpenTab(tab.organization)}
                 className={` ${
                   openTab === tab.organization
-                    ? "bg-teal-600 font-semibold rounded-sm font-mono text-slate-200 text-xs md:text-base"
+                    ? "bg-teal-600 font-semibold rounded-sm font-mono text-neutral-100 text-xs md:text-base"
                     : "hover:bg-slate-100 font-mono rounded-sm text-xs md:text-base"
-                } inline-block px-2 py-2 font-mono rounded-sm text-gray-600 text-xs md:text-base`}
+                } inline-block px-2 py-2 font-mono rounded-sm text-xs md:text-base`}
               >
                 {tab.organization}
               </button>
