@@ -13,13 +13,19 @@ export default function About() {
           </p>
 
           <div className="container flex flex-col items-center justify-center mb-10 mx-auto lg:flex-row ">
-            <img src="./assets/images/personal-photo-2.png" alt="" className="rounded-full shadow-lg"/>
+            <img
+              src="./assets/images/personal-photo-2.png"
+              alt=""
+              className="rounded-full shadow-lg"
+            />
 
             <div className="p-4 mt-4 lg:mt-0 lg:w-1/2 lg:p-10">
               <p className="text-lg">
-                Hi, my name is Hosna and I am a highly ambitious,
-                self-motivated, and driven software engineer based in Los
-                Angeles, CA.
+                Hi, my name is Hosna and I am a{" "}
+                <span className="font-bold">{"highly ambitious"}</span>,
+                <span className="font-bold">{" self-motivated"}</span>, and
+                <span className="font-bold">{" driven"}</span> software engineer
+                based in Los Angeles, CA.
               </p>
               <br />
               <p className="text-lg">
@@ -36,11 +42,12 @@ export default function About() {
               </p>
               <br />
               <p className="text-lg">
-                I believe that you should never stop growing and that&#39;s what
-                I strive to do, I have a passion for technology and a desire to
-                always push the limits of what is possible. I am excited to see
-                where my career takes me and am always open to new
-                opportunities. 🙂
+                I believe that you should{" "}
+                <span className="font-bold text-teal-500">never stop growing</span> and
+                that&#39;s what I strive to do, I have a passion for technology
+                and a desire to always push the limits of what is possible. I am
+                excited to see where my career takes me and am always open to
+                new opportunities. 🙂
               </p>
             </div>
           </div>

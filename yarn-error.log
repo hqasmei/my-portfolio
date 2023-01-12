@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/hosnaqasmei/.nvm/versions/node/v19.0.0/bin/node /Users/hosnaqasmei/.yarn/bin/yarn.js add @material-tailwind/html~
+  /Users/hosnaqasmei/.nvm/versions/node/v19.0.0/bin/node /Users/hosnaqasmei/.yarn/bin/yarn.js add @react-google-maps
 
 PATH: 
   /Users/hosnaqasmei/.yarn/bin:/Users/hosnaqasmei/.config/yarn/global/node_modules/.bin:/Users/hosnaqasmei/.nvm/versions/node/v19.0.0/bin:/Users/hosnaqasmei/Library/Android/sdk/platform-tools:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/hosnaqasmei/.yarn/bin:/Users/hosnaqasmei/.config/yarn/global/node_modules/.bin:/Users/hosnaqasmei/.nvm/versions/node/v19.0.0/bin:/Users/hosnaqasmei/miniforge3/bin:/Users/hosnaqasmei/miniforge3/condabin:/Users/hosnaqasmei/Library/Android/sdk/platform-tools:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Users/hosnaqasmei/.cargo/bin:/Users/hosnaqasmei/Library/Android/sdk/emulator:/Users/hosnaqasmei/Library/Android/sdk/tools:/Users/hosnaqasmei/Library/Android/sdk/tools/bin:/Users/hosnaqasmei/Library/Android/sdk/emulator:/Users/hosnaqasmei/Library/Android/sdk/tools:/Users/hosnaqasmei/Library/Android/sdk/tools/bin:/Users/hosnaqasmei/Library/Android/sdk/platform-tools
@@ -14,8 +14,8 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@material-tailwind%2fhtml~: Not found
-      at params.callback [as _callback] (/Users/hosnaqasmei/.yarn/lib/cli.js:66145:18)
+  Error: https://registry.yarnpkg.com/@react-google-maps: Request "https://registry.yarnpkg.com/@react-google-maps" returned a 405
+      at params.callback [as _callback] (/Users/hosnaqasmei/.yarn/lib/cli.js:66154:18)
       at self.callback (/Users/hosnaqasmei/.yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
       at Request.<anonymous> (/Users/hosnaqasmei/.yarn/lib/cli.js:141862:10)
@@ -35,6 +35,7 @@ npm manifest:
       "@babel/runtime": "^7.20.1",
       "@fortawesome/fontawesome-free": "^6.2.1",
       "@georgedoescode/spline": "^1.0.1",
+      "@material-tailwind/html": "^1.2.4",
       "@react-google-maps/api": "^2.17.1",
       "@testing-library/jest-dom": "^5.16.5",
       "@testing-library/react": "^13.3.0",
@@ -1754,6 +1755,14 @@ Lockfile:
     version "2.0.4"
     resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
     integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
+  
+  "@material-tailwind/html@^1.2.4":
+    version "1.2.4"
+    resolved "https://registry.yarnpkg.com/@material-tailwind/html/-/html-1.2.4.tgz#acb7cb1b0d7545b83ed3b0e82bb1205732df94ba"
+    integrity sha512-ryE2OmMDAxkEGZoBOOgb6D9al9ZN3dhp82whk9vm7aU/Eze2LHp8qrTBh6tZLju4F3dvZbVCH5c8G5XLd2x1Og==
+    dependencies:
+      deepmerge "^4.2.2"
+      material-ripple-effects "^2.0.1"
   
   "@motionone/animation@^10.15.1":
     version "10.15.1"
@@ -6745,6 +6754,11 @@ Lockfile:
     integrity sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==
     dependencies:
       tmpl "1.0.5"
+  
+  material-ripple-effects@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/material-ripple-effects/-/material-ripple-effects-2.0.1.tgz#47803d2ab1561698d930e2524a7a9a19fb2829b7"
+    integrity sha512-hHlUkZAuXbP94lu02VgrPidbZ3hBtgXBtjlwR8APNqOIgDZMV8MCIcsclL8FmGJQHvnORyvoQgC965vPsiyXLQ==
   
   mdn-data@2.0.14:
     version "2.0.14"
