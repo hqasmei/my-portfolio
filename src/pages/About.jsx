@@ -1,7 +1,4 @@
 import React from "react"
-import CardsGrid from "../components/CardsGrid"
-
-import { aboutData } from "../data"
 
 export default function About() {
   return (
@@ -51,11 +48,6 @@ export default function About() {
               </p>
             </div>
           </div>
-
-          <p className="font-semibold text-teal-600 text-2xl mb-4 md:mb-4 md:text-3xl">
-            Hobbies
-          </p>
-          <CardsGrid data={aboutData} />
         </div>
       </section>
     </div>
