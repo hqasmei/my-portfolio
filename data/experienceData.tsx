@@ -1,0 +1,65 @@
+export const experienceData = [
+  {
+    role: "Associate Embedded Systems Engineer",
+    organization: "Proterra Ag",
+    location: "Commerce, CA",
+    period: "Feb 2021 – May 2022",
+    description: [
+      "Used React, PostgresSQL and an AWS RDS to develop a proprietary Web Application for users to interface and run our product, the HWMS (HyperYield Water Management System), to collect real time data of nutrient level in a fertigation solution.",
+      "Researched and tested a variety of ultrasonic distance sensors to read tank level value using an Arduino Uno and Raspberry Pi 4B.",
+      "Contributed to the design, assembly and maintenance of the power and electronics box for the HWMS.",
+    ],
+    image: "./assets/images/experience-images/proterraag.png",
+  },
+  {
+    role: "Software Engineer",
+    organization: "Teledyne Imaging Sensors",
+    location: "Camarillo, CA",
+    period: "Jan 2020 – Dec 2020",
+    description: [
+      "Created a JavaScript based GUI that displays real time status of test equipment readings",
+      "Used REST API to set the desired test mode of an image sensor.",
+      "Developed Python modules that automates reduction, analysis, and reporting of image sensors.",
+      "Analyzed FITS data cubes to find potential areas of abnormalities in the image sensor.",
+    ],
+    image: "./assets/images/experience-images/teledyne.png",
+  },
+  {
+    role: "Mission Systems Intern",
+    organization: "Northrop Grumman",
+    location: "San Diego, CA",
+    period: "Jun 2018 – Aug 2018",
+    description: [
+      "Actively participated in the discussion of goals during biweekly team meetings.",
+      "Created and configured Virtual Machines for the Ground Communications Interface Team.",
+      "Developed a C# program with the CNI team to receive server data through SNMP network protocol.",
+    ],
+    image: "./assets/images/experience-images/northrop.png",
+  },
+  {
+    role: "Software Engineer Intern",
+    organization: "RITEC Rugged",
+    location: "Simi Valley, CA",
+    period: "Feb 2017 - Sep 2017",
+    description: [
+      "Worked with Technical Lead Engineer on EFB system (Electronic Flight Bag)",
+      "Manged git repository to keep files up to date.",
+      "Hands on experience with embedded systems and Linux.",
+      "Edited web interface of the EFB system using HTML/CSS.",
+    ],
+    image: "./assets/images/experience-images/ritec.png",
+  },
+  {
+    role: "Mentor",
+    organization: "DIY Girls",
+    location: "Sylmar, CA",
+    period: "Aug 2015 - Dec 2016",
+    description: [
+      "Taught a class of elementary school students about circuits, 3D printing, and programming.",
+      "Twice a week at two different schools, 6 hours per week.",
+      "Assisted the students on any issues they had with their projects.",
+      "Help answer any questions that the students had.",
+    ],
+    image: "./assets/images/experience-images/diygirls.png",
+  },
+]

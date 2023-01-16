@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
-  content: ["./src/**/*.{html,js,jsx}"],
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
@@ -9,7 +8,7 @@ module.exports = {
         fadeIn: "fadeIn 1.5s",
         slideUp: "slideUp 0.5s",
         slideUpEaseInOut: "slideUp 0.5s ease-in-out",
-        slideUpCubiBezier:"slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
+        slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
       animationDelay: {
         0: "0s",
