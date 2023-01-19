@@ -70,50 +70,55 @@ export default function Navbar() {
               <Link
                 className={
                   pathname == "/"
-                    ? "active:block lg:inline-block font-bold"
-                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                    ? "block text-right mr-4 lg:inline-block font-bold"
+                    : "block text-right mr-4 lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/"
+                onClick={() => setNavbar(!navbar)}
               >
                 Home
               </Link>
               <Link
                 className={
                   pathname == "/experience"
-                    ? "block font-bold"
-                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                    ? "block text-right mr-4 font-bold"
+                    : "block text-right mr-4 lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/experience"
+                onClick={() => setNavbar(!navbar)}
               >
                 Experience
               </Link>
               <Link
                 className={
                   pathname == "/projects"
-                    ? "block lg:inline-block font-bold"
-                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                    ? "block text-right mr-4 lg:inline-block font-bold"
+                    : "block text-right mr-4 lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/projects"
+                onClick={() => setNavbar(!navbar)}
               >
                 Projects
               </Link>
               <Link
                 className={
                   pathname == "/blog"
-                    ? "block lg:inline-block font-bold"
-                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                    ? "block text-right mr-4 lg:inline-block font-bold"
+                    : "block text-right mr-4 lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/blog"
+                onClick={() => setNavbar(!navbar)}
               >
                 Blog
               </Link>
               <Link
                 className={
                   pathname == "/about"
-                    ? "block lg:inline-block font-bold"
-                    : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
+                    ? "block text-right mr-4 lg:inline-block font-bold"
+                    : "block text-right mr-4 lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/about"
+                onClick={() => setNavbar(!navbar)}
               >
                 About
               </Link>
