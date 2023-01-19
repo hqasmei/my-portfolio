@@ -1,7 +1,7 @@
 ---
 title: "A Guide for Knowing When it's Time to Leave a Job"
 subtitle: "Learn how to recognize the signs that it's time to move on from your job and take control of your career with this comprehensive guide."
-date: "2023-01-03"
+date: "2022-12-28"
 ---
 
 We've all been there, stuck in a job that we hate, counting down the minutes until the workday is over. But, how do you know when it's time to call it quits and move on? That's what we're going to talk about today.

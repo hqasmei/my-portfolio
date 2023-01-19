@@ -1,7 +1,7 @@
 ---
 title: "Overcoming Shyness: How to Take Small Steps towards Confidence"
 subtitle: "Learn practical techniques for conquering shyness and building confidence through taking small, manageable steps in this informative guide."
-date: "2023-01-01"
+date: "2022-12-14"
 ---
 
 Are you tired of feeling shy and self-conscious in social situations? Don't worry, you're not alone. Shyness is a common experience, but it doesn't have to hold you back. The key to overcoming shyness is to take small, incremental steps towards building confidence.

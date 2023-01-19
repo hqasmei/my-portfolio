@@ -1,7 +1,7 @@
 ---
 title: "My Journey at a Startup: What I Wish I Knew"
 subtitle: "An insightful and candid account of my personal journey at a startup, sharing valuable lessons learned and the things they wish they knew before diving in."
-date: "2023-01-02"
+date: "2022-12-21"
 ---
 
 As an embedded systems engineer at an agtech startup, I had the opportunity to work on some exciting projects. But, as I dove deeper into my role, I quickly realized that things were not as clear as I had hoped. And let me tell you, it was a tough lesson to learn. But, I wouldn't trade the experience for anything. Because, I learned a ton of valuable lessons that I want to share with you.

@@ -1,7 +1,7 @@
 ---
 title: "The Power of Planning: How to Accomplish More with Less Stress"
 subtitle: "The benefits of planning and offers strategies for effectively organizing your time and tasks to achieve more while reducing stress."
-date: "2023-01-05"
+date: "2023-01-11"
 ---
 
 ## Introduction
