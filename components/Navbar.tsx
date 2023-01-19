@@ -80,7 +80,7 @@ export default function Navbar() {
               <Link
                 className={
                   pathname == "/experience"
-                    ? "active:block lg:inline-block font-bold"
+                    ? "block font-bold"
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/experience"
@@ -90,7 +90,7 @@ export default function Navbar() {
               <Link
                 className={
                   pathname == "/projects"
-                    ? "active:block lg:inline-block font-bold"
+                    ? "block lg:inline-block font-bold"
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/projects"
@@ -100,7 +100,7 @@ export default function Navbar() {
               <Link
                 className={
                   pathname == "/blog"
-                    ? "active:block lg:inline-block font-bold"
+                    ? "block lg:inline-block font-bold"
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/blog"
@@ -110,7 +110,7 @@ export default function Navbar() {
               <Link
                 className={
                   pathname == "/about"
-                    ? "active:block lg:inline-block font-bold"
+                    ? "block lg:inline-block font-bold"
                     : "block lg:inline-block lg:mt-0 text-neutral-900  hover:text-neutral-500"
                 }
                 href="/about"

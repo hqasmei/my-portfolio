@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const HomePage = () => {
   return (
-    <main className="animate-fadeIn animation-delay-2">
+    <main className="min-h-screen mt-20 md:mt-28 animate-fadeIn animation-delay-2">
       <div className="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-12">
         <div className=" ">
           <Image

@@ -9,9 +9,9 @@ import { projectsData } from "../../data/projectsData"
 
 const ProjectsPage = () => {
   return (
-    <main>
+    <main className="min-h-screen mt-12">
       <div className="container flex flex-col items-center justify-center mt-10 mx-auto">
-        <p className="font-semibold text-4xl mb-8 lg:mb-4 md:mb-8 md:text-5xl">
+        <p className="font-semibold text-4xl lg:mb-4 md:text-5xl">
           What I&#39;ve Built
         </p>
 
@@ -20,7 +20,7 @@ const ProjectsPage = () => {
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
                 {item.reverse === false ? (
-                  <div className="flex flex-col my-28 justify-center text-center items-center md:space-x-6 md:flex-row">
+                  <div className="flex flex-col my-20 justify-center text-center items-center md:space-x-6 md:flex-row">
                     <Image
                       src={item.image}
                       alt=""
