@@ -10,43 +10,35 @@ Let's break down the standard elements of a website:
 
 1. Header (Navbar)
 The header, also known as the navbar, is typically located at the top of the website and contains the main navigation links. This allows users to easily access the different sections of the website.
+ 
 
-![Header](insert image link here)
-
-1. Footer
+2. Footer
 The footer is located at the bottom of the website and contains additional information such as contact details, social media links, and legal notices.
+ 
 
-![Footer](insert image link here)
-
-1. Hero Section
+3. Hero Section
 The hero section is the first section users see when they land on a website. It is usually used to showcase the main message or value proposition of the website.
+ 
 
-![Hero Section](insert image link here)
-
-1. Features Section
+4. Features Section
 The features section is used to highlight the different features and benefits of the product or service being offered.
 
-![Features Section](insert image link here)
 
-1. Pricing Section
+5. Pricing Section
 The pricing section is used to display the different pricing plans and packages available.
 
-![Pricing Section](insert image link here)
 
-1. Blog Section
+6. Blog Section
 The blog section is used to display the latest articles and updates from the website.
 
-![Blog Section](insert image link here)
 
-1. About Section
+7. About Section
 The about section provides information about the company or organization behind the website.
 
-![About Section](insert image link here)
 
-1. Contact Section
+8. Contact Section
 The contact section allows users to get in touch with the website's owners.
 
-![Contact Section](insert image link here)
 
 Honorable Mentions:
 
