@@ -22,7 +22,7 @@ const HomePage = () => {
             Hosna Qasmei.
           </p>
           <p className="text-2xl font-semibold leading-8 text-center mb-1 md:text-left ">
-            I am a software engineer and aspiring entrepreneur.
+            I am a software engineer and a youtube content creator.
           </p>
           <p className="text-xl leading-8 text-center text-neutral-500 md:text-left  xl:pr-36">
             Working towards creating software that makes life easier and more
