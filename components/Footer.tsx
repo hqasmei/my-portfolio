@@ -4,6 +4,7 @@ import {
   AiOutlineGithub,
   AiOutlineTwitter,
   AiOutlineLinkedin,
+  AiOutlineYoutube,
 } from "react-icons/ai"
 
 export default function Footer() {
@@ -28,6 +29,13 @@ export default function Footer() {
             target="_blank"
           >
             <AiOutlineLinkedin size={30} />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineYoutube size={30} />
           </a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-1">
