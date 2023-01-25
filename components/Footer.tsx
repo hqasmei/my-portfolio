@@ -13,14 +13,20 @@ export default function Footer() {
       <div className="mx-auto p-4 flex flex-col   text-center text-neutral-900 ">
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a href="https://github.com/hqasmei" rel="noreferrer" target="_blank">
-            <AiOutlineGithub size={30} />
+            <AiOutlineGithub
+              className="hover:-translate-y-1 transition-transform cursor-pointer"
+              size={30}
+            />
           </a>
           <a
             href="https://twitter.com/hqasmei"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineTwitter size={30} />
+            <AiOutlineTwitter
+              className="hover:-translate-y-1 transition-transform cursor-pointer"
+              size={30}
+            />
           </a>
 
           <a
@@ -28,14 +34,20 @@ export default function Footer() {
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineLinkedin size={30} />
+            <AiOutlineLinkedin
+              className="hover:-translate-y-1 transition-transform cursor-pointer"
+              size={30}
+            />
           </a>
           <a
             href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineYoutube size={30} />
+            <AiOutlineYoutube
+              className="hover:-translate-y-1 transition-transform cursor-pointer"
+              size={30}
+            />
           </a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-1">
