@@ -1,9 +1,13 @@
 "use client"
 import { Fragment } from "react"
+
+import Link from "next/link"
 import Image from "next/image"
+
 import { useTheme } from "next-themes"
 import { Popover, Transition } from "@headlessui/react"
 import { useScrollPosition } from "@/hooks/useScrollPosition"
+import { usePathname } from "next/navigation"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -13,7 +17,7 @@ export const Navbar = () => {
   const scrollPosition = useScrollPosition()
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
-
+  const pathname = usePathname()
   return (
     <Popover
       className={classNames(
@@ -24,14 +28,13 @@ export const Navbar = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/">
-              <span className="sr-only">Workflow</span>
+            <Link href="/">
               {currentTheme === "dark" ? (
                 <Image src="/light-logo.png" alt="" width={35} height={35} />
               ) : (
                 <Image src="/dark-logo.png" alt="" width={35} height={35} />
               )}
-            </a>
+            </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -53,24 +56,38 @@ export const Navbar = () => {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-            <a
+            <Link
+              className={
+                pathname == "/about"
+                  ? "text-base font-bold text-gray-500 hover:text-gray-900"
+                  : "text-base font-medium text-gray-500 hover:text-gray-900"
+              }
               href="/about"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               About
-            </a>
-            <a
+            </Link>
+
+            <Link
+              className={
+                pathname == "/projects"
+                  ? "text-base font-bold text-gray-500 hover:text-gray-900"
+                  : "text-base font-medium text-gray-500 hover:text-gray-900"
+              }
               href="/projects"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Projects
-            </a>
-            <a
+            </Link>
+
+            <Link
+              className={
+                pathname == "/resources"
+                  ? "text-base font-bold text-gray-500 hover:text-gray-900"
+                  : "text-base font-medium text-gray-500 hover:text-gray-900"
+              }
               href="/resources"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Resources
-            </a>
+            </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             {currentTheme === "dark" ? (
@@ -129,7 +146,9 @@ export const Navbar = () => {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <Image src="/logo.png" alt="" width={35} height={35} />
+                  <Link href="/">
+                    <Image src="/dark-logo.png" alt="" width={35} height={35} />
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -154,25 +173,38 @@ export const Navbar = () => {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-1 gap-y-4 gap-x-8">
-                <a
+                <Link
+                  className={
+                    pathname == "/about"
+                      ? "text-base font-bold text-gray-500 hover:text-gray-900"
+                      : "text-base font-medium text-gray-500 hover:text-gray-900"
+                  }
                   href="/about"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   About
-                </a>
+                </Link>
 
-                <a
+                <Link
+                  className={
+                    pathname == "/projects"
+                      ? "text-base font-bold text-gray-500 hover:text-gray-900"
+                      : "text-base font-medium text-gray-500 hover:text-gray-900"
+                  }
                   href="/projects"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Projects
-                </a>
-                <a
+                </Link>
+
+                <Link
+                  className={
+                    pathname == "/resources"
+                      ? "text-base font-bold text-gray-500 hover:text-gray-900"
+                      : "text-base font-medium text-gray-500 hover:text-gray-900"
+                  }
                   href="/resources"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Resources
-                </a>
+                </Link>
                 {currentTheme === "dark" ? (
                   <button onClick={() => setTheme("light")}>
                     <svg
@@ -181,7 +213,7 @@ export const Navbar = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="h-6 w-6 "
+                      className="h-6 w-6 text-black"
                     >
                       <path
                         strokeLinecap="round"

@@ -1,5 +1,12 @@
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl min-h-screen">Home</main>
+    <main className="mx-auto min-h-screen max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+      <div className="py-48">
+        <h1 className="text-3xl font-bold">Hosna Qasmei</h1>
+        <p className="text-large">
+          Software Engineer | YouTube Content Creator
+        </p>
+      </div>
+    </main>
   )
 }
