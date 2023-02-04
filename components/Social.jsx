@@ -9,11 +9,11 @@ import {
 const Social = () => {
   return (
     <div className="hidden md:fixed md:bottom-0 md:z-10 md:block md:w-32 ">
-      <ul className=" flex flex-col items-center space-y-6 after:block after:h-28 after:w-0.5 after:bg-black after:content-[''] dark:after:bg-white">
+      <ul className=" flex flex-col items-center space-y-6 after:block after:h-28 after:w-0.5 after:bg-black dark:after:bg-white">
         <li>
           <a href="https://github.com/hqasmei" target="_blank">
             <AiOutlineGithub
-              className="cursor-pointer transition-transform hover:-translate-y-1"
+              className="cursor-pointer transition-transform hover:-translate-y-1 "
               size={25}
             />
           </a>
@@ -29,7 +29,7 @@ const Social = () => {
         <li>
           <a href="https://www.linkedin.com/in/hosnaqasmei/" target="_blank">
             <AiOutlineLinkedin
-              className="cursor-pointer transition-transform hover:-translate-y-1"
+              className="cursor-pointer transition-transform hover:-translate-y-1 "
               size={25}
             />
           </a>
@@ -40,7 +40,7 @@ const Social = () => {
             target="_blank"
           >
             <AiOutlineYoutube
-              className="cursor-pointer transition-transform hover:-translate-y-1"
+              className="cursor-pointer transition-transform hover:-translate-y-1 "
               size={25}
             />
           </a>
