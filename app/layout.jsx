@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-[url('/background.png')] bg-fill ">
+      <body className="bg-fill bg-[url('/background.png')] bg-fixed bg-no-repeat">
         <Navbar />
         <Social />
         {children}

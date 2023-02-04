@@ -5,7 +5,7 @@ import { IoMdPhotos } from "react-icons/io"
 export default function ProjectsPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
-      <div className="py-8 sm:px-28 sm:py-28">
+      <div className="py-24 sm:px-28 sm:py-28">
         <h1 className="pb-2 text-4xl font-bold text-white md:text-6xl">
           Projects.
         </h1>

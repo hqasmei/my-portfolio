@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation"
 export const Navbar = () => {
   const pathname = usePathname()
   return (
-    <Popover className="sticky top-0 z-50  transition-shadow ">
+    <Popover className="absolute  mx-auto w-full px-2 sm:px-20">
       <div className="mx-2 px-2 md:mx-10">
         <div className="flex items-center justify-between py-4 md:justify-start md:space-x-10">
           <div className="flex flex-1 justify-start lg:w-0">

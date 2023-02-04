@@ -97,7 +97,7 @@ export default function ResourcesPage() {
   const sortedArr = resources.sort((a, b) => a.name.localeCompare(b.name))
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
-      <div className="py-8 sm:px-28 sm:py-28">
+      <div className="py-24 sm:px-28 sm:py-28">
         <h1 className="text-4xl font-bold text-white md:pb-2 md:text-6xl">
           Resources.
         </h1>
