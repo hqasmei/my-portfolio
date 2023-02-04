@@ -6,8 +6,10 @@ export default function ProjectsPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
       <div className="py-8 sm:px-28 sm:py-28">
-        <h1 className="pb-2 text-4xl font-bold md:text-6xl">Projects.</h1>
-        <p className="pb-4 text-xl text-neutral-500 dark:text-neutral-300">
+        <h1 className="pb-2 text-4xl font-bold text-white md:text-6xl">
+          Projects.
+        </h1>
+        <p className="pb-4 text-xl text-neutral-100">
           Here are a few side projects I've been working on to improve my coding
           skills.
         </p>

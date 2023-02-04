@@ -14,7 +14,7 @@ const Footer = () => {
           <li>
             <a href="https://github.com/hqasmei" target="_blank">
               <AiOutlineGithub
-                className="cursor-pointer transition-transform hover:-translate-y-1 "
+                className="cursor-pointer text-white  transition-transform hover:-translate-y-1 "
                 size={25}
               />
             </a>
@@ -22,7 +22,7 @@ const Footer = () => {
           <li>
             <a href="https://twitter.com/hqasmei" target="_blank">
               <AiOutlineTwitter
-                className="cursor-pointer transition-transform hover:-translate-y-1 "
+                className="cursor-pointer text-white transition-transform hover:-translate-y-1 "
                 size={25}
               />
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
           <li>
             <a href="https://www.linkedin.com/in/hosnaqasmei/" target="_blank">
               <AiOutlineLinkedin
-                className="cursor-pointer transition-transform hover:-translate-y-1"
+                className="cursor-pointer text-white  transition-transform hover:-translate-y-1"
                 size={25}
               />
             </a>
@@ -41,7 +41,7 @@ const Footer = () => {
               target="_blank"
             >
               <AiOutlineYoutube
-                className="cursor-pointer transition-transform hover:-translate-y-1 "
+                className="cursor-pointer text-white transition-transform hover:-translate-y-1 "
                 size={25}
               />
             </a>

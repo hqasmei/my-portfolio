@@ -5,7 +5,9 @@ export default function AboutPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6 text-left md:max-w-5xl">
       <div className="flex flex-col space-y-4 py-8 sm:px-28 sm:py-28 md:space-y-0  ">
-        <h1 className="text-4xl font-bold md:pb-4 md:text-6xl">About Me.</h1>
+        <h1 className="text-4xl font-bold text-white md:pb-4 md:text-6xl">
+          About Me.
+        </h1>
         <div className="flex flex-col space-y-5 sm:items-center sm:justify-center  md:flex-row md:space-y-0 md:space-x-4  ">
           <div className="md:mt-2 md:w-1/2">
             <Image
@@ -16,8 +18,8 @@ export default function AboutPage() {
               className="rounded-lg shadow-2xl "
             />
           </div>
-          <div className="md:mt-2 md:w-1/2">
-            <p className="text-lg leading-7">
+          <div className="text-neutral-100 md:mt-2 md:w-1/2">
+            <p className="text-lg leading-7 ">
               <span className="font-bold">Hi, my name is Hosna Qasmei!</span> I
               am a software engineer and developer based in{" "}
               <span className="font-bold">Los Angeles, CA.</span>

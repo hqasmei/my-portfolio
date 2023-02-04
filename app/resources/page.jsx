@@ -98,13 +98,15 @@ export default function ResourcesPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
       <div className="py-8 sm:px-28 sm:py-28">
-        <h1 className="text-4xl font-bold md:pb-2 md:text-6xl">Resources.</h1>
-        <p className="pb-4 text-md leading-5 sm:text-xl text-neutral-500 dark:text-neutral-300">
+        <h1 className="text-4xl font-bold text-white md:pb-2 md:text-6xl">
+          Resources.
+        </h1>
+        <p className="text-md pb-4 leading-5 text-neutral-100  sm:text-xl">
           Here are a few resources I've have compiled along the way that I
           reference frequently and find very useful. It's a work in progress.
         </p>
 
-        <ul>
+        <ul className="text-neutral-100">
           {sortedArr.map((item, idx) => {
             return (
               <li key={idx}>

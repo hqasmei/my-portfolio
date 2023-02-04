@@ -3,7 +3,6 @@ import "../styles/globals.css"
 import { Navbar } from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Social from "@/components/Social"
-import { ThemeProvider } from "next-themes"
 
 export default function RootLayout({ children }) {
   return (
@@ -13,13 +12,11 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="dark:bg-black">
-        <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
-          <Social />
-          {children}
-          <Footer />
-        </ThemeProvider>
+      <body className="bg-[url('/background.png')] bg-fill ">
+        <Navbar />
+        <Social />
+        {children}
+        <Footer />
       </body>
     </html>
   )
