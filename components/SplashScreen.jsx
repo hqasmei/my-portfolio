@@ -9,42 +9,15 @@ const SplashScreen = ({ finishLoading }) => {
       complete: () => finishLoading(),
     })
 
-    loader
-      .add({
-        targets: "#logo",
-        delay: 0,
-        scale: 1,
-        duration: 500,
-        easing: "easeInOutExpo",
-      })
-      .add({
-        targets: "#logo",
-        delay: 100,
-        scale: 1.25,
-        duration: 500,
-        easing: "easeInOutExpo",
-      })
-      .add({
-        targets: "#logo",
-        delay: 100,
-        scale: 1,
-        duration: 500,
-        easing: "easeInOutExpo",
-      })
-      .add({
-        targets: "#logo",
-        delay: 100,
-        scale: 1.25,
-        duration: 500,
-        easing: "easeInOutExpo",
-      })
-      .add({
-        targets: "#logo",
-        delay: 100,
-        scale: 1,
-        duration: 500,
-        easing: "easeInOutExpo",
-      })
+    loader.add({
+      targets: "#logo",
+      rotate: {
+        value: 360,
+        duration: 1800,
+        easing: "easeInOutSine",
+      },
+      delay: 250,
+    })
   }
 
   useEffect(() => {
@@ -54,10 +27,7 @@ const SplashScreen = ({ finishLoading }) => {
   }, [])
 
   return (
-    <div
-      className="flex h-screen items-center justify-center"
-      
-    >
+    <div className="flex h-screen items-center justify-center">
       <Image id="logo" src="/light-logo.png" alt="" width={60} height={60} />
     </div>
   )
