@@ -1,6 +1,6 @@
 import React from "react"
 import { RESOURCES } from "../../data.js"
-
+import { RxCaretDown } from "react-icons/rx"
 export default function ResourcesPage() {
   const sortedArr = RESOURCES.sort((a, b) => a.section.localeCompare(b.section))
   return (
@@ -22,40 +22,17 @@ export default function ResourcesPage() {
               )
               return (
                 <details key={idx} className="group">
-                  <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-2xl font-medium text-neutral-200 group-open:text-neutral-300">
+                  <summary className="text-secondary-900 flex cursor-pointer list-none items-center justify-between py-4 text-2xl font-medium text-neutral-100">
                     {item.section}
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="block h-5 w-5 group-open:hidden"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="hidden h-5 w-5 group-open:block"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19.5 12h-15"
-                        />
-                      </svg>
+                    <div className="text-secondary-500">
+                      <RxCaretDown
+                        size={30}
+                        className="block transition-all duration-300 group-open:rotate-180"
+                      />
                     </div>
                   </summary>
                   <div className="text-secondary-500 pb-4">
+                    {" "}
                     <ul className="ml-8 list-disc text-neutral-200 ">
                       {sortedSubArr.map((i, i_idx) => {
                         return (
