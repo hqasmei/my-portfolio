@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-fill bg-[url('/background.png')] bg-fixed bg-no-repeat">
+      <body className="bg-cover bg-[url('/background.png')] bg-no-repeat">
         {isLoading && isHome ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (

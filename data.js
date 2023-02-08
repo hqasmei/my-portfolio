@@ -386,3 +386,54 @@ export const SOCIALS = [
     ),
   },
 ]
+
+export const EXPERIENCE = [
+  {
+    role: "Full Stack Developer",
+    organization: "Proterra Ag",
+    location: "Commerce, CA",
+    period: "Jan 2022 – May 2022",
+    time: "5 mos",
+    link: "https://www.proterra.ag/",
+  },
+  {
+    role: "Associate Embedded Systems Engineer",
+    organization: "Proterra Ag",
+    location: "Commerce, CA",
+    period: "Feb 2021 – Dec 2021",
+    time: "11 mos",
+    link: "https://www.proterra.ag/",
+  },
+  {
+    role: "Software Engineer",
+    organization: "Teledyne Imaging Sensors",
+    location: "Camarillo, CA",
+    period: "Jan 2020 – Dec 2020",
+    time: "1 yr",
+    link: "https://www.teledyneimaging.com/en/home/",
+  },
+  {
+    role: "Mission Systems Intern",
+    organization: "Northrop Grumman",
+    location: "San Diego, CA",
+    period: "Jun 2018 – Aug 2018",
+    time: "3 mos",
+    link: "https://www.northropgrumman.com/",
+  },
+  {
+    role: "Software Engineer Intern",
+    organization: "RITEC Rugged",
+    location: "Simi Valley, CA",
+    period: "Feb 2017 - Sep 2017",
+    time: "7 mos",
+    link: "https://ritecrugged.com/",
+  },
+  {
+    role: "Mentor",
+    organization: "DIY Girls",
+    location: "Sylmar, CA",
+    period: "Aug 2015 - Dec 2016",
+    time: "1 yr 4 mos",
+    link: "https://www.diygirls.org/",
+  },
+]

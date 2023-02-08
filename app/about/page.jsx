@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import { EXPERIENCE } from "@/data"
 
 export default function AboutPage() {
   return (
@@ -20,9 +21,9 @@ export default function AboutPage() {
           </div>
           <div className="text-neutral-100 md:mt-2 md:w-1/2">
             <p className="text-lg leading-7 ">
-              <span className="font-bold">Hi, my name is Hosna Qasmei!</span> I
-              am a software engineer and developer based in{" "}
-              <span className="font-bold">Los Angeles, CA.</span>
+              Hi, my name is <span className="font-semibold">Hosna Qasmei</span>
+              ! I am a software engineer and developer based in{" "}
+              <span className="font-semibold">Los Angeles, CA.</span>
             </p>
             <br />
             <p className="text-lg leading-7">
@@ -30,13 +31,50 @@ export default function AboutPage() {
               From making YouTube videos, reading, watching soccer and
               traveling. I am always seeking new experiences and learning new
               things. I believe that you should{" "}
-              <span className="text-lg font-bold leading-7 text-teal-500">
+              <span className="text-lg font-semibold leading-7 text-teal-500">
                 never stop growing
               </span>{" "}
               and that&#39;s what I strive to do 🙂.
             </p>
             <br />
           </div>
+        </div>
+
+        <div className="flex flex-col pt-16">
+          <h1 className="mb-4 text-3xl font-bold text-gray-100">Career</h1>
+          <ol className="relative border-l border-gray-100">
+            {EXPERIENCE.map((item, idx) => {
+              return (
+                <li className="mb-10 ml-4">
+                  <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-100 "></div>
+
+                  <h3 className="text-xl font-semibold text-gray-100 ">
+                    {item.role}
+                  </h3>
+                  <p className="text-gray-100 ">
+                    <a
+                      href={item.link}
+                      className="font-medium underline hover:text-neutral-400"
+                      target="_blank"
+                    >
+                      {item.organization}
+                    </a>
+                    <span className="text-md text-neutral-300">
+                      {" • "} {item.location}
+                    </span>
+                  </p>
+                  <p className="text-neutral-300">
+                    <span className="text-md text-neutral-300">
+                      {item.period}
+                    </span>
+
+                    {" • "}
+                    {item.time}
+                  </p>
+                </li>
+              )
+            })}
+          </ol>
         </div>
       </div>
     </main>
