@@ -3,6 +3,7 @@ import { Fragment } from "react"
 
 import Link from "next/link"
 import Image from "next/image"
+import { SOCIALS_DARK } from "@/data"
 
 import { Popover, Transition } from "@headlessui/react"
 import { usePathname } from "next/navigation"
@@ -121,19 +122,18 @@ export const Navbar = () => {
                 <Link
                   className={
                     pathname == "/about"
-                      ? "text-base font-bold text-neutral-500 hover:text-neutral-900"
+                      ? "text-base font-bold text-neutral-900 hover:text-neutral-900"
                       : "text-base font-medium text-neutral-500 hover:text-neutral-900"
                   }
                   href="/about"
                 >
-                  
                   About
                 </Link>
 
                 <Link
                   className={
                     pathname == "/projects"
-                      ? "text-base font-bold text-neutral-500 hover:text-neutral-900"
+                      ? "text-base font-bold text-neutral-900 hover:text-neutral-900"
                       : "text-base font-medium text-neutral-500 hover:text-neutral-900"
                   }
                   href="/projects"
@@ -144,13 +144,26 @@ export const Navbar = () => {
                 <Link
                   className={
                     pathname == "/resources"
-                      ? "text-base font-bold text-neutral-500 hover:text-neutral-900"
+                      ? "text-base font-bold text-neutral-900 hover:text-neutral-900"
                       : "text-base font-medium text-neutral-500 hover:text-neutral-900"
                   }
                   href="/resources"
                 >
                   Resources
                 </Link>
+                <div>
+                  <ul className="flex flex-row items-center space-x-3">
+                    {SOCIALS_DARK.map((item, idx) => {
+                      return (
+                        <li key={idx}>
+                          <a href={item.link} target="_blank" rel="noreferrer">
+                            {item.icon}
+                          </a>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

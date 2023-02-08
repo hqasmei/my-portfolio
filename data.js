@@ -309,6 +309,45 @@ export const RESOURCES = [
   },
 ]
 
+export const SOCIALS_DARK = [
+  {
+    link: "https://github.com/hqasmei",
+    icon: (
+      <AiOutlineGithub
+        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 hover:text-neutral-900 "
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://twitter.com/hqasmei",
+    icon: (
+      <AiOutlineTwitter
+        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1  hover:text-neutral-900"
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://www.linkedin.com/in/hosnaqasmei/",
+    icon: (
+      <AiOutlineLinkedin
+        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-900"
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
+    icon: (
+      <AiOutlineYoutube
+        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-900"
+        size={25}
+      />
+    ),
+  },
+]
+
 export const SOCIALS = [
   {
     link: "https://github.com/hqasmei",
