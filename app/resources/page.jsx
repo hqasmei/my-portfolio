@@ -14,24 +14,24 @@ export default function ResourcesPage() {
           reference frequently and find very useful. It's a work in progress.
         </p>
 
-        <div class="mx-auto max-w-full">
-          <div class="divide-y divide-gray-100">
+        <div className="mx-auto max-w-full">
+          <div className="divide-y divide-gray-100">
             {sortedArr.map((item, idx) => {
               const sortedSubArr = item.data.sort((a, b) =>
                 a.name.localeCompare(b.name)
               )
               return (
-                <details key={idx} class="group">
-                  <summary class="text-secondary-900 flex cursor-pointer list-none items-center justify-between py-4 text-2xl font-medium text-neutral-100">
+                <details key={idx} className="group">
+                  <summary className="text-secondary-900 flex cursor-pointer list-none items-center justify-between py-4 text-2xl font-medium text-neutral-100">
                     {item.section}
-                    <div class="text-secondary-500">
+                    <div className="text-secondary-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        class="block h-5 w-5 transition-all duration-300 group-open:rotate-180"
+                        className="block h-5 w-5 transition-all duration-300 group-open:rotate-180"
                       >
                         <path
                           strokeLinecap="round"
@@ -41,7 +41,7 @@ export default function ResourcesPage() {
                       </svg>
                     </div>
                   </summary>
-                  <div class="text-secondary-500 pb-4">
+                  <div className="text-secondary-500 pb-4">
                     {" "}
                     <ul className="ml-8 list-disc text-neutral-200 ">
                       {sortedSubArr.map((i, i_idx) => {

@@ -19,13 +19,13 @@ export default function ProjectsPage() {
             {PROJECTS.map((item, idx) => {
               return (
                 <Link key={idx} href={item.link} target="_blank">
-                  <div class="mx-auto max-w-md rounded-lg bg-white shadow hover:bg-neutral-200">
-                    <div class="p-4">
+                  <div className="mx-auto max-w-md rounded-lg bg-white shadow hover:bg-neutral-200">
+                    <div className="p-4">
                       {item.icon}
-                      <h3 class="text-xl font-medium text-gray-900">
+                      <h3 className="text-xl font-medium text-gray-900">
                         {item.name}
                       </h3>
-                      <p class="mt-1 text-gray-500">{item.description}</p>
+                      <p className="mt-1 text-gray-500">{item.description}</p>
                     </div>
                   </div>
                 </Link>
