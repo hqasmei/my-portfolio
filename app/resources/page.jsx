@@ -33,26 +33,22 @@ export default function ResourcesPage() {
                   </summary>
                   <div className="text-secondary-500 pb-4">
                     {" "}
-                    <ul className="ml-8 list-disc text-neutral-200 ">
-                      {sortedSubArr.map((i, i_idx) => {
-                        return (
-                          <li key={i_idx} className="">
-                            <p>
-                              {" "}
-                              <a
-                                href={i.link}
-                                target="_blank"
-                                className="font-medium underline hover:text-neutral-400"
-                              >
-                                {i.name}
-                              </a>
-                              {" - "}
-                              {i.description}
-                            </p>
-                          </li>
-                        )
-                      })}
-                    </ul>
+                    {sortedSubArr.map((i, i_idx) => {
+                      return (
+                        <p className="text-neutral-200">
+                          {" "}
+                          <a
+                            href={i.link}
+                            target="_blank"
+                            className="font-medium underline hover:text-neutral-400"
+                          >
+                            {i.name}
+                          </a>
+                          {" - "}
+                          {i.description}
+                        </p>
+                      )
+                    })}
                   </div>
                 </details>
               )
