@@ -1,7 +1,8 @@
 import React from "react"
 import Link from "next/link"
-import { TbHeartHandshake, TbSoccerField } from "react-icons/tb"
-import { IoMdPhotos } from "react-icons/io"
+
+import { PROJECTS } from "@/data"
+
 export default function ProjectsPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
@@ -14,47 +15,22 @@ export default function ProjectsPage() {
           skills.
         </p>
         <section>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <Link href="https://thankfulthoughts.io/" target="_blank">
-              <div className="rounded-md bg-neutral-200 p-4 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600 ">
-                <div className="flex flex-row items-center justify-center space-x-2">
-                  <TbHeartHandshake
-                    size={30}
-                    className="text-neutral-500 dark:text-neutral-300"
-                  />
-                  <h1 className="font-semibold text-neutral-500 dark:text-neutral-300">
-                    Thankful Thoughts
-                  </h1>
-                </div>
-              </div>
-            </Link>
-            <Link href="https://sportstable.vercel.app/" target="_blank">
-              <div className="rounded-md bg-neutral-200 p-4 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600 ">
-                <div className="flex flex-row items-center justify-center space-x-2">
-                  <TbSoccerField
-                    size={30}
-                    className="text-neutral-500 dark:text-neutral-300"
-                  />
-                  <h1 className=" font-semibold text-neutral-500 dark:text-neutral-300">
-                    SportsTable
-                  </h1>
-                </div>
-              </div>
-            </Link>
-            <Link href="https://katorfamilyphotos.com/" target="_blank">
-              <div className="rounded-md bg-neutral-200 p-4 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600 ">
-                <div className="flex flex-row items-center justify-center space-x-2">
-                  {" "}
-                  <IoMdPhotos
-                    size={30}
-                    className="text-neutral-500 dark:text-neutral-300"
-                  />
-                  <h1 className=" font-semibold text-neutral-500 dark:text-neutral-300">
-                    Kator Family Photos
-                  </h1>
-                </div>
-              </div>
-            </Link>
+          <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 ">
+            {PROJECTS.map((item, idx) => {
+              return (
+                <Link key={idx} href={item.link} target="_blank">
+                  <div class="mx-auto max-w-md rounded-lg bg-white shadow hover:bg-neutral-200">
+                    <div class="p-4">
+                      {item.icon}
+                      <h3 class="text-xl font-medium text-gray-900">
+                        {item.name}
+                      </h3>
+                      <p class="mt-1 text-gray-500">{item.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         </section>
 

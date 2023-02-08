@@ -1,3 +1,34 @@
+import React from "react"
+import { TbHeartHandshake, TbSoccerField } from "react-icons/tb"
+import { IoMdPhotos } from "react-icons/io"
+import {
+  AiOutlineGithub,
+  AiOutlineTwitter,
+  AiOutlineLinkedin,
+  AiOutlineYoutube,
+} from "react-icons/ai"
+
+export const PROJECTS = [
+  {
+    name: "Thankful Thoughts",
+    icon: <TbHeartHandshake size={30} className="text-neutral-500 " />,
+    description: "A gratitude and positive thoughts generator.",
+    link: "https://thankfulthoughts.io/",
+  },
+  {
+    name: "SportsTable",
+    icon: <TbSoccerField size={30} className="text-neutral-500 " />,
+    description: "All sports highlights in one place.",
+    link: "https://sportstable.vercel.app/",
+  },
+  {
+    name: "Kator Family Photos",
+    icon: <IoMdPhotos size={30} className="text-neutral-500 " />,
+    description: "A service that digitizes photo albums and films.",
+    link: "https://katorfamilyphotos.com/",
+  },
+]
+
 export const RESOURCES = [
   {
     section: "Cloud Platforms",
@@ -275,5 +306,44 @@ export const RESOURCES = [
         link: "https://www.datacamp.com/",
       },
     ],
+  },
+]
+
+export const SOCIALS = [
+  {
+    link: "https://github.com/hqasmei",
+    icon: (
+      <AiOutlineGithub
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1 "
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://twitter.com/hqasmei",
+    icon: (
+      <AiOutlineTwitter
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://www.linkedin.com/in/hosnaqasmei/",
+    icon: (
+      <AiOutlineLinkedin
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
+    icon: (
+      <AiOutlineYoutube
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
   },
 ]
