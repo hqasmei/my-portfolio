@@ -59,6 +59,26 @@ export const RESOURCES = [
         description: "A graphic design platform.",
         link: "https://www.canva.com/",
       },
+      {
+        name: "CSS Gradient",
+        description: "Create a gradient background.",
+        link: "https://cssgradient.io/",
+      },
+      {
+        name: "HTML Color Picker",
+        description: "Color hue maker.",
+        link: "https://www.w3schools.com/colors/colors_picker.asp",
+      },
+      {
+        name: "Clippy",
+        description: "CSS clip-path maker.",
+        link: "https://bennettfeely.com/clippy/",
+      },
+      {
+        name: "CSS matic",
+        description: "The ultimate CSS tools for web designers.",
+        link: "https://www.cssmatic.com/",
+      },
     ],
   },
   {
@@ -104,6 +124,21 @@ export const RESOURCES = [
         description: "AI tool directory.",
         link: "https://www.futurepedia.io/",
       },
+      {
+        name: "SaaSHub",
+        description: "Software Alternatives And Reviews.",
+        link: "https://www.saashub.com/",
+      },
+      {
+        name: "Libraries.io",
+        description: "Open source packages across package managers.",
+        link: "https://libraries.io/",
+      },
+      {
+        name: "Lorem Ipsum",
+        description: "Placeholder text generator.",
+        link: " https://loremipsum.io/",
+      },
     ],
   },
   {
@@ -129,6 +164,12 @@ export const RESOURCES = [
         description: "Popular icon packs.",
         link: "https://react-icons.github.io/react-icons",
       },
+
+      {
+        name: "useAnimations",
+        description: "Animated icons in Lottie Framework.",
+        link: "https://useanimations.com/#explore",
+      },
       {
         name: "heroicons",
         description: "Icons from Tailwind CSS.",
@@ -144,6 +185,94 @@ export const RESOURCES = [
         name: "Tailwind CSS",
         description: "Utility-first CSS framework.",
         link: "https://tailwindcss.com/",
+      },
+    ],
+  },
+  {
+    section: "UI Libraries",
+    data: [
+      {
+        name: "Material UI",
+        description:
+          "A comprehensive library of components based on Google's Material Design system.",
+        link: "https://mui.com/",
+      },
+      {
+        name: "Elastic UI",
+        description: "A design library in use at Elastic.",
+        link: "https://eui.elastic.co/#/",
+      },
+      {
+        name: "Ant Design",
+        description: "UI design language and React UI library.",
+        link: "https://ant.design/",
+      },
+      {
+        name: "Semantic UI",
+        description: "A front-end development framework similar to bootstrap.",
+        link: "https://semantic-ui.com/introduction/getting-started.html",
+      },
+      {
+        name: "Chakra UI",
+        description: "A simple, modular and accessible component library",
+        link: "https://chakra-ui.com/",
+      },
+      {
+        name: "Headless UI",
+        description: "UI components accessible with Tailwind CSS",
+        link: "https://headlessui.com/",
+      },
+      {
+        name: "shadcn/ui",
+        description: "Designed componentsbuilt with Radix UI and Tailwind CSS.",
+        link: "https://ui.shadcn.com/",
+      },
+      {
+        name: "Sailboat UI",
+        description: "A modern UI component library for Tailwind CSS.",
+        link: " https://sailboatui.com/docs/getting-started/quick-start/",
+      },
+    ],
+  },
+  {
+    section: "Free Online Courses",
+    data: [
+      {
+        name: "Scrimba",
+        description: "Interactive courses and tutorials.",
+        link: "https://scrimba.com/allcourses",
+      },
+      {
+        name: "LearnWeb3",
+        description:
+          "The best place to turn you into a web3 developer for completely free.",
+        link: "https://learnweb3.io/",
+      },
+      {
+        name: "AWS Skill Builder",
+        description: "Courses to help you learn AWS.",
+        link: "https://explore.skillbuilder.aws/lms/",
+      },
+      {
+        name: "egghead",
+        description: "High-quality curated video courses.",
+        link: "https://egghead.io/",
+      },
+      {
+        name: "A Cloud Guru",
+        description: "Build expertise with real hands-on labs.",
+        link: "https://learn.acloud.guru/dashboard",
+      },
+      {
+        name: "freeCodeCamp",
+        description: "An interactive learning web platform.",
+        link: " https://www.freecodecamp.org/",
+      },
+
+      {
+        name: "datacamp",
+        description: "Learn data skills you need online.",
+        link: "https://www.datacamp.com/",
       },
     ],
   },
