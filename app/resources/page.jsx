@@ -22,27 +22,40 @@ export default function ResourcesPage() {
               )
               return (
                 <details key={idx} className="group">
-                  <summary className="text-secondary-900 flex cursor-pointer list-none items-center justify-between py-4 text-2xl font-medium text-neutral-100">
+                  <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-2xl font-medium text-neutral-200 group-open:text-neutral-300">
                     {item.section}
-                    <div className="text-secondary-500">
+                    <div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="block h-5 w-5 transition-all duration-300 group-open:rotate-180"
+                        className="block h-5 w-5 group-open:hidden"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="hidden h-5 w-5 group-open:block"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.5 12h-15"
                         />
                       </svg>
                     </div>
                   </summary>
                   <div className="text-secondary-500 pb-4">
-                    {" "}
                     <ul className="ml-8 list-disc text-neutral-200 ">
                       {sortedSubArr.map((i, i_idx) => {
                         return (
