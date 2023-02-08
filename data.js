@@ -314,7 +314,7 @@ export const SOCIALS_DARK = [
     link: "https://github.com/hqasmei",
     icon: (
       <AiOutlineGithub
-        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 hover:text-neutral-900 "
+        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 hover:text-neutral-600 "
         size={25}
       />
     ),
@@ -323,7 +323,7 @@ export const SOCIALS_DARK = [
     link: "https://twitter.com/hqasmei",
     icon: (
       <AiOutlineTwitter
-        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1  hover:text-neutral-900"
+        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1  hover:text-neutral-600"
         size={25}
       />
     ),
@@ -332,7 +332,7 @@ export const SOCIALS_DARK = [
     link: "https://www.linkedin.com/in/hosnaqasmei/",
     icon: (
       <AiOutlineLinkedin
-        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-900"
+        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-600"
         size={25}
       />
     ),
@@ -341,7 +341,7 @@ export const SOCIALS_DARK = [
     link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
     icon: (
       <AiOutlineYoutube
-        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-900"
+        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-600"
         size={25}
       />
     ),

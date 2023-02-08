@@ -43,7 +43,7 @@ export const Navbar = () => {
               className={
                 pathname == "/about"
                   ? "text-base font-bold text-neutral-100 hover:text-neutral-200"
-                  : "text-base font-semibold text-neutral-100 hover:text-neutral-300"
+                  : "text-base text-neutral-100 hover:text-neutral-300"
               }
               href="/about"
             >
@@ -54,7 +54,7 @@ export const Navbar = () => {
               className={
                 pathname == "/projects"
                   ? "text-base font-bold text-neutral-100 hover:text-neutral-200"
-                  : "text-base font-medium text-neutral-100 hover:text-neutral-300"
+                  : "text-base  text-neutral-100 hover:text-neutral-300"
               }
               href="/projects"
             >
@@ -65,7 +65,7 @@ export const Navbar = () => {
               className={
                 pathname == "/resources"
                   ? "text-base font-bold text-neutral-100 hover:text-neutral-200"
-                  : "text-base font-medium text-neutral-100 hover:text-neutral-300"
+                  : "text-base text-neutral-100 hover:text-neutral-300"
               }
               href="/resources"
             >
@@ -122,8 +122,8 @@ export const Navbar = () => {
                 <Link
                   className={
                     pathname == "/about"
-                      ? "text-base font-bold text-neutral-900 hover:text-neutral-900"
-                      : "text-base font-medium text-neutral-500 hover:text-neutral-900"
+                      ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
+                      : "text-base text-neutral-500 hover:text-neutral-600"
                   }
                   href="/about"
                 >
@@ -133,8 +133,8 @@ export const Navbar = () => {
                 <Link
                   className={
                     pathname == "/projects"
-                      ? "text-base font-bold text-neutral-900 hover:text-neutral-900"
-                      : "text-base font-medium text-neutral-500 hover:text-neutral-900"
+                      ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
+                      : "text-base text-neutral-500 hover:text-neutral-600"
                   }
                   href="/projects"
                 >
@@ -144,8 +144,8 @@ export const Navbar = () => {
                 <Link
                   className={
                     pathname == "/resources"
-                      ? "text-base font-bold text-neutral-900 hover:text-neutral-900"
-                      : "text-base font-medium text-neutral-500 hover:text-neutral-900"
+                      ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
+                      : "text-base text-neutral-500 hover:text-neutral-600"
                   }
                   href="/resources"
                 >

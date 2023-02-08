@@ -45,7 +45,7 @@ export default function AboutPage() {
           <ol className="relative border-l border-gray-100">
             {EXPERIENCE.map((item, idx) => {
               return (
-                <li className="mb-10 ml-4">
+                <li key={idx} className="mb-10 ml-4">
                   <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-100 "></div>
 
                   <h3 className="text-xl font-semibold text-gray-100 ">
