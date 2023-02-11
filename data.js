@@ -19,7 +19,7 @@ export const PROJECTS = [
     name: "SportsTable",
     icon: <TbSoccerField size={30} className="text-neutral-500 " />,
     description: "All sports highlights in one place.",
-    link: "https://sportstable.vercel.app/",
+    link: "https://sportstable.io/",
   },
   {
     name: "Kator Family Photos",
