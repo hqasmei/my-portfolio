@@ -17,7 +17,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-between py-4 md:justify-start md:space-x-10">
           <div className="flex flex-1 justify-start lg:w-0">
             <Link href="/">
-              <Image src="/light-logo.png" alt="" width={35} height={35} />
+              <Image
+                src="/light-logo.png"
+                alt=""
+                width={60}
+                height={55}
+                className="rounded-md p-3 transition duration-300 hover:bg-gray-700 hover:ease-in"
+              />
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
@@ -39,12 +45,12 @@ export const Navbar = () => {
               </svg>
             </Popover.Button>
           </div>
-          <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+          <Popover.Group as="nav" className="hidden space-x-2 md:flex">
             <Link
               className={
                 pathname == "/about"
-                  ? "text-base font-bold text-neutral-100 hover:text-neutral-200"
-                  : "text-base text-neutral-100 hover:text-neutral-300"
+                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
               }
               href="/about"
             >
@@ -54,8 +60,8 @@ export const Navbar = () => {
             <Link
               className={
                 pathname == "/projects"
-                  ? "text-base font-bold text-neutral-100 hover:text-neutral-200"
-                  : "text-base  text-neutral-100 hover:text-neutral-300"
+                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
               }
               href="/projects"
             >
@@ -64,9 +70,20 @@ export const Navbar = () => {
 
             <Link
               className={
+                pathname == "/blog"
+                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
+              }
+              href="/blog"
+            >
+              Blog
+            </Link>
+
+            <Link
+              className={
                 pathname == "/resources"
-                  ? "text-base font-bold text-neutral-100 hover:text-neutral-200"
-                  : "text-base text-neutral-100 hover:text-neutral-300"
+                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
               }
               href="/resources"
             >
@@ -149,7 +166,17 @@ export const Navbar = () => {
                   >
                     Projects
                   </Link>
-
+                  <Link
+                    className={
+                      pathname == "/blog"
+                        ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
+                        : "text-base text-neutral-500 hover:text-neutral-600"
+                    }
+                    href="/blog"
+                    onClick={() => close()}
+                  >
+                    Blog
+                  </Link>
                   <Link
                     className={
                       pathname == "/resources"

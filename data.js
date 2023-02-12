@@ -412,28 +412,4 @@ export const EXPERIENCE = [
     time: "1 yr",
     link: "https://www.teledyneimaging.com/en/home/",
   },
-  {
-    role: "Mission Systems Intern",
-    organization: "Northrop Grumman",
-    location: "San Diego, CA",
-    period: "Jun 2018 – Aug 2018",
-    time: "3 mos",
-    link: "https://www.northropgrumman.com/",
-  },
-  {
-    role: "Software Engineer Intern",
-    organization: "RITEC Rugged",
-    location: "Simi Valley, CA",
-    period: "Feb 2017 - Sep 2017",
-    time: "7 mos",
-    link: "https://ritecrugged.com/",
-  },
-  {
-    role: "Mentor",
-    organization: "DIY Girls",
-    location: "Sylmar, CA",
-    period: "Aug 2015 - Dec 2016",
-    time: "1 yr 4 mos",
-    link: "https://www.diygirls.org/",
-  },
 ]
