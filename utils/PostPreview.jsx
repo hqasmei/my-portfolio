@@ -7,14 +7,14 @@ const PostPreview = (props) => {
   return (
     <Link
       href={`/posts/${props.slug}`}
-      className="rounded-md  p-4 transition duration-300 hover:bg-gray-700 hover:ease-in"
+      className="rounded-md  transition duration-300 hover:bg-gray-600 hover:ease-in md:p-4"
     >
-      <div className="-my-4 flex flex-col justify-between border-b border-gray-200  py-6 md:flex-row">
-        <div className="w-2/3">
-          <h2 className="font-semibold text-gray-100 text-lg">{props.title}</h2>
-          <p className="text-gray-300 text-sm">{props.subtitle}</p>
+      <div className="flex flex-col-reverse justify-between border-b border-gray-200 py-6  md:-my-4 md:flex-row">
+        <div className="md:w-3/4">
+          <h2 className="text-lg font-semibold text-gray-100">{props.title}</h2>
+          <p className="text-sm text-gray-300">{props.subtitle}</p>
         </div>
-        <div className="flex w-1/3 justify-end">
+        <div className="flex justify-start md:w-1/4 md:justify-end">
           <p className="text-sm text-gray-300">{formattedDate}</p>
         </div>
       </div>
