@@ -10,15 +10,15 @@ First things first, let's bust a myth. Leaving a job doesn't make you a quitter.
 
 So, how do you know when it's time to move on? Here are a few signs to look out for:
 
-1. Your job is impacting your mental or physical health.
+- Your job is impacting your mental or physical health.
 If you find that your job is causing you a lot of stress and anxiety, or if it's affecting your physical health, it may be time to consider leaving. Your well-being should always be a top priority.
-2. You're not learning or growing.
+- You're not learning or growing.
 If you're not learning anything new or growing in your role, it may be time to move on. Stagnation can be frustrating and can lead to feelings of boredom or dissatisfaction. And trust me, you deserve more than that.
-3. You're not being recognized or rewarded for your work.
+- You're not being recognized or rewarded for your work.
 If you're putting in a lot of effort and not seeing any recognition or rewards, it may be time to move on. Feeling undervalued can be demotivating, and it's important to work in an environment where your contributions are appreciated.
-4. Your values don't align with the company's.
+- Your values don't align with the company's.
 If you find that your values don't align with the company's, it may be time to move on. It's important to work for a company that shares your values and beliefs.
-5. You have a better opportunity elsewhere.
+- You have a better opportunity elsewhere.
 If you have an opportunity to advance your career, increase your salary or work in a field that you're passionate about, it may be time to move on. Sometimes, the grass is greener on the other side, and it's important to explore all of your options.
 
 When you're thinking about leaving a job, it's important to keep a few things in mind:

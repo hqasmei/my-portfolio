@@ -34,7 +34,7 @@ const PostPage = (props) => {
           <p className="mt-2 text-gray-300">{formattedDate}</p>
         </div>
 
-        <article className=" mx-auto text-lg text-gray-200">
+        <article className="prose lg:prose-xl">
           <Markdown>{post.content}</Markdown>
         </article>
       </div>
