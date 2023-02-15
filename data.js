@@ -10,7 +10,7 @@ import {
 
 import { FaDev } from "react-icons/fa"
 
-export const PROJECTS = [
+export const FEATURED_PROJECTS = [
   {
     name: "Thankful Thoughts",
     icon: <TbHeartHandshake size={30} className="text-neutral-500 " />,
@@ -28,6 +28,36 @@ export const PROJECTS = [
     icon: <IoMdPhotos size={30} className="text-neutral-500 " />,
     description: "A service that digitizes photo albums and films.",
     link: "https://katorfamilyphotos.com/",
+  },
+]
+
+export const ALL_PROJECTS = [
+  {
+    section: "2023",
+    data: [
+      {
+        name: "Thankful Thoughts",
+        link: "https://thankfulthoughts.io/",
+      },
+      {
+        name: "Kator Family Photos",
+        link: "https://katorfamilyphotos.com/",
+      },
+      {
+        name: "Pagniation Examples",
+        link: "https://pagination-examples.vercel.app/",
+      },
+    ],
+  },
+
+  {
+    section: "2022",
+    data: [
+      {
+        name: "SportsTable",
+        link: "https://sportstable.io/",
+      },
+    ],
   },
 ]
 
