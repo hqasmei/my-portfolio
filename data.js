@@ -8,6 +8,8 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai"
 
+import { FaDev } from "react-icons/fa"
+
 export const PROJECTS = [
   {
     name: "Thankful Thoughts",
@@ -53,6 +55,11 @@ export const RESOURCES = [
         name: "Vercel",
         description: "Easy deployment platform.",
         link: "https://vercel.com/",
+      },
+      {
+        name: "Koyeb",
+        description: "Global deployment applications platform.",
+        link: "https://www.koyeb.com/",
       },
 
       {
@@ -359,6 +366,24 @@ export const SOCIALS = [
     ),
   },
   {
+    link: "https://dev.to/hqasmei",
+    icon: (
+      <FaDev
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
+    icon: (
+      <AiOutlineYoutube
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
+  },
+  {
     link: "https://twitter.com/hqasmei",
     icon: (
       <AiOutlineTwitter
@@ -371,15 +396,6 @@ export const SOCIALS = [
     link: "https://www.linkedin.com/in/hosnaqasmei/",
     icon: (
       <AiOutlineLinkedin
-        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
-        size={25}
-      />
-    ),
-  },
-  {
-    link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
-    icon: (
-      <AiOutlineYoutube
         className="cursor-pointer text-white transition-transform hover:-translate-y-1"
         size={25}
       />

@@ -22,8 +22,8 @@ export const Navbar = () => {
                 alt=""
                 width={60}
                 height={55}
-                className="rounded-md p-3 transition duration-300 hover:bg-gray-600
-                00 hover:ease-in"
+                className="00 rounded-md p-3 transition duration-300
+                hover:bg-gray-600 hover:ease-in"
               />
             </Link>
           </div>
