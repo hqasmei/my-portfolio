@@ -23,7 +23,7 @@ export const Navbar = () => {
                 width={60}
                 height={55}
                 className="00 rounded-md p-3 transition duration-300
-                hover:bg-gray-600 hover:ease-in"
+                hover:bg-neutral-600 hover:ease-in"
               />
             </Link>
           </div>
@@ -50,8 +50,8 @@ export const Navbar = () => {
             <Link
               className={
                 pathname == "/about"
-                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
+                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
               }
               href="/about"
             >
@@ -61,8 +61,8 @@ export const Navbar = () => {
             <Link
               className={
                 pathname == "/projects"
-                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
+                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
               }
               href="/projects"
             >
@@ -72,8 +72,8 @@ export const Navbar = () => {
             <Link
               className={
                 pathname == "/blog"
-                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
+                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
               }
               href="/blog"
             >
@@ -83,8 +83,8 @@ export const Navbar = () => {
             <Link
               className={
                 pathname == "/resources"
-                  ? "rounded-md py-2 px-4 font-bold text-gray-50 transition duration-300 hover:bg-gray-700 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-gray-300  transition duration-300 hover:bg-gray-700 hover:text-gray-50 hover:ease-in"
+                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
+                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
               }
               href="/resources"
             >

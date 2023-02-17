@@ -41,17 +41,17 @@ export default function AboutPage() {
         </div>
 
         <div className="flex flex-col pt-16">
-          <h1 className="mb-4 text-3xl font-bold text-gray-100">Career</h1>
-          <ol className="relative border-l border-gray-100">
+          <h1 className="mb-4 text-3xl font-bold text-neutral-100">Career</h1>
+          <ol className="relative border-l border-neutral-100">
             {EXPERIENCE.map((item, idx) => {
               return (
                 <li key={idx} className="mb-10 ml-4">
-                  <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-100 "></div>
+                  <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-neutral-100 "></div>
 
-                  <h3 className="text-xl font-semibold text-gray-100 ">
+                  <h3 className="text-xl font-semibold text-neutral-100 ">
                     {item.role}
                   </h3>
-                  <p className="text-gray-100 ">
+                  <p className="text-neutral-100 ">
                     <a
                       href={item.link}
                       className="font-medium underline hover:text-neutral-400"

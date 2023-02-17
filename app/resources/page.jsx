@@ -14,7 +14,7 @@ export default function ResourcesPage() {
           reference frequently and find very useful. It's a work in progress.
         </p>
         <div className="mx-auto">
-          <div className="divide-y divide-gray-100 text-gray-100 text-semibold">
+          <div className="divide-y divide-neutral-100 text-neutral-100 text-semibold">
             {sortedArr.map((item, idx) => {
               const sortedSubArr = item.data.sort((a, b) =>
                 a.name.localeCompare(b.name)

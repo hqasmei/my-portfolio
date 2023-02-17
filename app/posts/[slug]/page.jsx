@@ -28,10 +28,10 @@ const PostPage = (props) => {
     <div className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
       <div className="py-24 sm:px-28 sm:py-28">
         <div className="my-12 text-center">
-          <h1 className="text-3xl font-bold text-gray-200 md:mx-36">
+          <h1 className="text-3xl font-bold text-neutral-200 md:mx-36">
             {post.data.title}
           </h1>
-          <p className="mt-2 text-gray-300">{formattedDate}</p>
+          <p className="mt-2 text-neutral-300">{formattedDate}</p>
         </div>
 
         <article className="prose lg:prose-xl">

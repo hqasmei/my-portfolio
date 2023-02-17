@@ -26,10 +26,10 @@ export default function ProjectsPage() {
                   <div className="mx-auto max-w-md rounded-lg bg-white shadow hover:bg-neutral-200">
                     <div className="p-4">
                       {item.icon}
-                      <h3 className="text-xl font-medium text-gray-900">
+                      <h3 className="text-xl font-medium text-neutral-900">
                         {item.name}
                       </h3>
-                      <p className="mt-1 text-gray-500">{item.description}</p>
+                      <p className="mt-1 text-neutral-500">{item.description}</p>
                     </div>
                   </div>
                 </Link>
