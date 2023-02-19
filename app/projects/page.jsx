@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6 text-neutral-100 md:max-w-5xl">
       <div className="py-24 sm:px-28 sm:py-28">
-        <h1 className="pb-2 text-4xl font-bold text-white md:text-6xl">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent text-white md:pb-4 md:text-6xl">
           Projects.
         </h1>
         <p className="pb-4 text-xl text-neutral-300">
@@ -29,7 +29,9 @@ export default function ProjectsPage() {
                       <h3 className="text-xl font-medium text-neutral-900">
                         {item.name}
                       </h3>
-                      <p className="mt-1 text-neutral-500">{item.description}</p>
+                      <p className="mt-1 text-neutral-500">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 </Link>
@@ -45,9 +47,9 @@ export default function ProjectsPage() {
               const sortedSubArr = item.data
               return (
                 <>
-                  <h1 className="text-lg font-semibold mb-2">{item.section}</h1>
+                  <h1 className="mb-2 text-lg font-semibold">{item.section}</h1>
                   <div className="text-secondary-500 pb-4 ">
-                    <ul className="ml-8 list-disc text-neutral-100 space-y-2">
+                    <ul className="ml-8 list-disc space-y-2 text-neutral-100">
                       {sortedSubArr.map((i, i_idx) => {
                         return (
                           <li key={i_idx} className="">

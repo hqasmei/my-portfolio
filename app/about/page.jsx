@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6 text-left md:max-w-5xl">
       <div className="flex flex-col space-y-4 py-24 sm:px-28 sm:py-28 md:space-y-0  ">
-        <h1 className="text-4xl font-bold text-white md:pb-4 md:text-6xl">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent text-white md:pb-4 md:text-6xl">
           About Me.
         </h1>
         <div className="flex flex-col space-y-5 sm:items-center sm:justify-center  md:flex-row md:space-y-0 md:space-x-4  ">
@@ -31,7 +31,7 @@ export default function AboutPage() {
               From making YouTube videos, reading, watching soccer and
               traveling. I am always seeking new experiences and learning new
               things. I believe that you should{" "}
-              <span className="text-lg font-semibold leading-7 text-teal-500">
+              <span className="text-lg font-semibold leading-7">
                 never stop growing
               </span>{" "}
               and that&#39;s what I strive to do 🙂.

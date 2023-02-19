@@ -31,6 +31,7 @@ const PostPage = (props) => {
           <h1 className="text-3xl font-bold text-neutral-200 md:mx-36">
             {post.data.title}
           </h1>
+          
           <p className="mt-2 text-neutral-300">{formattedDate}</p>
         </div>
 

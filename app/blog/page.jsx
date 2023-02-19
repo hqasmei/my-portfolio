@@ -11,7 +11,7 @@ const BlogPage = () => {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
       <div className="py-24 sm:px-28 sm:py-28">
-        <h1 className="pb-4 text-4xl font-bold text-white md:pb-8 md:text-6xl">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent text-white md:pb-4 md:text-6xl">
           All Posts.
         </h1>
         <div className="grid max-w-6xl grid-cols-1 items-center justify-center">

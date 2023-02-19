@@ -6,7 +6,7 @@ export default function ResourcesPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6  md:max-w-5xl">
       <div className="py-24 sm:px-28 sm:py-28">
-        <h1 className="text-4xl font-bold text-white md:pb-2 md:text-6xl">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent text-white md:pb-4 md:text-6xl">
           Resources.
         </h1>
         <p className="text-md pb-4 leading-5 text-neutral-100  sm:text-xl">
@@ -14,7 +14,7 @@ export default function ResourcesPage() {
           reference frequently and find very useful. It's a work in progress.
         </p>
         <div className="mx-auto">
-          <div className="divide-y divide-neutral-100 text-neutral-100 text-semibold">
+          <div className="text-semibold divide-y divide-neutral-100 text-neutral-100">
             {sortedArr.map((item, idx) => {
               const sortedSubArr = item.data.sort((a, b) =>
                 a.name.localeCompare(b.name)
