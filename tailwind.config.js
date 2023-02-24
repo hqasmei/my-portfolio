@@ -13,7 +13,40 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#333",
+            a: {
+              color: "#3182ce",
+              "&:hover": {
+                color: "#2c5282",
+              },
+            },
+            p: {
+              color: "#ffffff",
+            },
+            ol: {
+              color: "#ffffff",
+            },
+            ul: {
+              color: "#ffffff",
+            },
+            h1: {
+              color: "#ffffff",
+            },
+            h2: {
+              color: "#ffffff",
+            },
+            h3: {
+              color: "#ffffff",
+            },
+            h4: {
+              color: "#ffffff",
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
