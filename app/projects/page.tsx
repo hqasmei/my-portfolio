@@ -14,7 +14,7 @@ export default function ProjectsPage() {
           Projects.
         </h1>
         <p className="pb-4 text-xl text-neutral-300">
-          Here are a few side projects I've been working on. Check them out!
+          Here are a few side projects I&#39;ve been working on. Check them out!
         </p>
         <section>
           <h1 className="mb-4 text-xl font-semibold">Featured Projects</h1>

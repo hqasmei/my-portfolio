@@ -10,8 +10,9 @@ export default function ResourcesPage() {
           Resources.
         </h1>
         <p className="text-md pb-4 leading-5 text-neutral-100  sm:text-xl">
-          Here are a few resources I've have compiled along the way that I
-          reference frequently and find very useful. It's a work in progress.
+          Here are a few resources I&#39;ve have compiled along the way that I
+          reference frequently and find very useful. It&#39;s a work in
+          progress.
         </p>
         <div className="mx-auto">
           <div className="text-semibold divide-y divide-neutral-100 text-neutral-100">
