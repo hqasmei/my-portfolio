@@ -1,6 +1,6 @@
 "use client"
 import { Fragment } from "react"
-
+import { BsArrowRightShort } from "react-icons/bs"
 import Link from "next/link"
 import Image from "next/image"
 import { SOCIALS_DARK } from "@/utils/data"
@@ -20,15 +20,14 @@ const Navbar = () => {
               <Image
                 src="/light-logo.png"
                 alt=""
-                width={60}
+                width={55}
                 height={55}
-                className="00 rounded-md p-3 transition duration-300
-                hover:bg-neutral-600 hover:ease-in"
+                className="rounded-md p-2 transition duration-300 hover:bg-neutral-700 hover:ease-in"
               />
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-neutral-100 hover:text-neutral-200 focus:outline-none   ">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-neutral-100 hover:text-neutral-200 focus:outline-none">
               <span className="sr-only">Open menu</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,12 +45,12 @@ const Navbar = () => {
               </svg>
             </Popover.Button>
           </div>
-          <Popover.Group as="nav" className="hidden space-x-2 md:flex">
+          <Popover.Group as="nav" className="hidden space-x-2 md:flex ">
             <Link
               className={
                 pathname == "/about"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300"
+                  : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
               }
               href="/about"
             >
@@ -60,8 +59,8 @@ const Navbar = () => {
             <Link
               className={
                 pathname == "/projects"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300 "
+                  : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
               }
               href="/projects"
             >
@@ -71,23 +70,23 @@ const Navbar = () => {
             <Link
               className={
                 pathname == "/resources"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300 "
+                  : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
               }
               href="/resources"
             >
               Resources
             </Link>
-            {/* <Link
+            <Link
               className={
-                pathname == "/more"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                "rounded-md border border-neutral-400 py-2 px-3 text-sm text-neutral-400  transition duration-300 hover:border-neutral-50 hover:text-neutral-50"
               }
               href="/more"
             >
-              More
-            </Link> */}
+              <div className="flex flex-row items-center justify-center">
+                <p>More</p> <BsArrowRightShort size={16} />
+              </div>
+            </Link>
           </Popover.Group>
         </div>
       </div>
@@ -175,7 +174,7 @@ const Navbar = () => {
                   >
                     Resources
                   </Link>
-                  {/* <Link
+                  <Link
                     className={
                       pathname == "/more"
                         ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
@@ -185,7 +184,7 @@ const Navbar = () => {
                     onClick={() => close()}
                   >
                     More
-                  </Link> */}
+                  </Link>
                   <div>
                     <ul className="flex flex-row items-center space-x-3">
                       {SOCIALS_DARK.map((item, idx) => {

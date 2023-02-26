@@ -15,8 +15,8 @@ export default function PersonalLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className="bg-gray-200">
-      <MoreNavbar />
+    <section className="bg-neutral-900">
+      {/* <MoreNavbar /> */}
       {children}
       <Footer />
     </section>
