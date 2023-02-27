@@ -14,7 +14,7 @@ export default function TravelPage() {
           Travel.
         </h1>
         <p className="pb-4 text-xl text-neutral-600">
-          Here is a list of places I've visited and want to visit!
+          Here is a list of places I&#39;ve visited and want to visit!
         </p>
         <p>Coming Soon...</p>
       </div>

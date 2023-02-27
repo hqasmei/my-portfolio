@@ -15,7 +15,7 @@ export default function BooksPage() {
           Books.
         </h1>
         <p className="pb-4 text-xl text-neutral-600">
-          Here is a list books I've read, currently reading or want to read!
+          Here is a list books I&#39;ve read, currently reading or want to read!
         </p>
 
         <p>Coming Soon...</p>

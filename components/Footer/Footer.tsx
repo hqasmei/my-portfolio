@@ -22,7 +22,7 @@ const Footer = (props: FooterProps) => {
     } else {
       setData(SOCIALS)
     }
-  }, [])
+  }, [isDark])
 
   return (
     <footer>
