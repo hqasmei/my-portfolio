@@ -4,6 +4,7 @@ import { Fragment } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { SOCIALS_DARK } from "@/utils/data"
+import { BsArrowRightShort } from "react-icons/bs"
 
 import { Popover, Transition } from "@headlessui/react"
 import { usePathname } from "next/navigation"
@@ -11,37 +12,36 @@ import { usePathname } from "next/navigation"
 const MoreNavbar = () => {
   const pathname = usePathname()
   return (
-    <Popover className="absolute  mx-auto w-full px-2 sm:px-20">
+    <Popover className="absolute  mx-auto w-full sm:px-10">
       <Popover.Overlay className="fixed inset-0 backdrop-blur-sm" />
       <div className="mx-2 px-2 md:mx-10">
         <div className="flex items-center justify-between py-4 md:justify-start md:space-x-10">
           <div className="flex flex-1 justify-start lg:w-0">
-            <Link href="/">
+            <Link href="/more">
               <Image
-                src="/light-logo.png"
+                src="/dark-logo.png"
                 alt=""
-                width={60}
+                width={55}
                 height={55}
-                className="00 rounded-md p-3 transition duration-300
-                hover:bg-neutral-600 hover:ease-in"
+                className="rounded-md p-2 transition duration-300 hover:bg-neutral-200 hover:ease-in"
               />
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-neutral-100 hover:text-neutral-200 focus:outline-none   ">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md p-2  hover:text-neutral-500 focus:outline-none">
               <span className="sr-only">Open menu</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="h-6 w-6"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
                 />
               </svg>
             </Popover.Button>
@@ -49,43 +49,53 @@ const MoreNavbar = () => {
           <Popover.Group as="nav" className="hidden space-x-2 md:flex">
             <Link
               className={
-                pathname == "/about/books"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                pathname == "/more/books"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-800 transition duration-300 "
+                  : "rounded-md py-2 px-3 text-sm text-neutral-500  transition duration-300  hover:text-neutral-800"
               }
-              href="/about/books"
+              href="/more/books"
             >
               Books
             </Link>
             <Link
               className={
-                pathname == "/about/travel"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                pathname == "/more/travel"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-800 transition duration-300 "
+                  : "rounded-md py-2 px-3 text-sm text-neutral-500  transition duration-300  hover:text-neutral-800"
               }
-              href="/about/travel"
+              href="/more/travel"
             >
               Travel
             </Link>
             <Link
               className={
-                pathname == "/about/recipes"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                pathname == "/more/recipes"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-800 transition duration-300 "
+                  : "rounded-md py-2 px-3 text-sm text-neutral-500  transition duration-300  hover:text-neutral-800"
               }
-              href="/about/recipes"
+              href="/more/recipes"
             >
               Recipes
             </Link>
             <Link
               className={
-                pathname == "/about/thoughts"
-                  ? "rounded-md py-2 px-4 font-bold text-neutral-50 transition duration-300 hover:bg-neutral-800 hover:ease-in"
-                  : "rounded-md py-2 px-4 text-neutral-300  transition duration-300 hover:bg-neutral-800 hover:text-neutral-50 hover:ease-in"
+                pathname == "/more/stories"
+                  ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-800 transition duration-300 "
+                  : "rounded-md py-2 px-3 text-sm text-neutral-500  transition duration-300  hover:text-neutral-800"
               }
-              href="/about/thoughts"
+              href="/more/stories"
             >
-              Thoughts
+              Stories
+            </Link>
+            <Link
+              className={
+                "rounded-md border border-neutral-500 py-2 px-3 text-sm text-neutral-500  transition duration-300 hover:border-neutral-800 hover:text-neutral-800"
+              }
+              href="/"
+            >
+              <div className="flex flex-row items-center justify-center">
+                <p>Back</p> <BsArrowRightShort size={16} />
+              </div>
             </Link>
           </Popover.Group>
         </div>
@@ -109,7 +119,7 @@ const MoreNavbar = () => {
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <Link href="/">
+                    <Link href="/more">
                       <Image
                         src="/dark-logo.png"
                         alt=""
@@ -119,7 +129,7 @@ const MoreNavbar = () => {
                     </Link>
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2  hover:bg-neutral-100 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span className="sr-only">Close menu</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -143,47 +153,58 @@ const MoreNavbar = () => {
                 <div className="grid grid-cols-1 gap-y-4 gap-x-8">
                   <Link
                     className={
-                      pathname == "/about/books"
+                      pathname == "/more/books"
                         ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
                         : "text-base text-neutral-500 hover:text-neutral-600"
                     }
-                    href="/about/books"
+                    href="/more/books"
                     onClick={() => close()}
                   >
                     Books
                   </Link>
                   <Link
                     className={
-                      pathname == "/about/travel"
+                      pathname == "/more/travel"
                         ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
                         : "text-base text-neutral-500 hover:text-neutral-600"
                     }
-                    href="/about/travel"
+                    href="/more/travel"
                     onClick={() => close()}
                   >
                     Travel
                   </Link>
                   <Link
                     className={
-                      pathname == "/about/recipes"
+                      pathname == "/more/recipes"
                         ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
                         : "text-base text-neutral-500 hover:text-neutral-600"
                     }
-                    href="/about/recipes"
+                    href="/more/recipes"
                     onClick={() => close()}
                   >
                     Recipes
                   </Link>
                   <Link
                     className={
-                      pathname == "/about/thoughts"
+                      pathname == "/more/stories"
                         ? "text-base font-bold text-neutral-500 hover:text-neutral-600"
                         : "text-base text-neutral-500 hover:text-neutral-600"
                     }
-                    href="/about/thoughts"
+                    href="/more/stories"
                     onClick={() => close()}
                   >
-                    Thoughts
+                    Stories
+                  </Link>
+                  <Link
+                    className={
+                      "rounded-md border border-neutral-500 py-2 px-3 text-sm text-neutral-500  transition duration-300 hover:border-neutral-600 hover:text-neutral-600"
+                    }
+                    href="/"
+                    onClick={() => close()}
+                  >
+                    <div className="flex flex-row items-center justify-center">
+                      <p>Back</p> <BsArrowRightShort size={16} />
+                    </div>
                   </Link>
                   <div>
                     <ul className="flex flex-row items-center space-x-3">

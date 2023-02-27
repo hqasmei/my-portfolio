@@ -3,7 +3,7 @@ import Footer from "@/components/Footer/Footer"
 
 export default function Home() {
   return (
-    <section className="bg-neutral-900">
+    <section className="bg-black">
       <Navbar />
       <main className="mx-auto min-h-screen text-left">
         <div className="px-8 py-64 sm:px-28 md:px-64 md:py-52">
@@ -19,7 +19,7 @@ export default function Home() {
           </p>
         </div>
       </main>
-      <Footer />
+      <Footer isDark={false} />
     </section>
   )
 }

@@ -15,10 +15,10 @@ export default function AboutLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className="bg-neutral-900">
+    <section className="bg-black">
       <Navbar />
       {children}
-      <Footer />
+      <Footer isDark={false} />
     </section>
   )
 }

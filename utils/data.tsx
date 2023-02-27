@@ -8,8 +8,6 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai"
 
-import { FaDev } from "react-icons/fa"
-
 export const FEATURED_PROJECTS = [
   {
     name: "Thankful Thoughts",

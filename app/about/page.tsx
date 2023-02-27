@@ -31,7 +31,7 @@ export default function AboutPage() {
               From making YouTube videos, reading, watching soccer and
               traveling. I am always seeking new experiences and learning new
               things. I believe that you should{" "}
-              <span className="text-lg font-semibold leading-7">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-lg font-semibold text-transparent">
                 never stop growing
               </span>{" "}
               and that&#39;s what I strive to do 🙂.
