@@ -39,8 +39,8 @@ const MoreNavbar = () => {
                 className="h-6 w-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
                 />
               </svg>

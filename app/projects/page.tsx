@@ -22,13 +22,13 @@ export default function ProjectsPage() {
             {FEATURED_PROJECTS.map((item, idx) => {
               return (
                 <Link key={idx} href={item.link} target="_blank">
-                  <div className="mx-auto max-w-md rounded-lg bg-white shadow hover:bg-neutral-200">
+                  <div className="mx-auto max-w-md rounded-lg bg-neutral-800 shadow hover:bg-neutral-700">
                     <div className="p-4">
                       {item.icon}
-                      <h3 className="text-xl font-medium text-neutral-900">
+                      <h3 className="text-xl font-medium text-neutral-100">
                         {item.name}
                       </h3>
-                      <p className="mt-1 text-neutral-500">
+                      <p className="mt-1 text-neutral-400">
                         {item.description}
                       </p>
                     </div>

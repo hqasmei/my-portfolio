@@ -1,6 +1,6 @@
 import React from "react"
 import { TbHeartHandshake, TbSoccerField } from "react-icons/tb"
-import { IoMdPhotos } from "react-icons/io"
+import { IoBookOutline } from "react-icons/io5"
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
@@ -11,21 +11,21 @@ import {
 export const FEATURED_PROJECTS = [
   {
     name: "Thankful Thoughts",
-    icon: <TbHeartHandshake size={30} className="text-neutral-500 " />,
+    icon: <TbHeartHandshake size={30} className="text-neutral-100 " />,
     description: "A gratitude and positive thoughts generator.",
     link: "https://thankfulthoughts.io/",
   },
   {
     name: "SportsTable",
-    icon: <TbSoccerField size={30} className="text-neutral-500 " />,
+    icon: <TbSoccerField size={30} className="text-neutral-100 " />,
     description: "All sports highlights in one place.",
     link: "https://sportstable.io/",
   },
   {
-    name: "Kator Family Photos",
-    icon: <IoMdPhotos size={30} className="text-neutral-500 " />,
-    description: "A service that digitizes photo albums and films.",
-    link: "https://katorfamilyphotos.com/",
+    name: "PlatoIO",
+    icon: <IoBookOutline size={30} className="text-neutral-100 " />,
+    description: "One stop shop for Plato quotes.",
+    link: "https://platoio.com/",
   },
 ]
 
@@ -33,6 +33,10 @@ export const ALL_PROJECTS = [
   {
     section: "2023",
     data: [
+      {
+        name: "PlatoIO",
+        link: "https://platoio.com/",
+      },
       {
         name: "Thankful Thoughts",
         link: "https://thankfulthoughts.io/",
