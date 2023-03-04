@@ -15,7 +15,7 @@ export default function ResourcesLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className="bg-black">
+    <section className="bg-black ">
       <Navbar />
       {children}
       <Footer isDark={false} />

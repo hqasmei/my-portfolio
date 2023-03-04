@@ -3,9 +3,9 @@ import Footer from "@/components/Footer/Footer"
 
 export default function Home() {
   return (
-    <section className="bg-black">
+    <section className="flex h-screen flex-col bg-black">
       <Navbar />
-      <main className="mx-auto min-h-screen text-left">
+      <main className="mx-auto flex-1 text-left">
         <div className="px-8 py-64 sm:px-28 md:px-64 md:py-52">
           <h1 className="pb-4 text-4xl font-bold text-white md:text-6xl">
             Hosna Qasmei.
