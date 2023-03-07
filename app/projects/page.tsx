@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "next/link" 
+import Link from "next/link"
 import { FEATURED_PROJECTS, ALL_PROJECTS } from "@/utils/data"
 
 export default function ProjectsPage() {
@@ -8,12 +8,12 @@ export default function ProjectsPage() {
   )
 
   return (
-    <main className="mx-auto min-h-screen max-w-3xl px-6 text-neutral-100 md:max-w-5xl">
-      <div className="py-24 sm:px-28 sm:py-28">
-        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent   md:pb-4 md:text-6xl">
+    <main className="mx-auto w-full flex  max-w-3xl flex-1">
+      <div className="pt-24 sm:pt-28">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent text-center  md:pb-4 md:text-6xl">
           Projects.
         </h1>
-        <p className="pb-4 text-xl text-neutral-300">
+        <p className="pb-4 text-xl text-neutral-300 text-center ">
           Here are a few side projects I&#39;ve been working on. Check them out!
         </p>
         <section>
@@ -34,41 +34,6 @@ export default function ProjectsPage() {
                     </div>
                   </div>
                 </Link>
-              )
-            })}
-          </div>
-        </section>
-
-        <section className="mt-10">
-          <h1 className="mb-4 text-xl font-semibold">All Projects</h1>
-          <div>
-            {sortedArr.map((item, idx) => {
-              const sortedSubArr = item.data
-              return (
-                <>
-                  <h1 key={idx} className="mb-2 text-lg font-semibold">
-                    {item.section}
-                  </h1>
-                  <div className="text-secondary-500 pb-4 ">
-                    <ul className="ml-8 list-disc space-y-2 text-neutral-100">
-                      {sortedSubArr.map((i, i_idx) => {
-                        return (
-                          <li key={i_idx} className="">
-                            <p>
-                              <a
-                                href={i.link}
-                                target="_blank"
-                                className="underline hover:text-neutral-300"
-                              >
-                                {i.name}
-                              </a>
-                            </p>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                  </div>
-                </>
               )
             })}
           </div>

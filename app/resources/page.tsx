@@ -4,12 +4,12 @@ import { RESOURCES } from "@/utils/data"
 export default function ResourcesPage() {
   const sortedArr = RESOURCES.sort((a, b) => a.section.localeCompare(b.section))
   return (
-    <main className="mx-auto flex-1 max-w-3xl px-6  md:max-w-5xl">
-      <div className="py-24 sm:px-28 sm:py-28">
-        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent  md:pb-4 md:text-6xl">
+    <main className="mx-auto w-full flex  max-w-3xl flex-1">
+      <div className="pt-24 sm:pt-28">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent  md:pb-4 md:text-6xl text-center">
           Resources.
         </h1>
-        <p className="text-md pb-4 leading-5 text-neutral-100  sm:text-xl">
+        <p className="text-md pb-4 leading-5 text-neutral-100  sm:text-xl text-center">
           Here are a few resources I&#39;ve have compiled along the way that I
           reference frequently and find very useful. It&#39;s a work in
           progress.

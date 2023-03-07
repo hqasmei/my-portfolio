@@ -1,5 +1,7 @@
 import "../styles/globals.css"
 import type { Metadata } from "next"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Hosna Qasmei",
@@ -18,7 +20,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className="flex h-screen flex-col bg-black">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

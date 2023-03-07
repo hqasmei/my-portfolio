@@ -4,9 +4,9 @@ import { EXPERIENCE } from "@/utils/data"
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-3xl px-6 text-left md:max-w-5xl">
-      <div className="flex flex-col space-y-4 py-24 sm:px-28 sm:py-28 md:space-y-0  ">
-        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent  md:pb-4 md:text-6xl">
+    <main className="mx-auto w-full flex  max-w-3xl flex-1">
+      <div className="flex flex-col space-y-4 py-24   sm:py-28 md:space-y-0">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent  md:pb-4 md:text-6xl text-center">
           About Me.
         </h1>
         <div className="flex flex-col space-y-5 sm:items-center sm:justify-center  md:flex-row md:space-y-0 md:space-x-4  ">
