@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="mx-auto w-full flex  max-w-3xl flex-1">
-      <div className=" py-64  md:py-52">
+      <div className="text-center py-64 px-6 md:py-52 md:px-0 md:text-left">
         <h1 className="pb-4 text-4xl font-bold text-white md:text-6xl">
           Hosna Qasmei.
         </h1>

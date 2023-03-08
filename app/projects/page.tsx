@@ -9,7 +9,7 @@ export default function ProjectsPage() {
 
   return (
     <main className="mx-auto w-full flex  max-w-3xl flex-1">
-      <div className="pt-24 sm:pt-28">
+      <div className="pt-24 sm:pt-28 text-center px-6 md:px-0 md:text-left">
         <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent text-center  md:pb-4 md:text-6xl">
           Projects.
         </h1>
@@ -22,9 +22,9 @@ export default function ProjectsPage() {
             {FEATURED_PROJECTS.map((item, idx) => {
               return (
                 <Link key={idx} href={item.link} target="_blank">
-                  <div className="mx-auto max-w-md rounded-lg bg-neutral-800 shadow hover:bg-neutral-700">
-                    <div className="p-4">
-                      {item.icon}
+                  <div className="mx-auto p-4 flex flex-row space-x-4 md:space-x-0 md:flex-col max-w-md rounded-lg bg-neutral-800 shadow hover:bg-neutral-700 text-left">
+                    <div className="flex items-center justify-center md:justify-start">{item.icon}</div>
+                    <div>
                       <h3 className="text-xl font-medium text-neutral-100">
                         {item.name}
                       </h3>

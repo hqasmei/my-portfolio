@@ -10,15 +10,20 @@ const Navbar = () => {
       <nav className="mx-auto flex max-w-3xl my-4 items-center justify-between px-6 md:px-0">
         <div className="flex">
           <Link href="/">
-            <Image
-              src="/light-logo.png"
-              alt=""
-              width={40}
-              height={40} 
-            />
+            <Image src="/light-logo.png" alt="" width={40} height={40} />
           </Link>
         </div>
         <div className="flex">
+          <Link
+            className={
+              pathname == "/about"
+                ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300"
+                : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
+            }
+            href="/about"
+          >
+            About
+          </Link>
           <Link
             className={
               pathname == "/projects"
@@ -39,16 +44,6 @@ const Navbar = () => {
             href="/resources"
           >
             Resources
-          </Link>
-          <Link
-            className={
-              pathname == "/about"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300"
-                : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
-            }
-            href="/about"
-          >
-            About Me
           </Link>
         </div>
       </nav>

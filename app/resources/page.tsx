@@ -5,7 +5,7 @@ export default function ResourcesPage() {
   const sortedArr = RESOURCES.sort((a, b) => a.section.localeCompare(b.section))
   return (
     <main className="mx-auto w-full flex  max-w-3xl flex-1">
-      <div className="pt-24 sm:pt-28">
+      <div className="pt-24 sm:pt-28 px-6 md:px-0">
         <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent  md:pb-4 md:text-6xl text-center">
           Resources.
         </h1>
