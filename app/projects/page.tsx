@@ -1,12 +1,8 @@
 import React from "react"
 import Link from "next/link"
-import { FEATURED_PROJECTS, ALL_PROJECTS } from "@/utils/data"
+import { PROJECTS } from "@/utils/data"
 
 export default function ProjectsPage() {
-  const sortedArr = ALL_PROJECTS.sort((a, b) =>
-    b.section.localeCompare(a.section)
-  )
-
   return (
     <main className="mx-auto w-full flex  max-w-3xl flex-1">
       <div className="pt-24 sm:pt-28 text-center px-6 md:px-0 md:text-left">
@@ -19,11 +15,13 @@ export default function ProjectsPage() {
         <section>
           <h1 className="mb-4 text-xl font-semibold">Featured Projects</h1>
           <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 ">
-            {FEATURED_PROJECTS.map((item, idx) => {
+            {PROJECTS.map((item, idx) => {
               return (
                 <Link key={idx} href={item.link} target="_blank">
                   <div className="mx-auto p-4 flex flex-row space-x-4 md:space-x-0 md:flex-col max-w-md rounded-lg bg-neutral-800 shadow hover:bg-neutral-700 text-left">
-                    <div className="flex items-center justify-center md:justify-start">{item.icon}</div>
+                    <div className="flex items-center justify-center md:justify-start">
+                      {item.icon}
+                    </div>
                     <div>
                       <h3 className="text-xl font-medium text-neutral-100">
                         {item.name}

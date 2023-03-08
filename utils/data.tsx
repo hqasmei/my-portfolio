@@ -1,6 +1,7 @@
 import React from "react"
 import { TbHeartHandshake, TbSoccerField } from "react-icons/tb"
 import { IoBookOutline } from "react-icons/io5"
+import { MdComputer } from "react-icons/md"
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
@@ -8,7 +9,18 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai"
 
-export const FEATURED_PROJECTS = [
+import { MdOutlineSportsSoccer } from "react-icons/md"
+import { ImBooks } from "react-icons/im"
+import { RiQuillPenLine } from "react-icons/ri"
+import { FaHiking } from "react-icons/fa"
+
+export const PROJECTS = [
+  {
+    name: "My Portfolio",
+    icon: <MdComputer size={30} className="text-neutral-100 " />,
+    description: "My personal website made from scratch.",
+    link: "https://hosnaqasmei.com/",
+  },
   {
     name: "Thankful Thoughts",
     icon: <TbHeartHandshake size={30} className="text-neutral-100 " />,
@@ -26,36 +38,6 @@ export const FEATURED_PROJECTS = [
     icon: <IoBookOutline size={30} className="text-neutral-100 " />,
     description: "One stop shop for Plato quotes.",
     link: "https://platoio.com/",
-  },
-]
-
-export const ALL_PROJECTS = [
-  {
-    section: "2023",
-    data: [
-      {
-        name: "PlatoIO",
-        link: "https://platoio.com/",
-      },
-      {
-        name: "Thankful Thoughts",
-        link: "https://thankfulthoughts.io/",
-      },
-      {
-        name: "Kator Family Photos",
-        link: "https://katorfamilyphotos.com/",
-      },
-    ],
-  },
-
-  {
-    section: "2022",
-    data: [
-      {
-        name: "SportsTable",
-        link: "https://sportstable.io/",
-      },
-    ],
   },
 ]
 
@@ -344,45 +326,6 @@ export const RESOURCES = [
   },
 ]
 
-export const SOCIALS_DARK = [
-  {
-    link: "https://github.com/hqasmei",
-    icon: (
-      <AiOutlineGithub
-        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 hover:text-neutral-600 "
-        size={25}
-      />
-    ),
-  },
-  {
-    link: "https://twitter.com/hqasmei",
-    icon: (
-      <AiOutlineTwitter
-        className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1  hover:text-neutral-600"
-        size={25}
-      />
-    ),
-  },
-  {
-    link: "https://www.linkedin.com/in/hosnaqasmei/",
-    icon: (
-      <AiOutlineLinkedin
-        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-600"
-        size={25}
-      />
-    ),
-  },
-  {
-    link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
-    icon: (
-      <AiOutlineYoutube
-        className="cursor-pointer text-neutral-500 transition-transform  hover:-translate-y-1 hover:text-neutral-600"
-        size={25}
-      />
-    ),
-  },
-]
-
 export const SOCIALS = [
   {
     link: "https://github.com/hqasmei",
@@ -446,5 +389,28 @@ export const EXPERIENCE = [
     period: "Jan 2020 – Dec 2020",
     time: "1 yr",
     link: "https://www.teledyneimaging.com/en/home/",
+  },
+]
+
+export const INTERESTS = [
+  {
+    title: "Books",
+    slug: "books",
+    icon: <ImBooks size={30} />,
+  },
+  {
+    title: "Writing",
+    slug: "writing",
+    icon: <RiQuillPenLine size={30} />,
+  },
+  {
+    title: "Sports",
+    slug: "sports",
+    icon: <MdOutlineSportsSoccer size={30} />,
+  },
+  {
+    title: "Hiking",
+    slug: "hiking",
+    icon: <FaHiking size={30} />,
   },
 ]
