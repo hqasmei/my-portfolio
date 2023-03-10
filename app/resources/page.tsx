@@ -14,13 +14,13 @@ export default function ResourcesPage() {
         <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-4xl font-bold text-transparent  md:pb-4 md:text-6xl text-center">
           Resources.
         </h1>
-        <p className="text-md pb-4 leading-5 text-neutral-100  sm:text-xl text-center">
+        <p className="text-md pb-4 leading-5 text-stone-100  sm:text-xl text-center">
           Here are a few resources I&#39;ve have compiled along the way that I
           reference frequently and find very useful. It&#39;s a work in
           progress.
         </p>
         <div className="mx-auto">
-          <div className="text-semibold divide-y divide-neutral-100 text-neutral-100">
+          <div className="text-semibold divide-y divide-stone-100 text-stone-100">
             {sortedArr.map((item, idx) => {
               const sortedSubArr = item.data.sort((a, b) =>
                 a.name.localeCompare(b.name)
@@ -47,7 +47,7 @@ export default function ResourcesPage() {
                     </div>
                   </summary>
                   <div className="text-secondary-500 pb-4">
-                    <ul className="ml-8 list-disc text-neutral-100 ">
+                    <ul className="ml-8 list-disc text-stone-100 ">
                       {sortedSubArr.map((i, i_idx) => {
                         return (
                           <li key={i_idx} className="">
@@ -56,7 +56,7 @@ export default function ResourcesPage() {
                               <a
                                 href={i.link}
                                 target="_blank"
-                                className="underline hover:text-neutral-400"
+                                className="underline hover:text-stone-400"
                               >
                                 {i.name}
                               </a>

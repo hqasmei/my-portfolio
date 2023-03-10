@@ -17,8 +17,8 @@ const Navbar = () => {
           <Link
             className={
               pathname == "/about"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300"
-                : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
+                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300"
+                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
             }
             href="/about"
           >
@@ -27,8 +27,8 @@ const Navbar = () => {
           <Link
             className={
               pathname == "/projects"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300 "
-                : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
+                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300 "
+                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
             }
             href="/projects"
           >
@@ -38,8 +38,8 @@ const Navbar = () => {
           <Link
             className={
               pathname == "/resources"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-neutral-50 transition duration-300 "
-                : "rounded-md py-2 px-3 text-sm text-neutral-400  transition duration-300  hover:text-neutral-50"
+                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300 "
+                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
             }
             href="/resources"
           >

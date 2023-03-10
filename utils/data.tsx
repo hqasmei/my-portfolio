@@ -18,31 +18,31 @@ import { FaHiking } from "react-icons/fa"
 export const PROJECTS = [
   {
     name: "My Portfolio",
-    icon: <MdComputer size={30} className="text-neutral-100 " />,
+    icon: <MdComputer size={30} className="text-stone-100 " />,
     description: "My personal website made from scratch.",
     link: "https://hosnaqasmei.com/",
   },
   {
     name: "Blog Template",
-    icon: <HiOutlineTemplate size={30} className="text-neutral-100 " />,
+    icon: <HiOutlineTemplate size={30} className="text-stone-100 " />,
     description: "Blog template using Next.js 13.2 and Tailwind CSS.",
     link: "https://nextjs13-2-blog.vercel.app/blog/",
   },
   {
     name: "Thankful Thoughts",
-    icon: <TbHeartHandshake size={30} className="text-neutral-100 " />,
+    icon: <TbHeartHandshake size={30} className="text-stone-100 " />,
     description: "A gratitude and positive thoughts generator.",
     link: "https://thankfulthoughts.io/",
   },
   {
     name: "SportsTable",
-    icon: <TbSoccerField size={30} className="text-neutral-100 " />,
+    icon: <TbSoccerField size={30} className="text-stone-100 " />,
     description: "All sports highlights in one place.",
     link: "https://sportstable.io/",
   },
   {
     name: "PlatoIO",
-    icon: <IoBookOutline size={30} className="text-neutral-100 " />,
+    icon: <IoBookOutline size={30} className="text-stone-100 " />,
     description: "One stop shop for Plato quotes.",
     link: "https://platoio.com/",
   },

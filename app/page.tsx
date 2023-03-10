@@ -8,7 +8,7 @@ export default function Home() {
         <p className="text-xl font-semibold text-white md:pb-1 md:text-3xl">
           Full Stack Developer & YouTube Content Creator
         </p>
-        <p className="text-lg  text-neutral-300  md:text-xl">
+        <p className="text-lg  text-stone-300  md:text-xl">
           Passionate about developing software for an easier and meaningful
           living.
         </p>

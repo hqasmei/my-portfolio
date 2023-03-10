@@ -16,7 +16,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons, setFilter }) => {
         <button
           key={key}
           onClick={() => handleClick(key)}
-          className="px-4 py-2 bg-neutral-900 text-white rounded-lg shadow-lg hover:bg-neutral-800"
+          className="px-4 py-2 bg-stone-800 text-white rounded-lg shadow-lg hover:bg-stone-700"
         >
           {key.charAt(0).toUpperCase() + key.slice(1)}
         </button>
