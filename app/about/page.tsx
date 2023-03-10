@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="flex flex-col space-y-5 items-center  md:flex-row md:space-y-0 md:space-x-4 ">
           <div className="md:mt-2 md:w-1/2">
             <Image
-              src="/headshot.png"
+              src="https://res.cloudinary.com/duud9d8dv/image/upload/v1678433693/hosna-qasmei_sueokm.png"
               alt=""
               width={350}
               height={350}
