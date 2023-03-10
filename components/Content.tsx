@@ -44,9 +44,9 @@ const Content: React.FC<ContentProps> = ({ posts, tags, params }) => {
   }, [filter])
 
   return (
-    <div className="max-w-3xl">
-      {/* <ButtonGroup buttons={tags} setFilter={setFilter} /> */}
-      <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3 mb-4">
+    <>
+      <ButtonGroup buttons={tags} setFilter={setFilter} />
+      <div className="max-w-3xl grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3">
         {currentPosts?.map((post) => (
           <div
             key={post?.title}
@@ -77,7 +77,7 @@ const Content: React.FC<ContentProps> = ({ posts, tags, params }) => {
         postsPerPage={postsPerPage}
         setPostsPerPage={setPostsPerPage}
       />
-    </div>
+    </>
   )
 }
 
