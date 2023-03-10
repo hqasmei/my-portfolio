@@ -11,14 +11,23 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons, setFilter }) => {
   }
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex overflow-x-auto space-x-4">
       {Object.keys(buttons).map((key) => (
         <button
           key={key}
           onClick={() => handleClick(key)}
           className="px-4 py-2 bg-stone-800 text-white rounded-lg shadow-lg hover:bg-stone-700"
         >
-          {key.charAt(0).toUpperCase() + key.slice(1)}
+          <div className="flex flex-row space-x-2 items-center">
+            <span className="text-sm md:text-md">
+              {key.charAt(0).toUpperCase() + key.slice(1)}{" "}
+            </span>
+            <span className="text-sm md:text-md">
+              {" ("}
+              {buttons[key]}
+              {")"}
+            </span>
+          </div>
         </button>
       ))}
     </div>

@@ -13,15 +13,15 @@ const BlogPage = async ({ params }: { params: { id: string } }) => {
 
   return (
     <main className="mx-auto w-full flex  max-w-3xl flex-1">
-      <div className="flex flex-col space-y-4 py-24 px-6 md:px-0 sm:py-28 md:space-y-4 flex-grow">
+      <div className="flex flex-col space-y-4 py-24 px-6 md:px-0 sm:py-28 md:space-y-4  ">
         <Link href="/about" className="text-stone-300 group">
           <div className="flex flex-row space-x-2 items-center group-hover:text-stone-400">
             <BsArrowBarLeft size={25} />
-            <p className="text-lg"> About</p>
+            <p className="md:text-lg"> About</p>
           </div>
         </Link>
 
-        <h1 className="text-white text-4xl font-bold md:pb-4 md:text-6xl ">
+        <h1 className="text-white text-4xl font-bold md:text-6xl ">
           {params.id.charAt(0).toUpperCase() + params.id.slice(1)}
         </h1>
 

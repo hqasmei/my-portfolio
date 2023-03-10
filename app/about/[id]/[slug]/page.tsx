@@ -21,7 +21,7 @@ const Page = async ({ params }: { params: { id: string; slug: string } }) => {
 
   return (
     <main className="mx-auto w-full flex  max-w-3xl flex-1">
-      <div className="flex flex-col space-y-4 py-24 px-6 md:px-0 sm:py-28 md:space-y-4 flex-grow">
+      <div className="flex flex-col space-y-4 py-24 px-6 md:px-0 sm:py-28 md:space-y-4 absolute">
         <Link href={`about/${params.id}`} className="text-stone-300 group">
           <div className="flex flex-row space-x-2 items-center group-hover:text-stone-400">
             <BsArrowBarLeft size={25} />
@@ -31,7 +31,6 @@ const Page = async ({ params }: { params: { id: string; slug: string } }) => {
           </div>
         </Link>
 
-        <h1 className="prose prose-invert prose-stone-100">{meta.title}</h1>
         <div className="py-4 mx-2 prose prose-invert">{content}</div>
       </div>
     </main>
