@@ -1,4 +1,5 @@
 import React from "react"
+import { HiOutlineTemplate } from "react-icons/hi"
 import { TbHeartHandshake, TbSoccerField } from "react-icons/tb"
 import { IoBookOutline } from "react-icons/io5"
 import { MdComputer } from "react-icons/md"
@@ -20,6 +21,12 @@ export const PROJECTS = [
     icon: <MdComputer size={30} className="text-neutral-100 " />,
     description: "My personal website made from scratch.",
     link: "https://hosnaqasmei.com/",
+  },
+  {
+    name: "Blog Template",
+    icon: <HiOutlineTemplate size={30} className="text-neutral-100 " />,
+    description: "Blog template using Next.js 13.2 and Tailwind CSS.",
+    link: "https://nextjs13-2-blog.vercel.app/blog/",
   },
   {
     name: "Thankful Thoughts",
@@ -402,15 +409,5 @@ export const INTERESTS = [
     title: "Writing",
     slug: "writing",
     icon: <RiQuillPenLine size={30} />,
-  },
-  {
-    title: "Sports",
-    slug: "sports",
-    icon: <MdOutlineSportsSoccer size={30} />,
-  },
-  {
-    title: "Hiking",
-    slug: "hiking",
-    icon: <FaHiking size={30} />,
   },
 ]

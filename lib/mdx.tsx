@@ -5,7 +5,7 @@ import { compileMDX } from "next-mdx-remote/rsc"
 type PostMeta = {
   title?: string
   author?: string
-  publishDate?: string
+  tags?: string[]
   slug?: string
 }
 
