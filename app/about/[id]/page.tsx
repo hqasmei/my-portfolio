@@ -20,7 +20,6 @@ const BlogPage = async ({ params }: { params: { id: string } }) => {
             <p className="md:text-lg"> About</p>
           </div>
         </Link>
-
         <h1 className="text-white text-4xl font-bold md:text-6xl ">
           {params.id.charAt(0).toUpperCase() + params.id.slice(1)}
         </h1>

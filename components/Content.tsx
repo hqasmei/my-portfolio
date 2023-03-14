@@ -15,11 +15,6 @@ type PostMeta = {
   slug?: string
 }
 
-type Post = {
-  meta: PostMeta
-  content: any
-}
-
 interface ContentProps {
   posts: PostMeta[]
   tags: Tags
@@ -46,32 +41,58 @@ const Content: React.FC<ContentProps> = ({ posts, tags, params }) => {
   return (
     <>
       <ButtonGroup buttons={tags} setFilter={setFilter} />
-      <div className="max-w-3xl grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {currentPosts?.map((post) => (
-          <div
-            key={post?.title}
-            className=" bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300 hover:bg-opacity-30 text-white"
-          >
-            <Link href={`about/${params.id}/${post.slug}`} className=" ">
-              <div className="flex items-center space-x-4 flew-row md:flex-col  md:space-x-0 md:items-start md:jumd:space-y-4">
-                <Image
-                  src={post.image!}
-                  alt=""
-                  width={100}
-                  height={100}
-                  className="rounded-xl"
-                />
-                <div className="w-full md:w-3/4 ">
-                  <h1 className="text-xl md:text-2xl font-semibold">
-                    {post.title}
-                  </h1>
-                  <p className="text-sm">{post.author}</p>
+
+      {params.id === "books" && (
+        <div className="max-w-3xl grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-3">
+          {currentPosts?.map((post) => (
+            <div
+              key={post?.title}
+              className=" bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300 hover:bg-opacity-10 text-white"
+            >
+              <Link href={`about/${params.id}/${post.slug}`} className=" ">
+                <div className="flex items-center space-x-4 flew-row md:flex-col  md:space-x-0 md:items-start md:jumd:space-y-4">
+                  <Image
+                    src={post.image!}
+                    alt=""
+                    width={100}
+                    height={100}
+                    className="rounded-xl"
+                  />
+                  <div className="w-full md:w-3/4 ">
+                    <h1 className="text-xl md:text-2xl font-semibold">
+                      {post.title}
+                    </h1>
+                    <p className="text-sm">{post.author}</p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {params.id === "writing" && (
+        <div className="max-w-3xl grid grid-cols-1 md:grid-cols-2 items-stretch gap-4">
+          {currentPosts?.map((post) => (
+            <div
+              key={post?.title}
+              className=" bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300 hover:bg-opacity-10 text-white"
+            >
+              <Link href={`about/${params.id}/${post.slug}`}>
+                <div className="flex  items-center space-x-4 flew-row md:flex-col  md:space-x-0 md:items-start md:jumd:space-y-4">
+                  <div className="w-full md:w-3/4 ">
+                    <h1 className="text-xl md:text-2xl font-semibold">
+                      {post.title}
+                    </h1>
+                    <p className="text-sm">{post.author}</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
+
       <Pagination
         totalPosts={data.length}
         postsPerPage={postsPerPage}
