@@ -34,7 +34,16 @@ const Navbar = () => {
           >
             Projects
           </Link>
-
+          <Link
+            className={
+              pathname == "/book-notes"
+                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300 "
+                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
+            }
+            href="/book-notes"
+          >
+            Book Notes
+          </Link>
           <Link
             className={
               pathname == "/resources"

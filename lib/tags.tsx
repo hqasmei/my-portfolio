@@ -1,11 +1,11 @@
 import fs from "fs"
 import path from "path"
-import { getAllPostsMeta } from "./mdx"
+import { getAllBooksMeta } from "./mdx"
 
 type Tags = Record<string, number>
 
-export async function getAllTags(type: string): Promise<Tags> {
-  const files = await getAllPostsMeta(type)
+export async function getAllTags(): Promise<Tags> {
+  const files = await getAllBooksMeta("books")
 
   let tagCount: Tags = {}
   // Iterate through each post, putting all found tags into tags

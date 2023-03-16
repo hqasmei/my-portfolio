@@ -1,45 +1,45 @@
-import fs from "fs"
-import path from "path"
-import { compileMDX } from "next-mdx-remote/rsc"
+import fs from "fs";
+import path from "path";
+import { compileMDX } from "next-mdx-remote/rsc";
 
-type PostMeta = {
-  title?: string
-  author?: string
-  tags?: string[]
-  slug?: string
-}
+type BookMeta = {
+  title?: string;
+  author?: string;
+  tags?: string[];
+  slug?: string;
+};
 
-type Post = {
-  meta: PostMeta
-  content: any
-}
+type Book = {
+  meta: BookMeta;
+  content: any;
+};
 
-export async function getPostBySlug(id: string, slug: string): Promise<Post> {
-  const rootDirectory = path.join(process.cwd(), "content", `${id}`)
-  const realSlug = slug.replace(/\.mdx$/, "")
-  const filePath = path.join(rootDirectory, `${realSlug}.mdx`)
+export async function getBookBySlug(id: string, slug: string): Promise<Book> {
+  const rootDirectory = path.join(process.cwd(), "content", `${id}`);
+  const realSlug = slug.replace(/\.mdx$/, "");
+  const filePath = path.join(rootDirectory, `${realSlug}.mdx`);
 
-  const fileContent = fs.readFileSync(filePath, { encoding: "utf8" })
+  const fileContent = fs.readFileSync(filePath, { encoding: "utf8" });
 
   const { frontmatter, content } = await compileMDX({
     source: fileContent,
     options: { parseFrontmatter: true },
-  })
+  });
 
-  return { meta: { ...frontmatter, slug: realSlug }, content }
+  return { meta: { ...frontmatter, slug: realSlug }, content };
 }
 
-export const getAllPostsMeta = async (slug: string): Promise<PostMeta[]> => {
-  const rootDirectory = path.join(process.cwd(), "content", `${slug}`)
+export const getAllBooksMeta = async (slug: string): Promise<BookMeta[]> => {
+  const rootDirectory = path.join(process.cwd(), "content", `${slug}`);
 
-  const files = await fs.promises.readdir(rootDirectory)
+  const files = await fs.promises.readdir(rootDirectory);
 
-  let posts: PostMeta[] = []
+  let books: BookMeta[] = [];
 
   for (const file of files) {
-    const { meta } = await getPostBySlug(slug, file)
-    posts.push(meta)
+    const { meta } = await getBookBySlug(slug, file);
+    books.push(meta);
   }
 
-  return posts
-}
+  return books;
+};

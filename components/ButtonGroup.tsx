@@ -13,7 +13,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons, setFilter }) => {
   return (
     <div className="max-w-3xl">
       <div className="overflow-x-auto flex pb-4 md:pb-0">
-        <div className="flex-none space-x-4">
+        <div className="flex-none space-x-4 mb-4">
           {Object.keys(buttons).map((key) => (
             <button
               key={key}
