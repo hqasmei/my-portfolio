@@ -1,21 +1,20 @@
-import React from "react"
-import { HiOutlineTemplate } from "react-icons/hi"
-import { TbHeartHandshake, TbSoccerField } from "react-icons/tb"
-import { IoBookOutline } from "react-icons/io5"
-import { MdComputer } from "react-icons/md"
+import React from "react";
+import { HiOutlineTemplate } from "react-icons/hi";
+import { TbHeartHandshake, TbSoccerField } from "react-icons/tb";
+import { IoBookOutline } from "react-icons/io5";
+import { MdComputer } from "react-icons/md";
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
   AiOutlineLinkedin,
   AiOutlineYoutube,
-} from "react-icons/ai"
+} from "react-icons/ai";
 
-import { MdOutlineSportsSoccer } from "react-icons/md"
-import { ImBooks } from "react-icons/im"
-import { RiQuillPenLine } from "react-icons/ri"
-import { FaHiking } from "react-icons/fa"
+import { MdLanguage } from "react-icons/md";
+import { ImBooks } from "react-icons/im";
+import { RiQuillPenLine } from "react-icons/ri"; 
 
-export const PROJECTS = [
+export const WEB_APPS = [
   {
     name: "My Portfolio",
     icon: <MdComputer size={30} className="text-stone-100 " />,
@@ -46,7 +45,16 @@ export const PROJECTS = [
     description: "One stop shop for Plato quotes.",
     link: "https://platoio.com/",
   },
-]
+];
+
+export const MOBILE_APPS = [
+  {
+    name: "Yad Bigee",
+    icon: <MdLanguage size={30} className="text-stone-100 " />,
+    description: "Learn how to speak dari.",
+    link: "https://github.com/hqasmei/yad-bigee",
+  },
+];
 
 export const RESOURCES = [
   {
@@ -331,7 +339,7 @@ export const RESOURCES = [
       },
     ],
   },
-]
+];
 
 export const SOCIALS = [
   {
@@ -370,7 +378,7 @@ export const SOCIALS = [
       />
     ),
   },
-]
+];
 
 export const EXPERIENCE = [
   {
@@ -397,7 +405,7 @@ export const EXPERIENCE = [
     time: "1 yr",
     link: "https://www.teledyneimaging.com/en/home/",
   },
-]
+];
 
 export const INTERESTS = [
   {
@@ -410,4 +418,4 @@ export const INTERESTS = [
     slug: "writing",
     icon: <RiQuillPenLine size={30} />,
   },
-]
+];
