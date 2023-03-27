@@ -1,38 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yad Bigee 
 
-## Getting Started
+## Prerequisites
+Before you start, you will need the following tools installed on your machine:
 
-First, run the development server:
+- Node.js (version 12 or higher)
+- Expo CLI (you can install it by running npm install -g expo-cli in your terminal)
+- Git
 
+## Installation
+1. Clone the repository to your local machine by running the following command in your terminal:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone git@github.com:hqasmei/yad-bigee.git
+```
+2. Navigate to the project directory by running the following command in your terminal:
+```bash
+cd yad-bigee
+```
+3. Install dependencies by running the following command in your terminal:
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the app
+1. Start the development server by running the following command in your terminal:
+```bash
+npx expo start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. Once the development server starts, you will see a QR code in your terminal and in the Expo Dev Tools in your browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. To run the app on your iOS or Android device, download the Expo app from the App Store or Google Play.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Open the Expo app on your device and scan the QR code displayed in your terminal or Expo Dev Tools.
 
-## Learn More
+5. The app should open on your device.
 
-To learn more about Next.js, take a look at the following resources:
+## Troubleshooting
+- If you encounter any issues, try the following:
+- Make sure that your Node.js version is 12 or higher.
+- Make sure that you have Expo CLI installed.
+- Make sure that your iOS or Android device is connected to the same network as your development machine.
+- If you're having trouble with the QR code, you can also try running the app in a simulator or emulator on your machine. Expo provides detailed instructions on how to set this up in their documentation: Running On Device
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Conclusion
+Congratulations! You have successfully installed and run the React Native Expo app locally on your machine. If you have any questions or issues, please feel free to reach out to the project team.
