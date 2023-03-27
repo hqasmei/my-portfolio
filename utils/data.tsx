@@ -25,7 +25,7 @@ export const WEB_APPS = [
     name: "Blog Template",
     icon: <HiOutlineTemplate size={30} className="text-stone-100 " />,
     description: "Blog template using Next.js 13.2 and Tailwind CSS.",
-    link: "https://nextjs13-2-blog.vercel.app/blog/",
+    link: "https://nextjs13-2-blog.vercel.app/",
   },
   {
     name: "Thankful Thoughts",
