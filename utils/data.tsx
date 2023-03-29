@@ -1,32 +1,19 @@
-import React from "react";
-import { HiOutlineTemplate } from "react-icons/hi";
+import React from "react"; 
 import { TbHeartHandshake, TbSoccerField } from "react-icons/tb";
-import { IoBookOutline } from "react-icons/io5";
-import { MdComputer } from "react-icons/md";
+import { IoBookOutline } from "react-icons/io5"; 
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
   AiOutlineLinkedin,
   AiOutlineYoutube,
 } from "react-icons/ai";
+import { SiHashnode } from "react-icons/si";
 
 import { MdLanguage } from "react-icons/md";
 import { ImBooks } from "react-icons/im";
-import { RiQuillPenLine } from "react-icons/ri"; 
+import { RiQuillPenLine } from "react-icons/ri";
 
 export const WEB_APPS = [
-  {
-    name: "My Portfolio",
-    icon: <MdComputer size={30} className="text-stone-100 " />,
-    description: "My personal website made from scratch.",
-    link: "https://hosnaqasmei.com/",
-  },
-  {
-    name: "Blog Template",
-    icon: <HiOutlineTemplate size={30} className="text-stone-100 " />,
-    description: "Blog template using Next.js 13.2 and Tailwind CSS.",
-    link: "https://nextjs13-2-blog.vercel.app/",
-  },
   {
     name: "Thankful Thoughts",
     icon: <TbHeartHandshake size={30} className="text-stone-100 " />,
@@ -373,6 +360,15 @@ export const SOCIALS = [
     link: "https://www.linkedin.com/in/hosnaqasmei/",
     icon: (
       <AiOutlineLinkedin
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
+  },
+  {
+    link: "https://hqasmei.hashnode.dev/",
+    icon: (
+      <SiHashnode
         className="cursor-pointer text-white transition-transform hover:-translate-y-1"
         size={25}
       />
