@@ -1,6 +1,6 @@
-import React from "react"; 
+import React from "react";
 import { TbHeartHandshake, TbSoccerField } from "react-icons/tb";
-import { IoBookOutline } from "react-icons/io5"; 
+import { IoBookOutline } from "react-icons/io5";
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
@@ -357,18 +357,18 @@ export const SOCIALS = [
     ),
   },
   {
-    link: "https://www.linkedin.com/in/hosnaqasmei/",
+    link: "https://hqasmei.hashnode.dev/",
     icon: (
-      <AiOutlineLinkedin
+      <SiHashnode
         className="cursor-pointer text-white transition-transform hover:-translate-y-1"
         size={25}
       />
     ),
   },
   {
-    link: "https://hqasmei.hashnode.dev/",
+    link: "https://www.linkedin.com/in/hosnaqasmei/",
     icon: (
-      <SiHashnode
+      <AiOutlineLinkedin
         className="cursor-pointer text-white transition-transform hover:-translate-y-1"
         size={25}
       />
