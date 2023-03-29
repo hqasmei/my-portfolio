@@ -12,21 +12,9 @@ import {
 
 import { MdLanguage } from "react-icons/md";
 import { ImBooks } from "react-icons/im";
-import { RiQuillPenLine } from "react-icons/ri"; 
+import { RiQuillPenLine } from "react-icons/ri";
 
 export const WEB_APPS = [
-  {
-    name: "My Portfolio",
-    icon: <MdComputer size={30} className="text-stone-100 " />,
-    description: "My personal website made from scratch.",
-    link: "https://hosnaqasmei.com/",
-  },
-  {
-    name: "Blog Template",
-    icon: <HiOutlineTemplate size={30} className="text-stone-100 " />,
-    description: "Blog template using Next.js 13.2 and Tailwind CSS.",
-    link: "https://nextjs13-2-blog.vercel.app/",
-  },
   {
     name: "Thankful Thoughts",
     icon: <TbHeartHandshake size={30} className="text-stone-100 " />,
