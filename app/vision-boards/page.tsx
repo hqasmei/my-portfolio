@@ -9,7 +9,8 @@ export default function VisionBoardPage() {
           Vision Boards.
         </h1>
         <p className="pb-4 text-center text-xl text-stone-300 ">
-          Here are a few my vision boards I've made over that last few years.
+          Here are a few my vision boards I&#39;ve made over that last few
+          years.
         </p>
 
         <section className="mb-6">
