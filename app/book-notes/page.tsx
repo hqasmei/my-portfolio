@@ -13,16 +13,16 @@ const BookNotesPage = async () => {
   const tags = await getAllTags()
 
   return (
-    <main className="mx-auto w-full flex max-w-3xl flex-1">
-      <div className="flex flex-col space-y-4 py-24 px-6 md:px-0 sm:py-28 md:space-y-4  ">
-        <h1 className="text-white text-4xl font-bold md:text-6xl ">
-          Book Notes
+    <main className="mx-auto flex w-full max-w-3xl flex-1">
+      <div className="flex flex-col space-y-4 py-24 px-6 sm:py-28 md:space-y-4 md:px-0  ">
+        <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-center text-4xl font-bold text-transparent  md:pb-4 md:text-6xl">
+          Book Notes.
         </h1>
 
         <Content books={books} tags={tags} />
       </div>
     </main>
-  )
+  );
 }
 
 export default BookNotesPage

@@ -66,7 +66,7 @@ export const Navbar = () => {
           >
             Projects
           </Link>
-          <Link
+          {/* <Link
             className={
               pathname == "/book-notes"
                 ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300 "
@@ -75,7 +75,7 @@ export const Navbar = () => {
             href="/book-notes"
           >
             Book Notes
-          </Link>
+          </Link> */}
           <Link
             className={
               pathname == "/resources"
@@ -159,7 +159,7 @@ export const Navbar = () => {
                   >
                     Projects
                   </Link>
-                  <Link
+                  {/* <Link
                     className={
                       pathname == "/book-notes"
                         ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
@@ -168,7 +168,7 @@ export const Navbar = () => {
                     href="/book-notes"
                   >
                     Book Notes
-                  </Link>
+                  </Link> */}
                   <Link
                     className={
                       pathname == "/resources"
