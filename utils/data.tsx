@@ -7,7 +7,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineYoutube,
 } from "react-icons/ai";
-import { SiHashnode } from "react-icons/si";
+import { FaDev } from "react-icons/fa"; 
 
 import { MdLanguage } from "react-icons/md";
 import { ImBooks } from "react-icons/im";
@@ -339,6 +339,15 @@ export const SOCIALS = [
     ),
   },
   {
+    link: "https://dev.to/hqasmei",
+    icon: (
+      <FaDev
+        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
+        size={25}
+      />
+    ),
+  },
+  {
     link: "https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA",
     icon: (
       <AiOutlineYoutube
@@ -356,15 +365,7 @@ export const SOCIALS = [
       />
     ),
   },
-  {
-    link: "https://hqasmei.hashnode.dev/",
-    icon: (
-      <SiHashnode
-        className="cursor-pointer text-white transition-transform hover:-translate-y-1"
-        size={25}
-      />
-    ),
-  },
+
   {
     link: "https://www.linkedin.com/in/hosnaqasmei/",
     icon: (
