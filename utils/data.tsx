@@ -39,7 +39,7 @@ export const MOBILE_APPS = [
     name: "Yad Bigee",
     icon: <MdLanguage size={30} className="text-stone-100 " />,
     description: "Learn how to speak dari.",
-    link: "https://github.com/hqasmei/yad-bigee",
+    link: "https://yadbigee.com",
   },
 ];
 
