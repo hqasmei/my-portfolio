@@ -49,8 +49,8 @@ export const Navbar = () => {
           <Link
             className={
               pathname == "/about"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300"
-                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
+                ? "rounded-md px-3 py-2 text-sm font-bold text-stone-50 transition duration-300"
+                : "rounded-md px-3 py-2 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
             }
             href="/about"
           >
@@ -59,8 +59,8 @@ export const Navbar = () => {
           <Link
             className={
               pathname == "/projects"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300 "
-                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
+                ? "rounded-md px-3 py-2 text-sm font-bold text-stone-50 transition duration-300 "
+                : "rounded-md px-3 py-2 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
             }
             href="/projects"
           >
@@ -79,8 +79,8 @@ export const Navbar = () => {
           <Link
             className={
               pathname == "/resources"
-                ? "rounded-md py-2 px-3 text-sm font-bold text-stone-50 transition duration-300 "
-                : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
+                ? "rounded-md px-3 py-2 text-sm font-bold text-stone-50 transition duration-300 "
+                : "rounded-md px-3 py-2 text-sm text-stone-400  transition duration-300  hover:text-stone-50"
             }
             href="/resources"
           >
@@ -100,14 +100,14 @@ export const Navbar = () => {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+          className=" absolute right-0 top-0 p-4 w-56 origin-top-right transition md:hidden"
         >
           {({ close }) => (
             <div className="divide-y-2 divide-neutral-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-              <div className="px-5 pt-5 pb-6">
+              <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between">
                   <div>
-                    <Link href="/">
+                    <Link href="/" onClick={() => close()}>
                       <Image
                         src="/dark-logo.png"
                         alt=""
@@ -137,25 +137,27 @@ export const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="space-y-6 py-6 px-5">
-                <div className="grid grid-cols-1 gap-y-4 gap-x-8 text-right">
+              <div className="space-y-6 px-5 py-6">
+                <div className="grid grid-cols-1 gap-x-8 gap-y-4 text-right">
                   <Link
                     className={
                       pathname == "/about"
-                        ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
-                        : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
+                        ? "rounded-md px-3 py-2 text-sm font-bold text-stone-500 transition duration-300"
+                        : "rounded-md px-3 py-2 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
                     }
                     href="/about"
+                    onClick={() => close()}
                   >
                     About
                   </Link>
                   <Link
                     className={
                       pathname == "/projects"
-                        ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
-                        : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
+                        ? "rounded-md px-3 py-2 text-sm font-bold text-stone-500 transition duration-300"
+                        : "rounded-md px-3 py-2 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
                     }
                     href="/projects"
+                    onClick={() => close()}
                   >
                     Projects
                   </Link>
@@ -172,10 +174,11 @@ export const Navbar = () => {
                   <Link
                     className={
                       pathname == "/resources"
-                        ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
-                        : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
+                        ? "rounded-md px-3 py-2 text-sm font-bold text-stone-500 transition duration-300"
+                        : "rounded-md px-3 py-2 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
                     }
                     href="/resources"
+                    onClick={() => close()}
                   >
                     Resources
                   </Link>
