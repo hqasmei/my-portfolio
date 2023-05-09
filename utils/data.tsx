@@ -7,11 +7,13 @@ import {
   AiOutlineLinkedin,
   AiOutlineYoutube,
 } from "react-icons/ai";
-import { FaDev } from "react-icons/fa"; 
+import { FaDev } from "react-icons/fa";
 
 import { MdLanguage } from "react-icons/md";
 import { ImBooks } from "react-icons/im";
 import { RiQuillPenLine } from "react-icons/ri";
+import { BsEmojiHeartEyes } from "react-icons/bs";
+import { SiTailwindcss } from "react-icons/si";
 
 export const WEB_APPS = [
   {
@@ -31,6 +33,18 @@ export const WEB_APPS = [
     icon: <IoBookOutline size={30} className="text-stone-100 " />,
     description: "One stop shop for Plato quotes.",
     link: "https://platoio.com/",
+  },
+  {
+    name: "CaptionAI",
+    icon: <BsEmojiHeartEyes size={30} className="text-stone-100 " />,
+    description: "AI generated captions for your images.",
+    link: "https://captionai.vercel.app/",
+  },
+  {
+    name: "Tailwind CSS Portfolio",
+    icon: <SiTailwindcss size={30} className="text-stone-100 " />,
+    description: "A Next.js and Tailwind CSS Portfolio Website.",
+    link: "https://youtu.be/7gnVzj_nMJw",
   },
 ];
 
