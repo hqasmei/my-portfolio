@@ -201,7 +201,17 @@ export const RESOURCES = [
       {
         name: "Lorem Ipsum",
         description: "Placeholder text generator.",
-        link: " https://loremipsum.io/",
+        link: "https://loremipsum.io/",
+      },
+      {
+        name: "carbon",
+        description: "Create and share beautiful images of your source code.",
+        link: "https://carbon.now.sh/",
+      },
+      {
+        name: "Ray",
+        description: "Create images of your source code.",
+        link: "https://ray.so/",
       },
     ],
   },
