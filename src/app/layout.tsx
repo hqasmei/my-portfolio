@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Hosna Qasmei",
