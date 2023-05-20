@@ -37,6 +37,7 @@ const Home = () => {
             </p>
           </div>
 
+          
           <div className="flex items-center justify-center ">
             <Headshot className="rounded-full shadow-lg md:rounded-xl" />
           </div>

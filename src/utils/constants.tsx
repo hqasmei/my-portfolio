@@ -21,6 +21,7 @@ export const projects = [
     tags: ["All", "Web"],
     image:
       "https://res.cloudinary.com/duud9d8dv/image/upload/v1684357011/sportstable_r0zrzn.png",
+    emoji: "⚽",
   },
   {
     title: "CaptionAI",
@@ -28,6 +29,7 @@ export const projects = [
     tags: ["All", "Web"],
     image:
       "https://res.cloudinary.com/duud9d8dv/image/upload/v1684356885/captionai_zxi5dn.png",
+    emoji: "🙌",
   },
   {
     title: "Yad Bigee",
@@ -35,6 +37,7 @@ export const projects = [
     tags: ["All", "Mobile"],
     image:
       "https://res.cloudinary.com/duud9d8dv/image/upload/v1684357010/yadbigee_fml2dz.png",
+    emoji: "🧠",
   },
 ];
 
