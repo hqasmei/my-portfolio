@@ -90,7 +90,7 @@ const Contact = () => {
 
         <div className="flex w-full flex-col space-y-10 md:flex-row md:items-start md:space-x-10 md:space-y-0 md:text-left">
           <div className="w-full md:w-1/2">
-            <InlineWidget url="https://calendly.com/hosna-qasmei/30min?month=2023-05" />
+            <InlineWidget url="https://calendly.com/seandavis058/30min" />
           </div>
           <div className="flex flex-col md:w-1/2">
             <p className="mb-2 text-2xl font-semibold">Get in Touch</p>
