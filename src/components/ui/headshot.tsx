@@ -6,7 +6,7 @@ interface HeadshotProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 const Headshot = (props: HeadshotProps) => {
-  const { width = 350, height = 350, ...rest } = props;
+  const { width = 750, height = 750, ...rest } = props;
 
   return (
     <img
