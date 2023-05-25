@@ -110,11 +110,11 @@ const Contact = () => {
                         placeholder="Name*"
                         className="w-full rounded p-2 text-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                       />
-                      <ErrorMessage
+                      {/* <ErrorMessage
                         name="name"
                         component="div"
                         className="text-black"
-                      />
+                      /> */}
                     </div>
 
                     <div className="w-full">
@@ -125,11 +125,11 @@ const Contact = () => {
                         placeholder="Email*"
                         className="w-full rounded p-2 text-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                       />
-                      <ErrorMessage
+                      {/* <ErrorMessage
                         name="email"
                         component="div"
                         className="text-black"
-                      />
+                      /> */}
                     </div>
                   </div>
 
@@ -141,11 +141,11 @@ const Contact = () => {
                       placeholder="Your message here*"
                       className="h-48 w-full rounded p-2 text-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                     />
-                    <ErrorMessage
+                    {/* <ErrorMessage
                       name="message"
                       component="div"
                       className="text-black"
-                    />
+                    /> */}
                   </div>
 
                   <div className="w-full">
