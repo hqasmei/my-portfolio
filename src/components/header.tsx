@@ -10,6 +10,7 @@ import {
   FiGithub,
   FiLinkedin,
   FaDev,
+  SiSubstack
 } from "./ui/icons";
 
 import Link from "next/link";
@@ -132,6 +133,9 @@ const Header = () => {
               </Link>
               <Link href="https://dev.to/hqasmei" target="_blank">
                 <FaDev size={25} color="white" />
+              </Link>
+              <Link href="https://hosnaqasmei.substack.com/" target="_blank">
+                <SiSubstack size={25} color="white" />
               </Link>
             </div>
           </div>
