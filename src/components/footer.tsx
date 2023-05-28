@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { FiTwitter, FiYoutube, FiGithub, FiLinkedin, FaDev } from "./ui/icons";
+import { FiTwitter, FiYoutube, FiGithub, FiLinkedin, FaDev , SiSubstack} from "./ui/icons";
 
 const Footer = () => {
   return (
@@ -14,7 +14,6 @@ const Footer = () => {
               className="cursor-pointer transition-transform hover:-translate-y-1 "
             />
           </Link>
-
           <Link
             href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
             target="_blank"
@@ -24,7 +23,6 @@ const Footer = () => {
               className="cursor-pointer transition-transform hover:-translate-y-1 "
             />
           </Link>
-
           <Link href="https://github.com/hqasmei" target="_blank">
             <FiGithub
               size={25}
@@ -39,6 +37,12 @@ const Footer = () => {
           </Link>
           <Link href="https://dev.to/hqasmei" target="_blank">
             <FaDev
+              size={25}
+              className="cursor-pointer transition-transform hover:-translate-y-1 "
+            />
+          </Link>
+          <Link href="https://hosnaqasmei.substack.com/" target="_blank">
+            <SiSubstack
               size={25}
               className="cursor-pointer transition-transform hover:-translate-y-1 "
             />

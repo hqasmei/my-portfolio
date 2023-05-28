@@ -1,7 +1,7 @@
 import Logo from "./logo";
 import Headshot from "./headshot";
 import { FiTwitter, FiYoutube, FiGithub, FiLinkedin } from "react-icons/fi";
-import { FaDev } from "react-icons/fa";
+import { FaDev } from "react-icons/fa"; 
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import {
   SiTypescript,
@@ -15,6 +15,7 @@ import {
   SiNextdotjs,
   SiVercel,
   SiPython,
+  SiSubstack,
 } from "react-icons/si";
 
 export {
@@ -24,6 +25,7 @@ export {
   FiGithub,
   FiLinkedin,
   FaDev,
+  SiSubstack,
   XMarkIcon,
   Bars3Icon,
   Headshot,
