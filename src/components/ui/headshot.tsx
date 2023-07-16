@@ -5,8 +5,8 @@ const Headshot = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={350}
-    height={350}
+    width={250}
+    height={250}
     viewBox="0 0 375 375"
     {...props}
   >
