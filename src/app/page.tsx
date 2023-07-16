@@ -9,7 +9,7 @@ export default function Root() {
         <div className="flex flex-col">
           <Headshot />
           <p className="mt-2">
-            I'm a Software Engineer who likes building cross-platform mobile
+            I&#39;m a Software Engineer who likes building cross-platform mobile
             apps.
           </p>
           <p>
